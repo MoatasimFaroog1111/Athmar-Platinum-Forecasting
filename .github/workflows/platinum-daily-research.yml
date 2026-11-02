@@ -30,10 +30,16 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - name: Attempt real daily chart download (not a licensed benchmark)
         run: python -m platinum.price_source --out raw/daily
+      - name: Retrieve WPIC and CFTC original archives
+        run: python -m platinum.acquire --out raw/acquired
+      - name: Extract WPIC evidence and CFTC positions into SQLite
+        run: python -m platinum.fundamentals --raw raw/acquired --db outputs/research.sqlite --out outputs/extracted
       - name: Walk-forward research backtest
         run: python -m platinum.daily --csv raw/daily/platinum_daily_futures.csv --instrument "YAHOO_PL_F_FUTURES_INDICATIVE" --output outputs/daily
       - name: A-B-C multi-horizon research evaluation
         run: python -m platinum.model_competition --csv raw/daily/platinum_daily_futures.csv --instrument YAHOO_PL_F_FUTURES_INDICATIVE
+      - name: Independent pre-holdout multi-fold selection and untouched holdout
+        run: python -m platinum.validation --csv raw/daily/platinum_daily_futures.csv --instrument YAHOO_PL_F_FUTURES_INDICATIVE
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -42,4 +48,8 @@ jobs:
             raw/daily/
             outputs/daily/
             outputs/multihorizon/
+            outputs/extracted/
+            outputs/validated/
+            outputs/research.sqlite
+            raw/acquired/manifest.json
           retention-days: 7
