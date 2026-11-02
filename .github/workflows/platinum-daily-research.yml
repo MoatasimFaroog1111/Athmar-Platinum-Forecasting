@@ -46,6 +46,21 @@ jobs:
         run: |
           mkdir -p outputs/features
           printf '{"cftc_net_managed_money":"outputs/features/cftc_managed_money_assumed.csv"}\n' > outputs/features/feature_paths.json
+      - name: Acquire daily cross-market macro features
+        run: python -m platinum.market_features --out outputs/features/market
+      - name: Build combined feature map
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          paths=json.loads(Path("outputs/features/market/feature_paths_market.json").read_text())
+          paths["cftc_net_managed_money"]="outputs/features/cftc_managed_money_assumed.csv"
+          Path("outputs/features/feature_paths_all.json").write_text(json.dumps(paths,indent=2))
+          PY
+      - name: Compare multi-source candidate models
+        run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_all.json
+      - name: Run pre-approval multi-horizon point and interval gate
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_all.json --out outputs/preapproval
       - name: Compare real daily-price-only vs historical CFTC augmented models
         run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths.json
       - name: Independently assess historical interval coverage
@@ -63,6 +78,7 @@ jobs:
             outputs/coverage/
             outputs/features/
             outputs/multisource/
+            outputs/preapproval/
             outputs/research.sqlite
             raw/acquired/manifest.json
           retention-days: 7
