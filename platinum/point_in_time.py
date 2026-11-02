@@ -9,7 +9,14 @@ def validate_releases(frame):
     f["period_end"]=pd.to_datetime(f["period_end"],utc=True,errors="raise")
     f["value"]=pd.to_numeric(f["value"],errors="raise")
     if f["available_at"].isna().any() or f["value"].isna().any(): raise ValueError("Incomplete releases")
-    if (f["available_at"]<f["period_end"]).any(): raise ValueError("Release precedes period")
+    future_reference=f["available_at"]<f["period_end"]
+    if future_reference.any():
+        if "is_forecast" not in f.columns:
+            raise ValueError("Release precedes period without forecast flag")
+        flags=f["is_forecast"].astype(str).str.lower().map({"true":True,"false":False})
+        flags=flags.fillna(f["is_forecast"] if f["is_forecast"].dtype==bool else False)
+        if (~flags[future_reference].astype(bool)).any():
+            raise ValueError("Actual observation released before period end")
     return f.sort_values("available_at")
 
 def asof_feature(daily,releases,name):
