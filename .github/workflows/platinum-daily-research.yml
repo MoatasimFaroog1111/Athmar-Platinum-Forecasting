@@ -40,6 +40,14 @@ jobs:
         run: python -m platinum.model_competition --csv raw/daily/platinum_daily_futures.csv --instrument YAHOO_PL_F_FUTURES_INDICATIVE
       - name: Independent pre-holdout multi-fold selection and untouched holdout
         run: python -m platinum.validation --csv raw/daily/platinum_daily_futures.csv --instrument YAHOO_PL_F_FUTURES_INDICATIVE
+      - name: Export real CFTC managed-money positioning as conservative research feature
+        run: python -m platinum.cftc_research_export --raw raw/acquired --out outputs/features/cftc_managed_money_assumed.csv
+      - name: Configure historical source feature mapping
+        run: |
+          mkdir -p outputs/features
+          printf '{"cftc_net_managed_money":"outputs/features/cftc_managed_money_assumed.csv"}\n' > outputs/features/feature_paths.json
+      - name: Compare real daily-price-only vs historical CFTC augmented models
+        run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths.json
       - name: Independently assess historical interval coverage
         run: python -m platinum.coverage_audit --csv raw/daily/platinum_daily_futures.csv
       - uses: actions/upload-artifact@v4
@@ -53,6 +61,8 @@ jobs:
             outputs/extracted/
             outputs/validated/
             outputs/coverage/
+            outputs/features/
+            outputs/multisource/
             outputs/research.sqlite
             raw/acquired/manifest.json
           retention-days: 7
