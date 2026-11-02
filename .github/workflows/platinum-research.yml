@@ -1,5 +1,6 @@
 name: Platinum source acquisition and research
 on:
+  pull_request:
   workflow_dispatch:
     inputs:
       train_daily:
@@ -24,6 +25,7 @@ jobs:
       - name: Run tests
         run: python -m pytest -q
       - name: Download sources
+        if: ${{ github.event_name != 'pull_request' }}
         run: python -m platinum.acquire --out raw/acquired
       - name: Train daily model (requires actual historical prices)
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.train_daily }}
