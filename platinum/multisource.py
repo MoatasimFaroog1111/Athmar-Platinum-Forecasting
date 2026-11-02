@@ -61,7 +61,7 @@ def evaluate(csv,features,out="outputs/multisource"):
       "observations":len(bars),"test_size":n-hold,
       "selection_validation_mae":val,"selected":chosen,"heldout_mae":actual,
       "heldout_baseline_mae":baseline,"beats_baseline":bool(actual<baseline),
-      "verified_release_files":features,"forecast_to_2027":"NOT_CALIBRATED"}
+      "input_release_files":features,"source_availability_verified":not any("assumed" in str(v).lower() for v in features.values()),"forecast_to_2027":"NOT_CALIBRATED"}
     dest=Path(out);dest.mkdir(parents=True,exist_ok=True)
     (dest/"multisource_report.json").write_text(json.dumps(result,indent=2),encoding="utf-8")
     return result
