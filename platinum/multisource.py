@@ -17,7 +17,10 @@ def evaluate(csv,features,out="outputs/multisource"):
     frame=bars[["Date","Close"]].copy()
     for name,path in features.items():
         if not name.isidentifier() or name in frame.columns: raise ValueError("Invalid metric identifier")
-        frame=asof_feature(frame,load_release_csv(path),name)
+        releases=load_release_csv(path)
+        if len(releases)<12:
+            raise ValueError(f"{name}: at least 12 independent published observations required for model comparison")
+        frame=asof_feature(frame,releases,name)
     if frame[list(features)].notna().any().sum()==0:
         raise ValueError("No historical released features available")
     price=np.log(frame.Close.to_numpy(dtype=float)*OZ_PER_KG)
