@@ -30,7 +30,7 @@ def cftc_extract(path):
             filtered=frame[frame[market_col].astype(str).str.contains(r"PLATINUM",case=False,regex=True)]
             for _,record in filtered.iterrows():
                 market=str(record[market_col])
-                if "NYMEX" not in market.upper(): continue
+                if not any(label in market.upper() for label in ("NYMEX", "NEW YORK MERCANTILE", "COMMODITY EXCHANGE")): continue
                 date=pd.to_datetime(record[date_col],errors="coerce")
                 if pd.isna(date): continue
                 longs=next((c for c in frame if c.startswith("m_money_positions_long")),None)
