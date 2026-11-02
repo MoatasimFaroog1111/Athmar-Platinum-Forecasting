@@ -62,7 +62,7 @@ def fit_and_forecast(csv, instrument, output="outputs/daily", unit="USD/troy_oz"
         "last_actual_date": df.Date.iloc[-1].date().isoformat(),
         "model_status": "experimental_not_validated"}
     model = Ridge(alpha=1.0).fit(x, y)
-    future_dates = pd.bdate_range(start=df.Date.iloc[-1] + pd.Timedelta(days=1), end="2027-12-31")
+    future_dates = pd.bdate_range(start=df.Date.iloc[-1] + pd.Timedelta(days=1), end=pd.Timestamp("2027-12-31", tz="UTC"))
     rolling_returns = list(np.diff(np.log(prices))[-LAGS:])
     estimate = float(prices[-1])
     rows = []
