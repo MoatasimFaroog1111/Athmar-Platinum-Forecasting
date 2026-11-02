@@ -64,6 +64,7 @@ def prepare(source,out):
             "value":g["value_koz"].astype(float),
             "source":"USER_EXTRACTED_WPIC_PIT_EXACT_DATE_NEXT_DAY",
             "unit":"koz",
+            "is_forecast":g["is_forecast"].astype(bool).to_numpy(),
         }).sort_values("available_at")
         if len(frame)<24 or frame["available_at"].duplicated().any():
             raise ValueError(f"{name}: invalid release series")
