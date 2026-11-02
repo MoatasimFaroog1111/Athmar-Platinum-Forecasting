@@ -51,6 +51,7 @@ def assess(prices,alpha=.1):
         "holdout_mae_logreturn":float(np.mean(np.abs(y[c:]-test))),
         "holdout_nochange_mae_logreturn":float(np.mean(np.abs(y[c:]))),
         "actual_misses":int((~covered).sum()),
+        "coverage_target_passed":bool(np.mean(covered)>=1-alpha),
         "coverage_status":"HISTORICAL_SINGLE_SESSION_ONLY_NOT_2027_CALIBRATION",
         "features_used":["lagged_daily_returns"],"fundamentals_used":False,
         "selection_calibration_test_disjoint":True}
