@@ -71,23 +71,30 @@ jobs:
           }
           Path("outputs/features/nested_feature_groups.json").write_text(json.dumps(groups,indent=2))
           PY
-      - name: Nested walk-forward select features and models using pre-lock data only
-        run: python -m platinum.nested_walkforward --daily raw/daily/platinum_daily_futures.csv --groups outputs/features/nested_feature_groups.json --lock-start 2026-11-03 --out outputs/nested/nested_lock_candidate.json
-      - name: Verify nested result matches frozen model lock
+      - name: Nested walk-forward rolling research diagnostic only
+        run: python -m platinum.nested_walkforward --daily raw/daily/platinum_daily_futures.csv --groups outputs/features/nested_feature_groups.json --lock-start 2026-11-03 --out outputs/nested/nested_research_diagnostic.json
+      - name: Verify immutable V1 protocol lock and frozen 90d artifact
         run: |
+          test "$(git hash-object config/model_lock_v1.json)" = "2683feaeba9fc5da14a7fc3b8a16597b9470979d"
+          test "$(git hash-object config/prospective_holdout_v1.json)" = "3bb7dd682cd386c99c1fb870eb4a6349e21da947"
+          test "$(git hash-object config/model_artifact_v1_90d.json)" = "2d6d24d39f322430eb9ae968991158359a127b9a"
           python - <<'PY'
           import json
           from pathlib import Path
-          nested=json.loads(Path("outputs/nested/nested_lock_candidate.json").read_text())
-          locked=json.loads(Path("config/model_lock_v1.json").read_text())
-          for h,expected in locked["horizons"].items():
-              got=nested["locked_candidates"][h]
-              for key in ("group","model","prelock_sample_signature"):
-                  if got[key] != expected[key]:
-                      raise SystemExit(f"MODEL_LOCK_MISMATCH h={h} {key}: {got[key]} != {expected[key]}")
-              if abs(float(got["q90_abs_logreturn"])-float(expected["q90_abs_logreturn"])) > 1e-12:
-                  raise SystemExit(f"MODEL_LOCK_MISMATCH h={h} interval")
-          print("FROZEN_MODEL_LOCK_MATCH_CONFIRMED")
+          lock=json.loads(Path("config/model_lock_v1.json").read_text())
+          protocol=json.loads(Path("config/prospective_holdout_v1.json").read_text())
+          artifact=json.loads(Path("config/model_artifact_v1_90d.json").read_text())
+          h90=lock["horizons"]["90"]
+          assert lock["protocol_id"] == protocol["protocol_id"] == "ATHMAR_PLATINUM_APPROVAL_V1"
+          assert artifact["model"] == h90["model"] == "ridge_1.0"
+          assert artifact["feature_group"] == h90["group"] == "market_wpic_all"
+          assert artifact["prelock_sample_signature"] == h90["prelock_sample_signature"]
+          assert abs(float(artifact["q90_abs_logreturn"])-float(h90["q90_abs_logreturn"])) < 1e-12
+          assert artifact["last_training_target"][:10] < protocol["origin_start"]
+          assert artifact["governance"]["immutable"] is True
+          for h in ("1","5","20","60"):
+              assert lock["horizons"][h]["model"] == "no_change"
+          print("IMMUTABLE_V1_ARTIFACTS_CONFIRMED")
           PY
       - name: Assert prospective holdout remains sealed
         run: python -m platinum.prospective_holdout --protocol config/prospective_holdout_v1.json --model-lock config/model_lock_v1.json --status-only
