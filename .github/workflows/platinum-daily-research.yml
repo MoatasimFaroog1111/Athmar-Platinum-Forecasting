@@ -63,7 +63,16 @@ jobs:
           Path("outputs/features/feature_paths_wpic_levels.json").write_text(json.dumps(level_map,indent=2))
           Path("outputs/features/feature_paths_wpic_engineered.json").write_text(json.dumps(engineered_map,indent=2))
           Path("outputs/features/feature_paths_all_engineered.json").write_text(json.dumps(all_engineered,indent=2))
+          groups={
+            "market_only":market,
+            "market_wpic_levels":level_map,
+            "market_wpic_engineered":engineered_map,
+            "market_wpic_all":{**market,**levels,**engineered},
+          }
+          Path("outputs/features/nested_feature_groups.json").write_text(json.dumps(groups,indent=2))
           PY
+      - name: Nested walk-forward select features and models using pre-lock data only
+        run: python -m platinum.nested_walkforward --daily raw/daily/platinum_daily_futures.csv --groups outputs/features/nested_feature_groups.json --lock-start 2026-11-03 --out outputs/nested/nested_lock_candidate.json
       - name: Multi-source model comparison with engineered WPIC plus markets
         run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_engineered.json --out outputs/multisource_wpic_engineered
       - name: Pre-approval gate - market-only verified timing baseline
@@ -102,6 +111,7 @@ jobs:
             outputs/validated/
             outputs/coverage/
             outputs/features/
+            outputs/nested/
             outputs/multisource_wpic_engineered/
             outputs/preapproval_market/
             outputs/preapproval_wpic_levels/
