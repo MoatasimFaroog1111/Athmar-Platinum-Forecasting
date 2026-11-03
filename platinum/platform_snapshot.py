@@ -1,4 +1,4 @@
-"""Build a read-only dashboard snapshot from the current research/shadow engine.
+"""Build a read-only dashboard snapshot from the current shadow engine.
 
 This module never scores the prospective holdout and never mutates model/protocol files.
 Missing live/shadow outputs are represented explicitly as unavailable instead of synthesized.
@@ -29,18 +29,36 @@ def _latest_wpic(path):
 def _journal(path):
     p=Path(path)
     if not p.is_file():
-        return {"status":"waiting_for_first_shadow_forecast","count":0,"latest":[]}
+        return {"status":"waiting_for_first_shadow_forecast","count":0,"latest":[],"latest_by_horizon":{}}
     df=pd.read_csv(p)
-    if df.empty:return {"status":"waiting_for_first_shadow_forecast","count":0,"latest":[]}
-    cols=[c for c in ("created_at","origin_date","horizon","target_date","forecast_usd_kg","p10_usd_kg","p90_usd_kg","model_hash","status") if c in df.columns]
-    latest=df.tail(8)[cols].where(pd.notna(df.tail(8)[cols]),None).to_dict("records")
-    return {"status":"active","count":len(df),"latest":latest}
+    if df.empty:return {"status":"waiting_for_first_shadow_forecast","count":0,"latest":[],"latest_by_horizon":{}}
+    if "outcome_scored" in df.columns:
+        scored=df["outcome_scored"].astype(str).str.lower().isin(["true","1","yes"])
+        if scored.any(): raise ValueError("Dashboard refuses shadow journal containing scored outcomes")
+    cols=[c for c in ("created_at","origin_date","origin_close_usd_kg","horizon","target_date",
+                       "forecast_usd_kg","p10_usd_kg","p90_usd_kg","model","feature_group",
+                       "model_artifact_sha256","model_lock_sha256","status","record_hash") if c in df.columns]
+    latest=df.tail(10)[cols].where(pd.notna(df.tail(10)[cols]),None).to_dict("records")
+    latest_by={}
+    if "horizon" in df.columns:
+        for h,g in df.groupby("horizon"):
+            r=g.iloc[-1]
+            latest_by[str(int(h))]={
+                "created_at":str(r.get("created_at","")),
+                "origin_date":str(r.get("origin_date","")),
+                "target_date":str(r.get("target_date","")),
+                "forecast_usd_kg":float(r["forecast_usd_kg"]),
+                "p10_usd_kg":float(r["p10_usd_kg"]),
+                "p90_usd_kg":float(r["p90_usd_kg"]),
+                "record_hash":str(r.get("record_hash",""))
+            }
+    return {"status":"active","count":len(df),"latest":latest,"latest_by_horizon":latest_by}
 
 def build_snapshot(protocol_path="config/prospective_holdout_v1.json",
                    model_lock_path="config/model_lock_v1.json",
                    price_csv=None,
                    wpic_csv="data/verified/platinum_supply_demand_pit_user_extracted.csv",
-                   journal_csv="outputs/shadow/forecast_journal.csv"):
+                   journal_csv="data/shadow/forecast_journal.csv"):
     protocol=_read_json(protocol_path,{})
     lock=_read_json(model_lock_path,{})
     if not protocol or not lock:raise ValueError("Protocol and model lock are required")
@@ -49,15 +67,17 @@ def build_snapshot(protocol_path="config/prospective_holdout_v1.json",
         df=load_daily(price_csv)
         market.update({"status":"available","last_actual_date":df.Date.iloc[-1].date().isoformat(),
                        "last_price_usd_kg":float(df.Close.iloc[-1]*OZ_PER_KG)})
+    journal=_journal(journal_csv)
     horizons=[]
     for h in ("1","5","20","60","90"):
         item=lock["horizons"][h]
+        latest=journal["latest_by_horizon"].get(h)
         horizons.append({"horizon_days":int(h),"model":item["model"],"feature_group":item["group"],
                          "interval_q90_abs_logreturn":float(item["q90_abs_logreturn"]),
                          "mode":"candidate" if item["model"]!="no_change" else "baseline",
-                         "status":"locked_shadow"})
+                         "status":"locked_shadow","latest_forecast":latest})
     return {
-      "product":{"name":"Athmar Platinum Intelligence","mode":"SHADOW","environment":"research"},
+      "product":{"name":"Athmar Platinum Intelligence","mode":"SHADOW","environment":"production-shadow"},
       "market":market,
       "approval":{"protocol_id":protocol["protocol_id"],"status":"LOCKED",
         "origin_start":protocol["origin_start"],"origin_end":protocol["origin_end"],
@@ -66,18 +86,21 @@ def build_snapshot(protocol_path="config/prospective_holdout_v1.json",
         "minimum_mature_origins_per_horizon":protocol["minimum_mature_origins_per_horizon"]},
       "horizons":horizons,
       "fundamentals":{"wpic":_latest_wpic(wpic_csv)},
-      "journal":_journal(journal_csv),
+      "journal":journal,
       "integrity":{"prospective_holdout_metrics_exposed":False,
         "cftc_used_for_approval":False,
-        "locked_model_source":"config/model_lock_v1.json"}
+        "locked_model_source":"config/model_lock_v1.json",
+        "journal_outcomes_scored":False}
     }
 
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--price-csv")
-    p.add_argument("--out",default="outputs/platform/state.json")
+    p.add_argument("--journal-csv",default="data/shadow/forecast_journal.csv")
+    p.add_argument("--wpic-csv",default="data/verified/platinum_supply_demand_pit_user_extracted.csv")
+    p.add_argument("--out",default="web/data/live-state.json")
     a=p.parse_args()
-    state=build_snapshot(price_csv=a.price_csv)
+    state=build_snapshot(price_csv=a.price_csv,journal_csv=a.journal_csv,wpic_csv=a.wpic_csv)
     out=Path(a.out);out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(state,indent=2),encoding="utf-8")
     print(json.dumps(state,indent=2))
