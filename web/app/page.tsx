@@ -1,7 +1,7 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
 
-type Horizon={horizon_days:number;model:string;feature_group:string;interval_q90_abs_logreturn:number;mode:string;status:string};
+type LatestForecast={created_at:string;origin_date:string;target_date:string;forecast_usd_kg:number;p10_usd_kg:number;p90_usd_kg:number;record_hash:string};\ntype Horizon={horizon_days:number;model:string;feature_group:string;interval_q90_abs_logreturn:number;mode:string;status:string;latest_forecast?:LatestForecast|null};
 type State={
  product:{name:string;mode:string;environment:string};
  market:{status:string;last_actual_date:string|null;last_price_usd_kg:number|null;instrument:string};
@@ -99,9 +99,9 @@ export default function Home(){
       <section className="horizonGrid">
         {data.horizons.map(h=><article className={"card horizon "+(h.mode==="candidate"?"candidate":"")} key={h.horizon_days}>
           <div className="horizonTop"><span>{h.horizon_days+"D"}</span><em>{h.mode==="candidate"?"MODEL":"BASELINE"}</em></div>
-          <h3>{h.model==="no_change"?"No-change":h.model.replace("_"," α ")}</h3>
-          <p>{h.feature_group==="price_only"?"Price-only locked baseline":"Market + WPIC levels + engineered vintages"}</p>
-          <div className="metricRow"><span>90% interval</span><strong>{"±"+(Math.expm1(h.interval_q90_abs_logreturn)*100).toFixed(1)+"%"}</strong></div>
+          <h3>{h.latest_forecast?"$"+fmt(h.latest_forecast.forecast_usd_kg,0):(h.model==="no_change"?"No-change":h.model.replace("_"," α "))}</h3>
+          <p>{h.latest_forecast?("Target · "+h.latest_forecast.target_date):(h.feature_group==="price_only"?"Price-only locked baseline":"Market + WPIC levels + engineered vintages")}</p>
+          <div className="metricRow"><span>{h.latest_forecast?"P10 / P90":"90% interval"}</span><strong>{h.latest_forecast?("$"+fmt(h.latest_forecast.p10_usd_kg,0)+" / $"+fmt(h.latest_forecast.p90_usd_kg,0)):("±"+(Math.expm1(h.interval_q90_abs_logreturn)*100).toFixed(1)+"%")}</strong></div>
           <div className="miniBar"><i style={{width:Math.min(100,12+h.horizon_days*.72)+"%"}}/></div>
         </article>)}
       </section>
@@ -133,7 +133,7 @@ export default function Home(){
             <li><span>Prospective metrics exposed</span><strong>{data.integrity.prospective_holdout_metrics_exposed?"YES":"NO"}</strong></li>
             <li><span>CFTC in approval lock</span><strong>{data.integrity.cftc_used_for_approval?"YES":"NO"}</strong></li>
             <li><span>90D candidate</span><strong>{candidate?candidate.model:"—"}</strong></li>
-            <li><span>Source</span><strong>model_lock_v1</strong></li>
+            <li><span>Journal outcomes scored</span><strong>{data.integrity.journal_outcomes_scored?"YES":"NO"}</strong></li>\n            <li><span>Source</span><strong>model_lock_v1</strong></li>
           </ul>
         </article>
       </section>
