@@ -46,27 +46,48 @@ jobs:
         run: python -m platinum.market_features --out outputs/features/market
       - name: Normalize uploaded WPIC vintages into exact-date PIT feature series
         run: python -m platinum.wpic_pit_prepare --input data/verified/platinum_supply_demand_pit_user_extracted.csv --out outputs/features/wpic
+      - name: Engineer WPIC vintage revision ratio and growth features
+        run: python -m platinum.wpic_engineering --input data/verified/platinum_supply_demand_pit_user_extracted.csv --out outputs/features/wpic_engineered
       - name: Build ablation feature maps
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           market=json.loads(Path("outputs/features/market/feature_paths_market.json").read_text())
-          wpic=json.loads(Path("outputs/features/wpic/feature_paths_wpic.json").read_text())
-          verified={**market,**wpic}
-          all_sources={**verified,"cftc_net_managed_money":"outputs/features/cftc_managed_money_assumed.csv"}
+          levels=json.loads(Path("outputs/features/wpic/feature_paths_wpic.json").read_text())
+          engineered=json.loads(Path("outputs/features/wpic_engineered/feature_paths_engineered.json").read_text())
+          level_map={**market,**levels}
+          engineered_map={**market,**engineered}
+          all_engineered={**engineered_map,"cftc_net_managed_money":"outputs/features/cftc_managed_money_assumed.csv"}
           Path("outputs/features/feature_paths_market_only.json").write_text(json.dumps(market,indent=2))
-          Path("outputs/features/feature_paths_verified_wpic.json").write_text(json.dumps(verified,indent=2))
-          Path("outputs/features/feature_paths_all.json").write_text(json.dumps(all_sources,indent=2))
+          Path("outputs/features/feature_paths_wpic_levels.json").write_text(json.dumps(level_map,indent=2))
+          Path("outputs/features/feature_paths_wpic_engineered.json").write_text(json.dumps(engineered_map,indent=2))
+          Path("outputs/features/feature_paths_all_engineered.json").write_text(json.dumps(all_engineered,indent=2))
           PY
-      - name: Multi-source model comparison with verified-date WPIC plus markets
-        run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_verified_wpic.json --out outputs/multisource_wpic
+      - name: Multi-source model comparison with engineered WPIC plus markets
+        run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_engineered.json --out outputs/multisource_wpic_engineered
       - name: Pre-approval gate - market-only verified timing baseline
         run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_market_only.json --source-verified --out outputs/preapproval_market
-      - name: Pre-approval gate - verified WPIC PIT plus markets
-        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_verified_wpic.json --source-verified --out outputs/preapproval_wpic
-      - name: Pre-approval gate - all sources including assumed-timing CFTC
-        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_all.json --out outputs/preapproval_all
+      - name: Pre-approval gate - WPIC absolute levels plus markets
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_levels.json --source-verified --out outputs/preapproval_wpic_levels
+      - name: Pre-approval gate - WPIC engineered features plus markets
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_engineered.json --source-verified --out outputs/preapproval_wpic_engineered
+      - name: Verify identical final temporal holdouts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          old=json.loads(Path("outputs/preapproval_wpic_levels/gate.json").read_text())
+          new=json.loads(Path("outputs/preapproval_wpic_engineered/gate.json").read_text())
+          for h in ("1","5","20","60","90"):
+              a=old["horizons"][h]["split_signature"]
+              b=new["horizons"][h]["split_signature"]
+              if a != b:
+                  raise SystemExit(f"Holdout changed at horizon {h}: {a} != {b}")
+          print("IDENTICAL_HOLDOUT_SPLITS_CONFIRMED")
+          PY
+      - name: Pre-approval gate - engineered WPIC plus assumed-timing CFTC
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_all_engineered.json --out outputs/preapproval_all_engineered
       - name: Independently assess historical interval coverage
         run: python -m platinum.coverage_audit --csv raw/daily/platinum_daily_futures.csv
       - uses: actions/upload-artifact@v4
@@ -81,10 +102,11 @@ jobs:
             outputs/validated/
             outputs/coverage/
             outputs/features/
-            outputs/multisource_wpic/
+            outputs/multisource_wpic_engineered/
             outputs/preapproval_market/
-            outputs/preapproval_wpic/
-            outputs/preapproval_all/
+            outputs/preapproval_wpic_levels/
+            outputs/preapproval_wpic_engineered/
+            outputs/preapproval_all_engineered/
             outputs/research.sqlite
             raw/acquired/manifest.json
           retention-days: 7
