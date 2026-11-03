@@ -1,0 +1,32 @@
+name: Package Local Windows Copy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/package-local.yml"
+      - "run-local.ps1"
+      - "run-local.bat"
+      - "LOCAL_SETUP.md"
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build local package
+        run: |
+          mkdir -p dist/Athmar-Platinum-Forecasting
+          rsync -a --exclude '.git' --exclude 'dist' ./ dist/Athmar-Platinum-Forecasting/
+          cd dist
+          zip -qr Athmar-Platinum-Local-Windows.zip Athmar-Platinum-Forecasting
+      - uses: actions/upload-artifact@v4
+        with:
+          name: athmar-platinum-local-windows
+          path: dist/Athmar-Platinum-Local-Windows.zip
+          retention-days: 30
