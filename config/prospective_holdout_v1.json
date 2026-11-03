@@ -1,0 +1,30 @@
+{
+  "protocol_id": "ATHMAR_PLATINUM_APPROVAL_V1",
+  "locked_at_utc": "2026-11-03T07:03:00Z",
+  "origin_start": "2026-11-03",
+  "origin_end": "2027-07-30",
+  "score_not_before_utc": "2027-12-15T00:00:00Z",
+  "horizons_business_days": [
+    1,
+    5,
+    20,
+    60,
+    90
+  ],
+  "nominal_interval_coverage": 0.9,
+  "minimum_mature_origins_per_horizon": 100,
+  "approval_rules": {
+    "all_horizons_must_pass": true,
+    "minimum_mae_improvement_vs_no_change": 0.01,
+    "nominal_coverage_must_lie_inside_wilson95": true,
+    "realized_coverage_min": 0.87,
+    "realized_coverage_max": 0.93,
+    "source_availability_must_be_verified": true
+  },
+  "governance": {
+    "no_model_or_feature_tuning_after_lock": true,
+    "no_holdout_metrics_before_score_not_before": true,
+    "any_protocol_change_requires_new_future_holdout": true,
+    "cftc_assumed_timing_excluded_from_approval_model": true
+  }
+}
