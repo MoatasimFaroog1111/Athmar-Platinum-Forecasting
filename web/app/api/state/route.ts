@@ -1,4 +1,4 @@
-import bootstrap from "@/data/bootstrap.json";
+import liveState from "@/data/live-state.json";
 
 export const dynamic = "force-dynamic";
 
@@ -10,5 +10,5 @@ export async function GET() {
       if (response.ok) return Response.json(await response.json(),{headers:{"cache-control":"no-store"}});
     } catch {}
   }
-  return Response.json(bootstrap,{headers:{"cache-control":"no-store"}});
+  return Response.json(liveState,{headers:{"cache-control":"no-store"}});
 }
