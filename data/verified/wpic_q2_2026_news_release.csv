@@ -1,0 +1,4 @@
+metric,period_end,available_at,value,source,unit
+platinum_q2_total_supply,2026-06-30,2026-09-10T00:00:00Z,1906,https://platinuminvestment.com/news,koz
+platinum_q2_total_demand,2026-06-30,2026-09-10T00:00:00Z,1663,https://platinuminvestment.com/news,koz
+platinum_q2_balance,2026-06-30,2026-09-10T00:00:00Z,244,https://platinuminvestment.com/news,koz

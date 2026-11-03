@@ -20,7 +20,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request'
     needs: tests
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -40,6 +40,83 @@ jobs:
         run: python -m platinum.model_competition --csv raw/daily/platinum_daily_futures.csv --instrument YAHOO_PL_F_FUTURES_INDICATIVE
       - name: Independent pre-holdout multi-fold selection and untouched holdout
         run: python -m platinum.validation --csv raw/daily/platinum_daily_futures.csv --instrument YAHOO_PL_F_FUTURES_INDICATIVE
+      - name: Export real CFTC managed-money positioning as conservative research feature
+        run: python -m platinum.cftc_research_export --raw raw/acquired --out outputs/features/cftc_managed_money_assumed.csv
+      - name: Acquire daily cross-market macro features
+        run: python -m platinum.market_features --out outputs/features/market
+      - name: Normalize uploaded WPIC vintages into exact-date PIT feature series
+        run: python -m platinum.wpic_pit_prepare --input data/verified/platinum_supply_demand_pit_user_extracted.csv --out outputs/features/wpic
+      - name: Engineer WPIC vintage revision ratio and growth features
+        run: python -m platinum.wpic_engineering --input data/verified/platinum_supply_demand_pit_user_extracted.csv --out outputs/features/wpic_engineered
+      - name: Build ablation feature maps
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          market=json.loads(Path("outputs/features/market/feature_paths_market.json").read_text())
+          levels=json.loads(Path("outputs/features/wpic/feature_paths_wpic.json").read_text())
+          engineered=json.loads(Path("outputs/features/wpic_engineered/feature_paths_engineered.json").read_text())
+          level_map={**market,**levels}
+          engineered_map={**market,**engineered}
+          all_engineered={**engineered_map,"cftc_net_managed_money":"outputs/features/cftc_managed_money_assumed.csv"}
+          Path("outputs/features/feature_paths_market_only.json").write_text(json.dumps(market,indent=2))
+          Path("outputs/features/feature_paths_wpic_levels.json").write_text(json.dumps(level_map,indent=2))
+          Path("outputs/features/feature_paths_wpic_engineered.json").write_text(json.dumps(engineered_map,indent=2))
+          Path("outputs/features/feature_paths_all_engineered.json").write_text(json.dumps(all_engineered,indent=2))
+          groups={
+            "market_only":market,
+            "market_wpic_levels":level_map,
+            "market_wpic_engineered":engineered_map,
+            "market_wpic_all":{**market,**levels,**engineered},
+          }
+          Path("outputs/features/nested_feature_groups.json").write_text(json.dumps(groups,indent=2))
+          PY
+      - name: Nested walk-forward select features and models using pre-lock data only
+        run: python -m platinum.nested_walkforward --daily raw/daily/platinum_daily_futures.csv --groups outputs/features/nested_feature_groups.json --lock-start 2026-11-03 --out outputs/nested/nested_lock_candidate.json
+      - name: Verify nested result matches frozen model lock
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          nested=json.loads(Path("outputs/nested/nested_lock_candidate.json").read_text())
+          locked=json.loads(Path("config/model_lock_v1.json").read_text())
+          for h,expected in locked["horizons"].items():
+              got=nested["locked_candidates"][h]
+              for key in ("group","model","prelock_sample_signature"):
+                  if got[key] != expected[key]:
+                      raise SystemExit(f"MODEL_LOCK_MISMATCH h={h} {key}: {got[key]} != {expected[key]}")
+              if abs(float(got["q90_abs_logreturn"])-float(expected["q90_abs_logreturn"])) > 1e-12:
+                  raise SystemExit(f"MODEL_LOCK_MISMATCH h={h} interval")
+          print("FROZEN_MODEL_LOCK_MATCH_CONFIRMED")
+          PY
+      - name: Assert prospective holdout remains sealed
+        run: python -m platinum.prospective_holdout --protocol config/prospective_holdout_v1.json --model-lock config/model_lock_v1.json --status-only
+      - name: Multi-source model comparison with engineered WPIC plus markets
+        run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_engineered.json --out outputs/multisource_wpic_engineered
+      - name: Pre-approval gate - market-only verified timing baseline
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_market_only.json --source-verified --out outputs/preapproval_market
+      - name: Pre-approval gate - WPIC absolute levels plus markets
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_levels.json --source-verified --out outputs/preapproval_wpic_levels
+      - name: Pre-approval gate - WPIC engineered features plus markets
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_engineered.json --source-verified --out outputs/preapproval_wpic_engineered
+      - name: Verify identical final temporal holdouts
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          old=json.loads(Path("outputs/preapproval_wpic_levels/gate.json").read_text())
+          new=json.loads(Path("outputs/preapproval_wpic_engineered/gate.json").read_text())
+          for h in ("1","5","20","60","90"):
+              a=old["horizons"][h]["split_signature"]
+              b=new["horizons"][h]["split_signature"]
+              if a != b:
+                  raise SystemExit(f"Holdout changed at horizon {h}: {a} != {b}")
+          print("IDENTICAL_HOLDOUT_SPLITS_CONFIRMED")
+          PY
+      - name: Pre-approval gate - engineered WPIC plus assumed-timing CFTC
+        run: python -m platinum.preapproval_gate --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_all_engineered.json --out outputs/preapproval_all_engineered
+      - name: Independently assess historical interval coverage
+        run: python -m platinum.coverage_audit --csv raw/daily/platinum_daily_futures.csv
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -50,6 +127,14 @@ jobs:
             outputs/multihorizon/
             outputs/extracted/
             outputs/validated/
+            outputs/coverage/
+            outputs/features/
+            outputs/nested/
+            outputs/multisource_wpic_engineered/
+            outputs/preapproval_market/
+            outputs/preapproval_wpic_levels/
+            outputs/preapproval_wpic_engineered/
+            outputs/preapproval_all_engineered/
             outputs/research.sqlite
             raw/acquired/manifest.json
           retention-days: 7
