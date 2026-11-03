@@ -73,6 +73,24 @@ jobs:
           PY
       - name: Nested walk-forward select features and models using pre-lock data only
         run: python -m platinum.nested_walkforward --daily raw/daily/platinum_daily_futures.csv --groups outputs/features/nested_feature_groups.json --lock-start 2026-11-03 --out outputs/nested/nested_lock_candidate.json
+      - name: Verify nested result matches frozen model lock
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          nested=json.loads(Path("outputs/nested/nested_lock_candidate.json").read_text())
+          locked=json.loads(Path("config/model_lock_v1.json").read_text())
+          for h,expected in locked["horizons"].items():
+              got=nested["locked_candidates"][h]
+              for key in ("group","model","prelock_sample_signature"):
+                  if got[key] != expected[key]:
+                      raise SystemExit(f"MODEL_LOCK_MISMATCH h={h} {key}: {got[key]} != {expected[key]}")
+              if abs(float(got["q90_abs_logreturn"])-float(expected["q90_abs_logreturn"])) > 1e-12:
+                  raise SystemExit(f"MODEL_LOCK_MISMATCH h={h} interval")
+          print("FROZEN_MODEL_LOCK_MATCH_CONFIRMED")
+          PY
+      - name: Assert prospective holdout remains sealed
+        run: python -m platinum.prospective_holdout --protocol config/prospective_holdout_v1.json --model-lock config/model_lock_v1.json --status-only
       - name: Multi-source model comparison with engineered WPIC plus markets
         run: python -m platinum.multisource --daily raw/daily/platinum_daily_futures.csv --features outputs/features/feature_paths_wpic_engineered.json --out outputs/multisource_wpic_engineered
       - name: Pre-approval gate - market-only verified timing baseline
