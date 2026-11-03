@@ -1,0 +1,84 @@
+name: Platinum Shadow Production
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 23 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: platinum-shadow-production
+  cancel-in-progress: false
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Verify shadow safety tests
+        run: python -m pytest -q tests/test_shadow_forecast.py tests/test_platform_snapshot.py tests/test_prospective_lock.py
+      - name: Acquire latest platinum price
+        run: python -m platinum.price_source --out raw/daily
+      - name: Acquire cross-market features
+        run: python -m platinum.market_features --out outputs/features/market
+      - name: Prepare WPIC PIT levels
+        run: python -m platinum.wpic_pit_prepare --input data/verified/platinum_supply_demand_pit_user_extracted.csv --out outputs/features/wpic
+      - name: Prepare WPIC engineered features
+        run: python -m platinum.wpic_engineering --input data/verified/platinum_supply_demand_pit_user_extracted.csv --out outputs/features/wpic_engineered
+      - name: Build locked 90d feature map
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          market=json.loads(Path("outputs/features/market/feature_paths_market.json").read_text())
+          levels=json.loads(Path("outputs/features/wpic/feature_paths_wpic.json").read_text())
+          engineered=json.loads(Path("outputs/features/wpic_engineered/feature_paths_engineered.json").read_text())
+          paths={**market,**levels,**engineered}
+          Path("outputs/features/shadow_v1_90d.json").write_text(json.dumps(paths,indent=2))
+          PY
+      - name: Append locked shadow forecasts
+        run: |
+          python -m platinum.shadow_forecast \
+            --daily raw/daily/platinum_daily_futures.csv \
+            --features outputs/features/shadow_v1_90d.json \
+            --model-lock config/model_lock_v1.json \
+            --artifact config/model_artifact_v1_90d.json \
+            --journal data/shadow/forecast_journal.csv
+      - name: Build live dashboard state
+        run: |
+          python -m platinum.platform_snapshot \
+            --price-csv raw/daily/platinum_daily_futures.csv \
+            --journal-csv data/shadow/forecast_journal.csv \
+            --out web/data/live-state.json
+      - name: Assert prospective holdout remains unscored
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          state=json.loads(Path("web/data/live-state.json").read_text())
+          assert state["approval"]["metrics_revealed"] is False
+          assert state["integrity"]["prospective_holdout_metrics_exposed"] is False
+          assert state["integrity"]["journal_outcomes_scored"] is False
+          print("SHADOW_ONLY_NO_HOLDOUT_SCORING_CONFIRMED")
+          PY
+      - name: Persist append-only journal and live state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/shadow/forecast_journal.csv web/data/live-state.json
+          if git diff --cached --quiet; then
+            echo "No new shadow records."
+            exit 0
+          fi
+          git commit -m "data: append locked shadow forecast journal"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
