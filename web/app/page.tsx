@@ -134,7 +134,8 @@ export default function Home(){
             <li><span>Prospective metrics exposed</span><strong>{data.integrity.prospective_holdout_metrics_exposed?"YES":"NO"}</strong></li>
             <li><span>CFTC in approval lock</span><strong>{data.integrity.cftc_used_for_approval?"YES":"NO"}</strong></li>
             <li><span>90D candidate</span><strong>{candidate?candidate.model:"—"}</strong></li>
-            <li><span>Journal outcomes scored</span><strong>{data.integrity.journal_outcomes_scored?"YES":"NO"}</strong></li>\n            <li><span>Source</span><strong>model_lock_v1</strong></li>
+            <li><span>Journal outcomes scored</span><strong>{data.integrity.journal_outcomes_scored?"YES":"NO"}</strong></li>
+            <li><span>Source</span><strong>model_lock_v1</strong></li>
           </ul>
         </article>
       </section>
