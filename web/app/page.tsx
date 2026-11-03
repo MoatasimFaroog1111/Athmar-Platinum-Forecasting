@@ -10,7 +10,7 @@ type State={
  horizons:Horizon[];
  fundamentals:{wpic:{status:string;vintage?:string|null;published_at?:string|null;year?:number;unit?:string;metrics:Record<string,number>}};
  journal:{status:string;count:number;latest:Array<Record<string,unknown>>};
- integrity:{prospective_holdout_metrics_exposed:boolean;cftc_used_for_approval:boolean;locked_model_source:string};
+ integrity:{prospective_holdout_metrics_exposed:boolean;cftc_used_for_approval:boolean;locked_model_source:string;journal_outcomes_scored?:boolean};
 };
 
 const fmt=(v:number|null,dp=0)=>v==null?"—":new Intl.NumberFormat("en-US",{maximumFractionDigits:dp}).format(v);
