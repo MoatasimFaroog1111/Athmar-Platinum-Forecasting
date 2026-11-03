@@ -1,7 +1,8 @@
 "use client";
 import {useEffect,useMemo,useState} from "react";
 
-type LatestForecast={created_at:string;origin_date:string;target_date:string;forecast_usd_kg:number;p10_usd_kg:number;p90_usd_kg:number;record_hash:string};\ntype Horizon={horizon_days:number;model:string;feature_group:string;interval_q90_abs_logreturn:number;mode:string;status:string;latest_forecast?:LatestForecast|null};
+type LatestForecast={created_at:string;origin_date:string;target_date:string;forecast_usd_kg:number;p10_usd_kg:number;p90_usd_kg:number;record_hash:string};
+type Horizon={horizon_days:number;model:string;feature_group:string;interval_q90_abs_logreturn:number;mode:string;status:string;latest_forecast?:LatestForecast|null};
 type State={
  product:{name:string;mode:string;environment:string};
  market:{status:string;last_actual_date:string|null;last_price_usd_kg:number|null;instrument:string};
