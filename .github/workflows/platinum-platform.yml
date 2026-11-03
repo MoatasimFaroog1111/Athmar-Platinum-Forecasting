@@ -1,0 +1,47 @@
+name: Athmar Platinum Platform
+on:
+  pull_request:
+    paths:
+      - "web/**"
+      - "platinum/platform_snapshot.py"
+      - "tests/test_platform_snapshot.py"
+      - "config/model_lock_v1.json"
+      - "config/prospective_holdout_v1.json"
+      - ".github/workflows/platinum-platform.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  platform:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Verify safe platform snapshot
+        run: |
+          python -m pytest -q tests/test_platform_snapshot.py
+          python -m platinum.platform_snapshot --out /tmp/athmar-platform-state.json
+          python - <<'PY'
+          import json
+          state=json.load(open("/tmp/athmar-platform-state.json"))
+          assert state["approval"]["status"]=="LOCKED"
+          assert state["approval"]["metrics_revealed"] is False
+          assert state["integrity"]["prospective_holdout_metrics_exposed"] is False
+          print("PLATFORM_SNAPSHOT_FAIL_CLOSED_CONFIRMED")
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package.json
+      - name: Install web dependencies
+        working-directory: web
+        run: npm install --no-audit --no-fund
+      - name: Build dashboard
+        working-directory: web
+        run: npm run build

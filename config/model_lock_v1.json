@@ -1,0 +1,83 @@
+{
+  "protocol_id": "ATHMAR_PLATINUM_APPROVAL_V1",
+  "protocol_path": "config/prospective_holdout_v1.json",
+  "nested_selection_run_id": 41595013483,
+  "nested_selection_job_id": 125780401282,
+  "selection_commit": "59f2b20c475b7ad2d9a20d699424d200d6f56ac6",
+  "lock_start": "2026-11-03",
+  "prelock_last_target": "2026-11-02",
+  "source_policy": {
+    "cftc_assumed_timing_included": false,
+    "approved_feature_sources": [
+      "daily_platinum_price",
+      "cross_market_next_day",
+      "wpic_exact_date_next_day"
+    ],
+    "note": "CFTC assumed historical availability is excluded from the approval lock."
+  },
+  "feature_groups": {
+    "price_only": [],
+    "market_wpic_all": [
+      "gold",
+      "palladium",
+      "silver",
+      "dollar_index",
+      "zar_usd",
+      "us10y",
+      "wpic_above_ground_stocks_current_year",
+      "wpic_automotive_current_year",
+      "wpic_balance_current_year",
+      "wpic_industrial_current_year",
+      "wpic_investment_current_year",
+      "wpic_jewellery_current_year",
+      "wpic_recycling_current_year",
+      "wpic_total_demand_current_year",
+      "wpic_total_mining_supply_current_year",
+      "wpic_total_supply_current_year",
+      "wpic_balance_to_demand_ratio",
+      "wpic_total_supply_yoy_growth",
+      "wpic_total_demand_yoy_growth",
+      "wpic_total_supply_revision_pct",
+      "wpic_total_demand_revision_pct",
+      "wpic_balance_revision_to_demand"
+    ]
+  },
+  "horizons": {
+    "1": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.04319172393303283,
+      "prelock_sample_signature": "3663bc7a1f1b410da01b"
+    },
+    "5": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.08872636237365583,
+      "prelock_sample_signature": "5c77455179279df0b21e"
+    },
+    "20": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.21199950404260193,
+      "prelock_sample_signature": "346abf6fda738502e38d"
+    },
+    "60": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.34644730362401965,
+      "prelock_sample_signature": "20686ba98e41369af2ba"
+    },
+    "90": {
+      "group": "market_wpic_all",
+      "model": "ridge_1.0",
+      "q90_abs_logreturn": 0.45296965936250544,
+      "prelock_sample_signature": "0380ab116ffa61e7d225"
+    }
+  },
+  "governance": {
+    "immutable_for_protocol_v1": true,
+    "tuning_after_lock_forbidden": true,
+    "future_holdout_metrics_forbidden_before": "2027-12-15T00:00:00Z",
+    "any_model_feature_interval_or_threshold_change_requires_new_protocol": true
+  }
+}
