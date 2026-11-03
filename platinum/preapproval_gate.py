@@ -4,7 +4,7 @@ Uses disjoint train/validation/calibration/test blocks per horizon, purges label
 selects model on validation only, calibrates intervals on a later block, and
 tests both point error and interval coverage on untouched data.
 """
-import argparse,json,math
+import argparse,json,math,hashlib
 from pathlib import Path
 import numpy as np,pandas as pd
 from sklearn.impute import SimpleImputer
@@ -72,7 +72,10 @@ def evaluate(daily,features,source_verified=False,nominal=.90):
         cover_ok=(k/total)>=nominal-.03 and lo<=nominal<=hi
         passed=point_ok and cover_ok
         passes.append(passed)
+        split_payload=f"{h}|{n}|{train_end}|{val_start}|{val_end}|{cal_start}|{cal_end}|{test_start}"
+        split_signature=hashlib.sha256(split_payload.encode()).hexdigest()[:16]
         results[str(h)]={"champion":champ,"validation_mae":val,"test_mae":mae,"baseline_mae":base,
+          "split_signature":split_signature,"split_indices":{"n":n,"train_end":train_end,"validation_start":val_start,"validation_end":val_end,"calibration_start":cal_start,"calibration_end":cal_end,"test_start":test_start},
           "point_gate":point_ok,"calibration_size":len(cal_abs),"test_size":total,"nominal":nominal,
           "coverage":k/total,"coverage_wilson95":[lo,hi],"interval_halfwidth_logreturn":q,
           "coverage_gate":cover_ok,"horizon_pass":passed}
