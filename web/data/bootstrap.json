@@ -1,0 +1,83 @@
+{
+  "product": {
+    "name": "Athmar Platinum Intelligence",
+    "mode": "SHADOW",
+    "environment": "research"
+  },
+  "market": {
+    "status": "unavailable",
+    "last_actual_date": null,
+    "last_price_usd_kg": null,
+    "instrument": "YAHOO_PL_F_FUTURES_INDICATIVE"
+  },
+  "approval": {
+    "protocol_id": "ATHMAR_PLATINUM_APPROVAL_V1",
+    "status": "LOCKED",
+    "origin_start": "2026-11-03",
+    "origin_end": "2027-07-30",
+    "score_not_before_utc": "2027-12-15T00:00:00Z",
+    "metrics_revealed": false,
+    "nominal_interval_coverage": 0.9,
+    "minimum_mature_origins_per_horizon": 100
+  },
+  "horizons": [
+    {
+      "horizon_days": 1,
+      "model": "no_change",
+      "feature_group": "price_only",
+      "interval_q90_abs_logreturn": 0.04319172393303283,
+      "mode": "baseline",
+      "status": "locked_shadow"
+    },
+    {
+      "horizon_days": 5,
+      "model": "no_change",
+      "feature_group": "price_only",
+      "interval_q90_abs_logreturn": 0.08872636237365583,
+      "mode": "baseline",
+      "status": "locked_shadow"
+    },
+    {
+      "horizon_days": 20,
+      "model": "no_change",
+      "feature_group": "price_only",
+      "interval_q90_abs_logreturn": 0.21199950404260193,
+      "mode": "baseline",
+      "status": "locked_shadow"
+    },
+    {
+      "horizon_days": 60,
+      "model": "no_change",
+      "feature_group": "price_only",
+      "interval_q90_abs_logreturn": 0.34644730362401965,
+      "mode": "baseline",
+      "status": "locked_shadow"
+    },
+    {
+      "horizon_days": 90,
+      "model": "ridge_1.0",
+      "feature_group": "market_wpic_all",
+      "interval_q90_abs_logreturn": 0.45296965936250544,
+      "mode": "candidate",
+      "status": "locked_shadow"
+    }
+  ],
+  "fundamentals": {
+    "wpic": {
+      "status": "unavailable",
+      "vintage": null,
+      "published_at": null,
+      "metrics": {}
+    }
+  },
+  "journal": {
+    "status": "waiting_for_first_shadow_forecast",
+    "count": 0,
+    "latest": []
+  },
+  "integrity": {
+    "prospective_holdout_metrics_exposed": false,
+    "cftc_used_for_approval": false,
+    "locked_model_source": "config/model_lock_v1.json"
+  }
+}
