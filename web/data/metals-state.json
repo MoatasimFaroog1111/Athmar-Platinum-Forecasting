@@ -292,7 +292,7 @@
       "market": {
         "status": "available",
         "last_actual_date": "2026-11-04",
-        "last_price_usd_kg": 130239.45613502039,
+        "last_price_usd_kg": 130271.60688158899,
         "instrument": "YAHOO_GC=F_FUTURES_INDICATIVE"
       },
       "approval": {
@@ -320,7 +320,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 126863.44536233168,
             "p90_usd_kg": 133705.30719783172,
-            "record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6"
+            "record_hash": "34f8f2cbf255b4d4927904f6ddaadd664524ea9fc100c9187e75370d405f4821"
           }
         },
         {
@@ -337,7 +337,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 123821.0429827947,
             "p90_usd_kg": 136990.5754767618,
-            "record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae"
+            "record_hash": "7a2a601269547d615217472f1a66046802f1ee4620f4a71f0e1a9550bc1ffcd3"
           }
         },
         {
@@ -354,7 +354,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 118264.55163923484,
             "p90_usd_kg": 143426.88235177452,
-            "record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101"
+            "record_hash": "219350566c0d8bcc0e36fca5a64154b0097d60fb7f7c5b8108591fc1976599bd"
           }
         },
         {
@@ -371,7 +371,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 108144.97585174831,
             "p90_usd_kg": 156847.93307087023,
-            "record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb"
+            "record_hash": "932ba1754cf3008d9cb5cef45151bc0ae6da300d6eee5d995af1d96fce5f87d1"
           }
         },
         {
@@ -388,7 +388,7 @@
             "forecast_usd_kg": 130197.06905921844,
             "p10_usd_kg": 95644.25287490465,
             "p90_usd_kg": 177232.5705108687,
-            "record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e"
+            "record_hash": "dd49e84a0d21c31f9fba1f9d65c8ca7f28c22ec79a02f6d3e3f7f0214fa9e32c"
           }
         }
       ],
@@ -396,11 +396,11 @@
         "title": "Cross-market Drivers",
         "status": "market_only_v1",
         "metrics": {
-          "platinum": 1460.199951171875,
-          "silver": 52.03499984741211,
+          "platinum": 1460.300048828125,
+          "silver": 52.040000915527344,
           "palladium": 992.5,
-          "dollar_index": 101.36100006103516,
-          "zar_usd": 16.46006965637207,
+          "dollar_index": 101.3759994506836,
+          "zar_usd": 16.467180252075195,
           "us10y": 4.952000141143799
         },
         "footnote": "Yahoo research futures/macro closes; next-UTC-day availability. No official fundamental dataset is claimed in V1."
@@ -424,8 +424,10 @@
             "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
             "status": "shadow_locked",
             "outcome_scored": false,
+            "hash_version": "v2",
+            "legacy_record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6",
             "previous_hash": "GENESIS",
-            "record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6"
+            "record_hash": "34f8f2cbf255b4d4927904f6ddaadd664524ea9fc100c9187e75370d405f4821"
           },
           {
             "metal": "gold",
@@ -442,8 +444,10 @@
             "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6",
-            "record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae"
+            "hash_version": "v2",
+            "legacy_record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae",
+            "previous_hash": "34f8f2cbf255b4d4927904f6ddaadd664524ea9fc100c9187e75370d405f4821",
+            "record_hash": "7a2a601269547d615217472f1a66046802f1ee4620f4a71f0e1a9550bc1ffcd3"
           },
           {
             "metal": "gold",
@@ -460,8 +464,10 @@
             "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae",
-            "record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101"
+            "hash_version": "v2",
+            "legacy_record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101",
+            "previous_hash": "7a2a601269547d615217472f1a66046802f1ee4620f4a71f0e1a9550bc1ffcd3",
+            "record_hash": "219350566c0d8bcc0e36fca5a64154b0097d60fb7f7c5b8108591fc1976599bd"
           },
           {
             "metal": "gold",
@@ -478,8 +484,10 @@
             "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101",
-            "record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb"
+            "hash_version": "v2",
+            "legacy_record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb",
+            "previous_hash": "219350566c0d8bcc0e36fca5a64154b0097d60fb7f7c5b8108591fc1976599bd",
+            "record_hash": "932ba1754cf3008d9cb5cef45151bc0ae6da300d6eee5d995af1d96fce5f87d1"
           },
           {
             "metal": "gold",
@@ -496,8 +504,10 @@
             "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb",
-            "record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e"
+            "hash_version": "v2",
+            "legacy_record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e",
+            "previous_hash": "932ba1754cf3008d9cb5cef45151bc0ae6da300d6eee5d995af1d96fce5f87d1",
+            "record_hash": "dd49e84a0d21c31f9fba1f9d65c8ca7f28c22ec79a02f6d3e3f7f0214fa9e32c"
           }
         ],
         "latest_by_horizon": {
@@ -508,7 +518,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 126863.44536233168,
             "p90_usd_kg": 133705.30719783172,
-            "record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6"
+            "record_hash": "34f8f2cbf255b4d4927904f6ddaadd664524ea9fc100c9187e75370d405f4821"
           },
           "5": {
             "created_at": "2026-11-04T12:06:00Z",
@@ -517,7 +527,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 123821.0429827947,
             "p90_usd_kg": 136990.5754767618,
-            "record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae"
+            "record_hash": "7a2a601269547d615217472f1a66046802f1ee4620f4a71f0e1a9550bc1ffcd3"
           },
           "20": {
             "created_at": "2026-11-04T12:06:00Z",
@@ -526,7 +536,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 118264.55163923484,
             "p90_usd_kg": 143426.88235177452,
-            "record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101"
+            "record_hash": "219350566c0d8bcc0e36fca5a64154b0097d60fb7f7c5b8108591fc1976599bd"
           },
           "60": {
             "created_at": "2026-11-04T12:06:00Z",
@@ -535,7 +545,7 @@
             "forecast_usd_kg": 130239.4561350204,
             "p10_usd_kg": 108144.97585174831,
             "p90_usd_kg": 156847.93307087023,
-            "record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb"
+            "record_hash": "932ba1754cf3008d9cb5cef45151bc0ae6da300d6eee5d995af1d96fce5f87d1"
           },
           "90": {
             "created_at": "2026-11-04T12:06:00Z",
@@ -544,7 +554,7 @@
             "forecast_usd_kg": 130197.06905921844,
             "p10_usd_kg": 95644.25287490465,
             "p90_usd_kg": 177232.5705108687,
-            "record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e"
+            "record_hash": "dd49e84a0d21c31f9fba1f9d65c8ca7f28c22ec79a02f6d3e3f7f0214fa9e32c"
           }
         }
       },
@@ -597,7 +607,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1591.5224371266945,
             "p90_usd_kg": 1758.5732946510575,
-            "record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47"
+            "record_hash": "1509484d8c2ec912972c329cb55a8756d7925384e3007917a7bffcf311d704f1"
           }
         },
         {
@@ -614,7 +624,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1496.3446339440166,
             "p90_usd_kg": 1870.4306429675644,
-            "record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f"
+            "record_hash": "f7c1ac5d0a39ee7da1464d78e02c22846df547993ad1648fce74cb8b95fda0b5"
           }
         },
         {
@@ -631,7 +641,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1350.7784077670933,
             "p90_usd_kg": 2071.997034950793,
-            "record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39"
+            "record_hash": "3eb0aea6ff3c0bd0c0a69b48f942ad069af3afb0505c1b1b06a70a602715bace"
           }
         },
         {
@@ -648,7 +658,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1112.2506126103567,
             "p90_usd_kg": 2516.3473267957183,
-            "record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602"
+            "record_hash": "a97dcd74a3b8cc78d3e9c714d3334669ba88cb58ffe3fe56fb3e8018b447a7ad"
           }
         },
         {
@@ -665,7 +675,7 @@
             "forecast_usd_kg": 1823.633006785598,
             "p10_usd_kg": 970.30159265387,
             "p90_usd_kg": 3427.42645030803,
-            "record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763"
+            "record_hash": "5615678eb5c6980969951ee80d5b80a76bb50080853127f66bd5b1060c0bb235"
           }
         }
       ],
@@ -673,11 +683,11 @@
         "title": "Cross-market Drivers",
         "status": "market_only_v1",
         "metrics": {
-          "platinum": 1460.199951171875,
-          "gold": 4050.89990234375,
+          "platinum": 1460.300048828125,
+          "gold": 4051.39990234375,
           "palladium": 992.5,
-          "dollar_index": 101.36000061035156,
-          "zar_usd": 16.4601993560791,
+          "dollar_index": 101.3769989013672,
+          "zar_usd": 16.46731948852539,
           "us10y": 4.952000141143799
         },
         "footnote": "Yahoo research futures/macro closes; next-UTC-day availability. No official fundamental dataset is claimed in V1."
@@ -701,8 +711,10 @@
             "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
             "status": "shadow_locked",
             "outcome_scored": false,
+            "hash_version": "v2",
+            "legacy_record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47",
             "previous_hash": "GENESIS",
-            "record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47"
+            "record_hash": "1509484d8c2ec912972c329cb55a8756d7925384e3007917a7bffcf311d704f1"
           },
           {
             "metal": "silver",
@@ -719,8 +731,10 @@
             "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47",
-            "record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f"
+            "hash_version": "v2",
+            "legacy_record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f",
+            "previous_hash": "1509484d8c2ec912972c329cb55a8756d7925384e3007917a7bffcf311d704f1",
+            "record_hash": "f7c1ac5d0a39ee7da1464d78e02c22846df547993ad1648fce74cb8b95fda0b5"
           },
           {
             "metal": "silver",
@@ -737,8 +751,10 @@
             "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f",
-            "record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39"
+            "hash_version": "v2",
+            "legacy_record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39",
+            "previous_hash": "f7c1ac5d0a39ee7da1464d78e02c22846df547993ad1648fce74cb8b95fda0b5",
+            "record_hash": "3eb0aea6ff3c0bd0c0a69b48f942ad069af3afb0505c1b1b06a70a602715bace"
           },
           {
             "metal": "silver",
@@ -755,8 +771,10 @@
             "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39",
-            "record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602"
+            "hash_version": "v2",
+            "legacy_record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602",
+            "previous_hash": "3eb0aea6ff3c0bd0c0a69b48f942ad069af3afb0505c1b1b06a70a602715bace",
+            "record_hash": "a97dcd74a3b8cc78d3e9c714d3334669ba88cb58ffe3fe56fb3e8018b447a7ad"
           },
           {
             "metal": "silver",
@@ -773,8 +791,10 @@
             "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602",
-            "record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763"
+            "hash_version": "v2",
+            "legacy_record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763",
+            "previous_hash": "a97dcd74a3b8cc78d3e9c714d3334669ba88cb58ffe3fe56fb3e8018b447a7ad",
+            "record_hash": "5615678eb5c6980969951ee80d5b80a76bb50080853127f66bd5b1060c0bb235"
           }
         ],
         "latest_by_horizon": {
@@ -785,7 +805,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1591.5224371266945,
             "p90_usd_kg": 1758.5732946510575,
-            "record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47"
+            "record_hash": "1509484d8c2ec912972c329cb55a8756d7925384e3007917a7bffcf311d704f1"
           },
           "5": {
             "created_at": "2026-11-04T12:06:01Z",
@@ -794,7 +814,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1496.3446339440166,
             "p90_usd_kg": 1870.4306429675644,
-            "record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f"
+            "record_hash": "f7c1ac5d0a39ee7da1464d78e02c22846df547993ad1648fce74cb8b95fda0b5"
           },
           "20": {
             "created_at": "2026-11-04T12:06:01Z",
@@ -803,7 +823,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1350.7784077670933,
             "p90_usd_kg": 2071.997034950793,
-            "record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39"
+            "record_hash": "3eb0aea6ff3c0bd0c0a69b48f942ad069af3afb0505c1b1b06a70a602715bace"
           },
           "60": {
             "created_at": "2026-11-04T12:06:01Z",
@@ -812,7 +832,7 @@
             "forecast_usd_kg": 1672.9640927912862,
             "p10_usd_kg": 1112.2506126103567,
             "p90_usd_kg": 2516.3473267957183,
-            "record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602"
+            "record_hash": "a97dcd74a3b8cc78d3e9c714d3334669ba88cb58ffe3fe56fb3e8018b447a7ad"
           },
           "90": {
             "created_at": "2026-11-04T12:06:01Z",
@@ -821,7 +841,7 @@
             "forecast_usd_kg": 1823.633006785598,
             "p10_usd_kg": 970.30159265387,
             "p90_usd_kg": 3427.42645030803,
-            "record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763"
+            "record_hash": "5615678eb5c6980969951ee80d5b80a76bb50080853127f66bd5b1060c0bb235"
           }
         }
       },
@@ -874,7 +894,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 30460.62358146706,
             "p90_usd_kg": 33427.53599863863,
-            "record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b"
+            "record_hash": "434e256cfdaaa0d2324c384d5113bcc413b3e2ecd1ba7ac6e859c3be4ced9071"
           }
         },
         {
@@ -891,7 +911,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 28610.48681144325,
             "p90_usd_kg": 35589.173928463715,
-            "record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7"
+            "record_hash": "ccbb4262bbfb3086b568625a35bcbcfa8e261c1396374f29c76f10d4ff6380e4"
           }
         },
         {
@@ -908,7 +928,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 26943.236553256305,
             "p90_usd_kg": 37791.435683602416,
-            "record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23"
+            "record_hash": "3cf215b244ce213f226c614f41288c50c29aef7826581850f5c165acb19fb15b"
           }
         },
         {
@@ -925,7 +945,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 24351.466016447885,
             "p90_usd_kg": 41813.6464811903,
-            "record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a"
+            "record_hash": "6156e24e07c5905203e5759330cc4a1141219bc9943d304849b8f6d52bc66e83"
           }
         },
         {
@@ -942,7 +962,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 22185.40630864392,
             "p90_usd_kg": 45896.09841464788,
-            "record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df"
+            "record_hash": "cda2f295e9df511eae5489d2006f5a72d9224c4feb0456a578d723dcefd76b98"
           }
         }
       ],
@@ -950,11 +970,11 @@
         "title": "Cross-market Drivers",
         "status": "market_only_v1",
         "metrics": {
-          "platinum": 1460.199951171875,
-          "gold": 4050.89990234375,
+          "platinum": 1460.300048828125,
+          "gold": 4051.39990234375,
           "silver": 52.03499984741211,
-          "dollar_index": 101.36000061035156,
-          "zar_usd": 16.46112060546875,
+          "dollar_index": 101.3759994506836,
+          "zar_usd": 16.467199325561523,
           "us10y": 4.952000141143799
         },
         "footnote": "Yahoo research futures/macro closes; next-UTC-day availability. No official fundamental dataset is claimed in V1."
@@ -978,8 +998,10 @@
             "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
             "status": "shadow_locked",
             "outcome_scored": false,
+            "hash_version": "v2",
+            "legacy_record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b",
             "previous_hash": "GENESIS",
-            "record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b"
+            "record_hash": "434e256cfdaaa0d2324c384d5113bcc413b3e2ecd1ba7ac6e859c3be4ced9071"
           },
           {
             "metal": "palladium",
@@ -996,8 +1018,10 @@
             "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b",
-            "record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7"
+            "hash_version": "v2",
+            "legacy_record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7",
+            "previous_hash": "434e256cfdaaa0d2324c384d5113bcc413b3e2ecd1ba7ac6e859c3be4ced9071",
+            "record_hash": "ccbb4262bbfb3086b568625a35bcbcfa8e261c1396374f29c76f10d4ff6380e4"
           },
           {
             "metal": "palladium",
@@ -1014,8 +1038,10 @@
             "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7",
-            "record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23"
+            "hash_version": "v2",
+            "legacy_record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23",
+            "previous_hash": "ccbb4262bbfb3086b568625a35bcbcfa8e261c1396374f29c76f10d4ff6380e4",
+            "record_hash": "3cf215b244ce213f226c614f41288c50c29aef7826581850f5c165acb19fb15b"
           },
           {
             "metal": "palladium",
@@ -1032,8 +1058,10 @@
             "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23",
-            "record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a"
+            "hash_version": "v2",
+            "legacy_record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a",
+            "previous_hash": "3cf215b244ce213f226c614f41288c50c29aef7826581850f5c165acb19fb15b",
+            "record_hash": "6156e24e07c5905203e5759330cc4a1141219bc9943d304849b8f6d52bc66e83"
           },
           {
             "metal": "palladium",
@@ -1050,8 +1078,10 @@
             "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
             "status": "shadow_locked",
             "outcome_scored": false,
-            "previous_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a",
-            "record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df"
+            "hash_version": "v2",
+            "legacy_record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df",
+            "previous_hash": "6156e24e07c5905203e5759330cc4a1141219bc9943d304849b8f6d52bc66e83",
+            "record_hash": "cda2f295e9df511eae5489d2006f5a72d9224c4feb0456a578d723dcefd76b98"
           }
         ],
         "latest_by_horizon": {
@@ -1062,7 +1092,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 30460.62358146706,
             "p90_usd_kg": 33427.53599863863,
-            "record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b"
+            "record_hash": "434e256cfdaaa0d2324c384d5113bcc413b3e2ecd1ba7ac6e859c3be4ced9071"
           },
           "5": {
             "created_at": "2026-11-04T12:06:03Z",
@@ -1071,7 +1101,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 28610.48681144325,
             "p90_usd_kg": 35589.173928463715,
-            "record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7"
+            "record_hash": "ccbb4262bbfb3086b568625a35bcbcfa8e261c1396374f29c76f10d4ff6380e4"
           },
           "20": {
             "created_at": "2026-11-04T12:06:03Z",
@@ -1080,7 +1110,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 26943.236553256305,
             "p90_usd_kg": 37791.435683602416,
-            "record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23"
+            "record_hash": "3cf215b244ce213f226c614f41288c50c29aef7826581850f5c165acb19fb15b"
           },
           "60": {
             "created_at": "2026-11-04T12:06:03Z",
@@ -1089,7 +1119,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 24351.466016447885,
             "p90_usd_kg": 41813.6464811903,
-            "record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a"
+            "record_hash": "6156e24e07c5905203e5759330cc4a1141219bc9943d304849b8f6d52bc66e83"
           },
           "90": {
             "created_at": "2026-11-04T12:06:03Z",
@@ -1098,7 +1128,7 @@
             "forecast_usd_kg": 31909.6159693355,
             "p10_usd_kg": 22185.40630864392,
             "p90_usd_kg": 45896.09841464788,
-            "record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df"
+            "record_hash": "cda2f295e9df511eae5489d2006f5a72d9224c4feb0456a578d723dcefd76b98"
           }
         }
       },
