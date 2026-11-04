@@ -105,7 +105,7 @@ def generate(metal,work_root="outputs/metals/live",journal_root="data/shadow/met
     journal=Path(journal_root)/f"{metal}_forecast_journal.csv";journal.parent.mkdir(parents=True,exist_ok=True)
     migrated=False
     if journal.exists():
-        existing=pd.read_csv(journal,dtype={"previous_hash":str,"record_hash":str,"legacy_record_hash":str,"hash_version":str})
+        existing=pd.read_csv(journal,dtype=str,keep_default_na=False)
         existing,migrated=_migrate_legacy(existing)
         prev=verify_journal(existing)
     else:
