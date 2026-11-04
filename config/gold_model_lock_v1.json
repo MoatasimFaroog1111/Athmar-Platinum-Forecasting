@@ -1,0 +1,321 @@
+{
+  "protocol_id": "ATHMAR_GOLD_APPROVAL_V1",
+  "metal": "gold",
+  "label": "Gold",
+  "symbol": "GC=F",
+  "lock_start": "2026-11-04",
+  "feature_groups": {
+    "market_cross": [
+      "platinum",
+      "silver",
+      "palladium",
+      "dollar_index",
+      "zar_usd",
+      "us10y"
+    ]
+  },
+  "horizons": {
+    "1": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.026263451765014878,
+      "prelock_sample_signature": "cb2312de154924cbde32"
+    },
+    "5": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.05053740494337333,
+      "prelock_sample_signature": "892574e6477a8ef15e81"
+    },
+    "20": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.0964506483171288,
+      "prelock_sample_signature": "82808b9548d63326b1ee"
+    },
+    "60": {
+      "group": "price_only",
+      "model": "no_change",
+      "q90_abs_logreturn": 0.1859020304279273,
+      "prelock_sample_signature": "e95a312ca4d376fe3418"
+    },
+    "90": {
+      "group": "market_cross",
+      "model": "boost",
+      "q90_abs_logreturn": 0.30841360932020045,
+      "prelock_sample_signature": "2734538d6518983918f7"
+    }
+  },
+  "nested_diagnostics": {
+    "1": {
+      "outer_nested": [
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.007457389302199009,
+          "baseline_mae": 0.007457389302199009,
+          "start": 692,
+          "stop": 803
+        },
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.010375255143766225,
+          "baseline_mae": 0.010375255143766225,
+          "start": 828,
+          "stop": 939
+        },
+        {
+          "selected": "market_cross|ridge_10.0",
+          "mae": 0.01397387097085798,
+          "baseline_mae": 0.014081949947119374,
+          "start": 964,
+          "stop": 1075
+        },
+        {
+          "selected": "market_cross|ridge_10.0",
+          "mae": 0.011276069880899338,
+          "baseline_mae": 0.011310434556882758,
+          "start": 1100,
+          "stop": 1211
+        }
+      ],
+      "final_inner_scores": {
+        "price_only|no_change": 0.011189542589795,
+        "market_cross|ridge_0.1": 0.011516815207036818,
+        "market_cross|ridge_1.0": 0.011391681840986642,
+        "market_cross|ridge_10.0": 0.011375804964008007,
+        "market_cross|boost": 0.012542326454855637
+      },
+      "locked_candidate": {
+        "group": "price_only",
+        "model": "no_change"
+      },
+      "calibration_q90_abs_logreturn": 0.026263451765014878,
+      "calibration_residual_count": 444,
+      "prelock_samples": 1236,
+      "last_prelock_origin": "2026-11-02T00:00:00+00:00",
+      "last_prelock_target": "2026-11-03T00:00:00+00:00",
+      "prelock_sample_signature": "cb2312de154924cbde32"
+    },
+    "5": {
+      "outer_nested": [
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.01728770250355777,
+          "baseline_mae": 0.01728770250355777,
+          "start": 689,
+          "stop": 799
+        },
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.02258816677758257,
+          "baseline_mae": 0.02258816677758257,
+          "start": 825,
+          "stop": 935
+        },
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.03195329629894588,
+          "baseline_mae": 0.03195329629894588,
+          "start": 960,
+          "stop": 1070
+        },
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.026891303854946036,
+          "baseline_mae": 0.026891303854946036,
+          "start": 1096,
+          "stop": 1206
+        }
+      ],
+      "final_inner_scores": {
+        "price_only|no_change": 0.025866626847775534,
+        "market_cross|ridge_0.1": 0.028239723211092593,
+        "market_cross|ridge_1.0": 0.02800127272782485,
+        "market_cross|ridge_10.0": 0.0280397393539462,
+        "market_cross|boost": 0.030760448260469465
+      },
+      "locked_candidate": {
+        "group": "price_only",
+        "model": "no_change"
+      },
+      "calibration_q90_abs_logreturn": 0.05053740494337333,
+      "calibration_residual_count": 440,
+      "prelock_samples": 1232,
+      "last_prelock_origin": "2026-10-27T00:00:00+00:00",
+      "last_prelock_target": "2026-11-03T00:00:00+00:00",
+      "prelock_sample_signature": "892574e6477a8ef15e81"
+    },
+    "20": {
+      "outer_nested": [
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.03758924298531317,
+          "baseline_mae": 0.03758924298531317,
+          "start": 681,
+          "stop": 790
+        },
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.03535128952953026,
+          "baseline_mae": 0.03535128952953026,
+          "start": 815,
+          "stop": 924
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.04492778757167968,
+          "baseline_mae": 0.058721591890160456,
+          "start": 949,
+          "stop": 1058
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.08674222039622484,
+          "baseline_mae": 0.05548379833397088,
+          "start": 1083,
+          "stop": 1192
+        }
+      ],
+      "final_inner_scores": {
+        "price_only|no_change": 0.05406686684761486,
+        "market_cross|ridge_0.1": 0.08086874656726345,
+        "market_cross|ridge_1.0": 0.0798849585480073,
+        "market_cross|ridge_10.0": 0.0796145897810401,
+        "market_cross|boost": 0.07442121793576285
+      },
+      "locked_candidate": {
+        "group": "price_only",
+        "model": "no_change"
+      },
+      "calibration_q90_abs_logreturn": 0.0964506483171288,
+      "calibration_residual_count": 436,
+      "prelock_samples": 1217,
+      "last_prelock_origin": "2026-10-06T00:00:00+00:00",
+      "last_prelock_target": "2026-11-03T00:00:00+00:00",
+      "prelock_sample_signature": "82808b9548d63326b1ee"
+    },
+    "60": {
+      "outer_nested": [
+        {
+          "selected": "price_only|no_change",
+          "mae": 0.05944998507310867,
+          "baseline_mae": 0.05944998507310867,
+          "start": 659,
+          "stop": 764
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.04596133783325343,
+          "baseline_mae": 0.08346420047640826,
+          "start": 788,
+          "stop": 893
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.15832274591458975,
+          "baseline_mae": 0.15961137314235382,
+          "start": 918,
+          "stop": 1023
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.24632535873258093,
+          "baseline_mae": 0.09189871393363946,
+          "start": 1047,
+          "stop": 1152
+        }
+      ],
+      "final_inner_scores": {
+        "price_only|no_change": 0.11856989609675149,
+        "market_cross|ridge_0.1": 0.19816083369979598,
+        "market_cross|ridge_1.0": 0.19460544743919791,
+        "market_cross|ridge_10.0": 0.19138681183773665,
+        "market_cross|boost": 0.13391544842538425
+      },
+      "locked_candidate": {
+        "group": "price_only",
+        "model": "no_change"
+      },
+      "calibration_q90_abs_logreturn": 0.1859020304279273,
+      "calibration_residual_count": 420,
+      "prelock_samples": 1177,
+      "last_prelock_origin": "2026-08-10T00:00:00+00:00",
+      "last_prelock_target": "2026-11-03T00:00:00+00:00",
+      "prelock_sample_signature": "e95a312ca4d376fe3418"
+    },
+    "90": {
+      "outer_nested": [
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.05287355916233186,
+          "baseline_mae": 0.08661805645434535,
+          "start": 642,
+          "stop": 745
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.04679206948119112,
+          "baseline_mae": 0.1373822580261261,
+          "start": 768,
+          "stop": 871
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.1736525011889293,
+          "baseline_mae": 0.22407056305837386,
+          "start": 894,
+          "stop": 997
+        },
+        {
+          "selected": "market_cross|boost",
+          "mae": 0.30363547965250964,
+          "baseline_mae": 0.10702998894065174,
+          "start": 1020,
+          "stop": 1123
+        }
+      ],
+      "final_inner_scores": {
+        "price_only|no_change": 0.1588723272130579,
+        "market_cross|ridge_0.1": 0.1684529753563123,
+        "market_cross|ridge_1.0": 0.16477285406011888,
+        "market_cross|ridge_10.0": 0.16407335439265477,
+        "market_cross|boost": 0.11537891930345712
+      },
+      "locked_candidate": {
+        "group": "market_cross",
+        "model": "boost"
+      },
+      "calibration_q90_abs_logreturn": 0.30841360932020045,
+      "calibration_residual_count": 412,
+      "prelock_samples": 1147,
+      "last_prelock_origin": "2026-06-26T00:00:00+00:00",
+      "last_prelock_target": "2026-11-03T00:00:00+00:00",
+      "prelock_sample_signature": "2734538d6518983918f7"
+    }
+  },
+  "training_snapshot": {
+    "daily_path": "data/locks/gold/v1/gold_daily_prelock.csv",
+    "daily_sha256": "431424779ec2687a0a380b7ad90b5a659a862b8586c1cc12d8fb3068d1809dae",
+    "feature_paths": {
+      "platinum": "data/locks/gold/v1/features/platinum.csv",
+      "silver": "data/locks/gold/v1/features/silver.csv",
+      "palladium": "data/locks/gold/v1/features/palladium.csv",
+      "dollar_index": "data/locks/gold/v1/features/dollar_index.csv",
+      "zar_usd": "data/locks/gold/v1/features/zar_usd.csv",
+      "us10y": "data/locks/gold/v1/features/us10y.csv"
+    },
+    "feature_sha256": {
+      "platinum": "fd5c2a091c47d458c68f1a06665a6dc264b6567a5b660d15a8ba533bcbf3806e",
+      "silver": "26d9e0bca768ed00ec77d1ab56819c0c799d6dab0475d7fec80f5d84b6129a55",
+      "palladium": "b404ecb2c2ce34b636575a58f97ba0ce23a6f4705653a2a02ceec58b841cfa6e",
+      "dollar_index": "491a4e8e56b2622c2ef8dc42db104243b6a2fe28313be9ecdc44d5b4fbfd290b",
+      "zar_usd": "7295739b9e50adbdc1e6179471c364f939b56e37048b0ec0f942e75f93e9f1a7",
+      "us10y": "3d7fb76f17d5079bc5bb0f9600491be87fc8bf03cb22508c03d789635cb3803e"
+    }
+  },
+  "governance": {
+    "immutable": true,
+    "post_lock_training_data_change_forbidden": true,
+    "holdout_scoring_forbidden_before": "2027-12-16T00:00:00Z"
+  }
+}
