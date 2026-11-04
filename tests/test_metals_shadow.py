@@ -17,7 +17,7 @@ def test_v2_hash_survives_csv_roundtrip(tmp_path):
     row=_v2_row()
     path=tmp_path/"journal.csv"
     pd.DataFrame([row],columns=COLUMNS).to_csv(path,index=False)
-    reread=pd.read_csv(path,dtype={"previous_hash":str,"record_hash":str,"legacy_record_hash":str,"hash_version":str})
+    reread=pd.read_csv(path,dtype=str,keep_default_na=False)
     assert verify_journal(reread)==row["record_hash"]
 
 def test_legacy_preview_migration_preserves_old_hash_reference():
