@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 Write-Host ""
-Write-Host "=== Athmar Platinum Intelligence - Local ===" -ForegroundColor Cyan
+Write-Host "=== Athmar Precious Metals Intelligence - Local ===" -ForegroundColor Cyan
 Write-Host ""
 
 if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
@@ -28,7 +28,7 @@ if ($LASTEXITCODE -ne 0) { throw "Failed to upgrade pip." }
 if ($LASTEXITCODE -ne 0) { throw "Failed to install Python requirements." }
 
 Write-Host "[3/5] Running safety tests..."
-& $python -m pytest -q tests/test_shadow_forecast.py tests/test_platform_snapshot.py tests/test_prospective_lock.py
+& $python -m pytest -q tests/test_shadow_forecast.py tests/test_platform_snapshot.py tests/test_prospective_lock.py tests/test_multi_metal.py tests/test_metals_shadow.py
 if ($LASTEXITCODE -ne 0) { throw "Safety tests failed." }
 
 Write-Host "[4/5] Installing web dependencies..."
