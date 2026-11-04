@@ -125,16 +125,16 @@
         "title": "WPIC Fundamentals",
         "status": "available",
         "metrics": {
-          "Total Mining Supply": 5551,
-          "Recycling": 1802,
-          "Total Supply": 7353,
-          "Automotive": 2904,
-          "Jewellery": 1883,
-          "Industrial": 2385,
-          "Investment": -83,
-          "Total Demand": 7089,
-          "Balance": 265,
-          "Above Ground Stocks": 2010
+          "Total Mining Supply": 5551.0,
+          "Recycling": 1802.0,
+          "Total Supply": 7353.0,
+          "Automotive": 2904.0,
+          "Jewellery": 1883.0,
+          "Industrial": 2385.0,
+          "Investment": -83.0,
+          "Total Demand": 7089.0,
+          "Balance": 265.0,
+          "Above Ground Stocks": 2010.0
         },
         "footnote": "Exact-date WPIC vintages; next-UTC-day availability; no reconstructed values."
       },
@@ -287,17 +287,17 @@
       "product": {
         "name": "Athmar Precious Metals Intelligence",
         "mode": "SHADOW",
-        "environment": "bootstrap"
+        "environment": "production-shadow"
       },
       "market": {
-        "status": "unavailable",
-        "last_actual_date": null,
-        "last_price_usd_kg": null,
+        "status": "available",
+        "last_actual_date": "2026-11-04",
+        "last_price_usd_kg": 130239.45613502039,
         "instrument": "YAHOO_GC=F_FUTURES_INDICATIVE"
       },
       "approval": {
         "protocol_id": "ATHMAR_GOLD_APPROVAL_V1",
-        "status": "BOOTSTRAPPING",
+        "status": "LOCKED",
         "origin_start": "2026-11-04",
         "origin_end": "2027-07-30",
         "score_not_before_utc": "2027-12-16T00:00:00Z",
@@ -305,22 +305,253 @@
         "nominal_interval_coverage": 0.9,
         "minimum_mature_origins_per_horizon": 100
       },
-      "horizons": [],
+      "horizons": [
+        {
+          "horizon_days": 1,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.026263451765014878,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 126863.44536233168,
+            "p90_usd_kg": 133705.30719783172,
+            "record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6"
+          }
+        },
+        {
+          "horizon_days": 5,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.05053740494337333,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 123821.0429827947,
+            "p90_usd_kg": 136990.5754767618,
+            "record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae"
+          }
+        },
+        {
+          "horizon_days": 20,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.0964506483171288,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 118264.55163923484,
+            "p90_usd_kg": 143426.88235177452,
+            "record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101"
+          }
+        },
+        {
+          "horizon_days": 60,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.1859020304279273,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 108144.97585174831,
+            "p90_usd_kg": 156847.93307087023,
+            "record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb"
+          }
+        },
+        {
+          "horizon_days": 90,
+          "model": "boost",
+          "feature_group": "market_cross",
+          "interval_q90_abs_logreturn": 0.30841360932020045,
+          "mode": "candidate",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 130197.06905921844,
+            "p10_usd_kg": 95644.25287490465,
+            "p90_usd_kg": 177232.5705108687,
+            "record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e"
+          }
+        }
+      ],
       "context": {
         "title": "Cross-market Drivers",
-        "status": "bootstrap",
-        "metrics": {},
-        "footnote": "Independent V1 is being initialized; no platinum WPIC data is reused."
+        "status": "market_only_v1",
+        "metrics": {
+          "platinum": 1460.199951171875,
+          "silver": 52.03499984741211,
+          "palladium": 992.5,
+          "dollar_index": 101.36100006103516,
+          "zar_usd": 16.46006965637207,
+          "us10y": 4.952000141143799
+        },
+        "footnote": "Yahoo research futures/macro closes; next-UTC-day availability. No official fundamental dataset is claimed in V1."
       },
       "journal": {
-        "status": "waiting_for_first_shadow_forecast",
-        "count": 0,
-        "latest": [],
-        "latest_by_horizon": {}
+        "status": "active",
+        "count": 5,
+        "latest": [
+          {
+            "metal": "gold",
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 130239.4561350204,
+            "horizon": 1,
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 126863.44536233168,
+            "p90_usd_kg": 133705.30719783172,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "GENESIS",
+            "record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6"
+          },
+          {
+            "metal": "gold",
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 130239.4561350204,
+            "horizon": 5,
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 123821.0429827947,
+            "p90_usd_kg": 136990.5754767618,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6",
+            "record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae"
+          },
+          {
+            "metal": "gold",
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 130239.4561350204,
+            "horizon": 20,
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 118264.55163923484,
+            "p90_usd_kg": 143426.88235177452,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae",
+            "record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101"
+          },
+          {
+            "metal": "gold",
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 130239.4561350204,
+            "horizon": 60,
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 108144.97585174831,
+            "p90_usd_kg": 156847.93307087023,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101",
+            "record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb"
+          },
+          {
+            "metal": "gold",
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 130239.4561350204,
+            "horizon": 90,
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 130197.06905921844,
+            "p10_usd_kg": 95644.25287490465,
+            "p90_usd_kg": 177232.5705108687,
+            "model": "boost",
+            "feature_group": "market_cross",
+            "model_lock_sha256": "857cef91ea5e37887bbb718ff97e935cf12409bc9eaaaf031cddeb75926684c3",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb",
+            "record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e"
+          }
+        ],
+        "latest_by_horizon": {
+          "1": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 126863.44536233168,
+            "p90_usd_kg": 133705.30719783172,
+            "record_hash": "63da09950be111dc886099d2453ed361fbce22499c61880fe43e8385d38585b6"
+          },
+          "5": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 123821.0429827947,
+            "p90_usd_kg": 136990.5754767618,
+            "record_hash": "def74c1691340e4f6b96acffad47e1370556ccc777c82b63bc4159d0d19debae"
+          },
+          "20": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 118264.55163923484,
+            "p90_usd_kg": 143426.88235177452,
+            "record_hash": "e47108ced06edbfbc049c272d5d966e5c8c9406588fffcf707ecffb8e21bc101"
+          },
+          "60": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 130239.4561350204,
+            "p10_usd_kg": 108144.97585174831,
+            "p90_usd_kg": 156847.93307087023,
+            "record_hash": "3a51c07859886bbe6c2367bf93f17a7141105e1158f4a422f1ca63c102d683fb"
+          },
+          "90": {
+            "created_at": "2026-11-04T12:06:00Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 130197.06905921844,
+            "p10_usd_kg": 95644.25287490465,
+            "p90_usd_kg": 177232.5705108687,
+            "record_hash": "55707f748d1ae6b041678f30dd1627ca90afe709ef408cf89019a9a677f6124e"
+          }
+        }
       },
       "integrity": {
         "prospective_holdout_metrics_exposed": false,
         "journal_outcomes_scored": false,
+        "locked_model_source": "config/gold_model_lock_v1.json",
         "official_fundamentals_in_v1": false
       }
     },
@@ -333,17 +564,17 @@
       "product": {
         "name": "Athmar Precious Metals Intelligence",
         "mode": "SHADOW",
-        "environment": "bootstrap"
+        "environment": "production-shadow"
       },
       "market": {
-        "status": "unavailable",
-        "last_actual_date": null,
-        "last_price_usd_kg": null,
+        "status": "available",
+        "last_actual_date": "2026-11-04",
+        "last_price_usd_kg": 1672.9640927912862,
         "instrument": "YAHOO_SI=F_FUTURES_INDICATIVE"
       },
       "approval": {
         "protocol_id": "ATHMAR_SILVER_APPROVAL_V1",
-        "status": "BOOTSTRAPPING",
+        "status": "LOCKED",
         "origin_start": "2026-11-04",
         "origin_end": "2027-07-30",
         "score_not_before_utc": "2027-12-16T00:00:00Z",
@@ -351,22 +582,253 @@
         "nominal_interval_coverage": 0.9,
         "minimum_mature_origins_per_horizon": 100
       },
-      "horizons": [],
+      "horizons": [
+        {
+          "horizon_days": 1,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.0499058932666685,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1591.5224371266945,
+            "p90_usd_kg": 1758.5732946510575,
+            "record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47"
+          }
+        },
+        {
+          "horizon_days": 5,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.11157173570308387,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1496.3446339440166,
+            "p90_usd_kg": 1870.4306429675644,
+            "record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f"
+          }
+        },
+        {
+          "horizon_days": 20,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.2139159343802648,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1350.7784077670933,
+            "p90_usd_kg": 2071.997034950793,
+            "record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39"
+          }
+        },
+        {
+          "horizon_days": 60,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.4082114175190146,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1112.2506126103567,
+            "p90_usd_kg": 2516.3473267957183,
+            "record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602"
+          }
+        },
+        {
+          "horizon_days": 90,
+          "model": "boost",
+          "feature_group": "market_cross",
+          "interval_q90_abs_logreturn": 0.6309790045367156,
+          "mode": "candidate",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 1823.633006785598,
+            "p10_usd_kg": 970.30159265387,
+            "p90_usd_kg": 3427.42645030803,
+            "record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763"
+          }
+        }
+      ],
       "context": {
         "title": "Cross-market Drivers",
-        "status": "bootstrap",
-        "metrics": {},
-        "footnote": "Independent V1 is being initialized; no platinum WPIC data is reused."
+        "status": "market_only_v1",
+        "metrics": {
+          "platinum": 1460.199951171875,
+          "gold": 4050.89990234375,
+          "palladium": 992.5,
+          "dollar_index": 101.36000061035156,
+          "zar_usd": 16.4601993560791,
+          "us10y": 4.952000141143799
+        },
+        "footnote": "Yahoo research futures/macro closes; next-UTC-day availability. No official fundamental dataset is claimed in V1."
       },
       "journal": {
-        "status": "waiting_for_first_shadow_forecast",
-        "count": 0,
-        "latest": [],
-        "latest_by_horizon": {}
+        "status": "active",
+        "count": 5,
+        "latest": [
+          {
+            "metal": "silver",
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 1672.9640927912862,
+            "horizon": 1,
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1591.5224371266945,
+            "p90_usd_kg": 1758.5732946510575,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "GENESIS",
+            "record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47"
+          },
+          {
+            "metal": "silver",
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 1672.9640927912862,
+            "horizon": 5,
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1496.3446339440166,
+            "p90_usd_kg": 1870.4306429675644,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47",
+            "record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f"
+          },
+          {
+            "metal": "silver",
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 1672.9640927912862,
+            "horizon": 20,
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1350.7784077670933,
+            "p90_usd_kg": 2071.997034950793,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f",
+            "record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39"
+          },
+          {
+            "metal": "silver",
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 1672.9640927912862,
+            "horizon": 60,
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1112.2506126103567,
+            "p90_usd_kg": 2516.3473267957183,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39",
+            "record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602"
+          },
+          {
+            "metal": "silver",
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 1672.9640927912862,
+            "horizon": 90,
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 1823.633006785598,
+            "p10_usd_kg": 970.30159265387,
+            "p90_usd_kg": 3427.42645030803,
+            "model": "boost",
+            "feature_group": "market_cross",
+            "model_lock_sha256": "3f345993a23bfff00070692c1da21bf5b6bf46c936dce779585c018014668702",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602",
+            "record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763"
+          }
+        ],
+        "latest_by_horizon": {
+          "1": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1591.5224371266945,
+            "p90_usd_kg": 1758.5732946510575,
+            "record_hash": "fce54a9881482ab48ef2cd3e4ef1665ebccf017ef42912b8d82b54f25b32cf47"
+          },
+          "5": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1496.3446339440166,
+            "p90_usd_kg": 1870.4306429675644,
+            "record_hash": "5cf50996504779d290fe979c1421fbe566770457bd1499013568381bca9db77f"
+          },
+          "20": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1350.7784077670933,
+            "p90_usd_kg": 2071.997034950793,
+            "record_hash": "45097d27a06241e55e2b7346e13f26e4489a451036eb69615ae539de9f1cdb39"
+          },
+          "60": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 1672.9640927912862,
+            "p10_usd_kg": 1112.2506126103567,
+            "p90_usd_kg": 2516.3473267957183,
+            "record_hash": "80c62b9fc6241b5806b5bc26fac859ac8d69b21a2abe67886039a7f0c8c98602"
+          },
+          "90": {
+            "created_at": "2026-11-04T12:06:01Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 1823.633006785598,
+            "p10_usd_kg": 970.30159265387,
+            "p90_usd_kg": 3427.42645030803,
+            "record_hash": "beb63a9c5dd740e2c61e57c89c942dc2548a612972f7fb6c9b9e3dbc7f8b6763"
+          }
+        }
       },
       "integrity": {
         "prospective_holdout_metrics_exposed": false,
         "journal_outcomes_scored": false,
+        "locked_model_source": "config/silver_model_lock_v1.json",
         "official_fundamentals_in_v1": false
       }
     },
@@ -379,17 +841,17 @@
       "product": {
         "name": "Athmar Precious Metals Intelligence",
         "mode": "SHADOW",
-        "environment": "bootstrap"
+        "environment": "production-shadow"
       },
       "market": {
-        "status": "unavailable",
-        "last_actual_date": null,
-        "last_price_usd_kg": null,
+        "status": "available",
+        "last_actual_date": "2026-11-04",
+        "last_price_usd_kg": 31909.6159693355,
         "instrument": "YAHOO_PA=F_FUTURES_INDICATIVE"
       },
       "approval": {
         "protocol_id": "ATHMAR_PALLADIUM_APPROVAL_V1",
-        "status": "BOOTSTRAPPING",
+        "status": "LOCKED",
         "origin_start": "2026-11-04",
         "origin_end": "2027-07-30",
         "score_not_before_utc": "2027-12-16T00:00:00Z",
@@ -397,22 +859,253 @@
         "nominal_interval_coverage": 0.9,
         "minimum_mature_origins_per_horizon": 100
       },
-      "horizons": [],
+      "horizons": [
+        {
+          "horizon_days": 1,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.046472586011397254,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 30460.62358146706,
+            "p90_usd_kg": 33427.53599863863,
+            "record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b"
+          }
+        },
+        {
+          "horizon_days": 5,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.10913408306463346,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 28610.48681144325,
+            "p90_usd_kg": 35589.173928463715,
+            "record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7"
+          }
+        },
+        {
+          "horizon_days": 20,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.16917510232641675,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 26943.236553256305,
+            "p90_usd_kg": 37791.435683602416,
+            "record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23"
+          }
+        },
+        {
+          "horizon_days": 60,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.27031535168099907,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 24351.466016447885,
+            "p90_usd_kg": 41813.6464811903,
+            "record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a"
+          }
+        },
+        {
+          "horizon_days": 90,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.363472706182538,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 22185.40630864392,
+            "p90_usd_kg": 45896.09841464788,
+            "record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df"
+          }
+        }
+      ],
       "context": {
         "title": "Cross-market Drivers",
-        "status": "bootstrap",
-        "metrics": {},
-        "footnote": "Independent V1 is being initialized; no platinum WPIC data is reused."
+        "status": "market_only_v1",
+        "metrics": {
+          "platinum": 1460.199951171875,
+          "gold": 4050.89990234375,
+          "silver": 52.03499984741211,
+          "dollar_index": 101.36000061035156,
+          "zar_usd": 16.46112060546875,
+          "us10y": 4.952000141143799
+        },
+        "footnote": "Yahoo research futures/macro closes; next-UTC-day availability. No official fundamental dataset is claimed in V1."
       },
       "journal": {
-        "status": "waiting_for_first_shadow_forecast",
-        "count": 0,
-        "latest": [],
-        "latest_by_horizon": {}
+        "status": "active",
+        "count": 5,
+        "latest": [
+          {
+            "metal": "palladium",
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 31909.6159693355,
+            "horizon": 1,
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 30460.62358146706,
+            "p90_usd_kg": 33427.53599863863,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "GENESIS",
+            "record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b"
+          },
+          {
+            "metal": "palladium",
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 31909.6159693355,
+            "horizon": 5,
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 28610.48681144325,
+            "p90_usd_kg": 35589.173928463715,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b",
+            "record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7"
+          },
+          {
+            "metal": "palladium",
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 31909.6159693355,
+            "horizon": 20,
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 26943.236553256305,
+            "p90_usd_kg": 37791.435683602416,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7",
+            "record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23"
+          },
+          {
+            "metal": "palladium",
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 31909.6159693355,
+            "horizon": 60,
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 24351.466016447885,
+            "p90_usd_kg": 41813.6464811903,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23",
+            "record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a"
+          },
+          {
+            "metal": "palladium",
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "origin_close_usd_kg": 31909.6159693355,
+            "horizon": 90,
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 22185.40630864392,
+            "p90_usd_kg": 45896.09841464788,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_lock_sha256": "f59f8b1bc78a3fdd92e12e54359cfaf6be6a3eb30a3abccdf8948ed4d32eedb7",
+            "status": "shadow_locked",
+            "outcome_scored": false,
+            "previous_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a",
+            "record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df"
+          }
+        ],
+        "latest_by_horizon": {
+          "1": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-05",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 30460.62358146706,
+            "p90_usd_kg": 33427.53599863863,
+            "record_hash": "8c62d49a5a1b632ddcad8858a579072c83b085df8ac1bd28fbc36c59c7637e2b"
+          },
+          "5": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-11-11",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 28610.48681144325,
+            "p90_usd_kg": 35589.173928463715,
+            "record_hash": "7f67caf02357b0074b78db15df98ebfbbbfa425b71a15e94b72f651d5b2960f7"
+          },
+          "20": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2026-12-02",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 26943.236553256305,
+            "p90_usd_kg": 37791.435683602416,
+            "record_hash": "1a8f29de25d6d4adaa95da55e318e832163fd29e8d6d8f8b89f335e77f4a0f23"
+          },
+          "60": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-01-27",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 24351.466016447885,
+            "p90_usd_kg": 41813.6464811903,
+            "record_hash": "56a34813287e4ea17074abf0fd60fc9292a2a40e32b9615593d28ae669bea76a"
+          },
+          "90": {
+            "created_at": "2026-11-04T12:06:03Z",
+            "origin_date": "2026-11-04",
+            "target_date": "2027-03-10",
+            "forecast_usd_kg": 31909.6159693355,
+            "p10_usd_kg": 22185.40630864392,
+            "p90_usd_kg": 45896.09841464788,
+            "record_hash": "70a9b9ec34d56fb2c5e3c8eaab6139c86a47c9998d7b851a7820f8cd2e8a95df"
+          }
+        }
       },
       "integrity": {
         "prospective_holdout_metrics_exposed": false,
         "journal_outcomes_scored": false,
+        "locked_model_source": "config/palladium_model_lock_v1.json",
         "official_fundamentals_in_v1": false
       }
     }
