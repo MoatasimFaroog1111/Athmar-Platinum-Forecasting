@@ -22,11 +22,11 @@ jobs:
       - name: Build local package
         run: |
           mkdir -p dist/Athmar-Precious-Metals-Intelligence
-          rsync -a --exclude '.git' --exclude 'dist' ./ dist/Athmar-Platinum-Forecasting/
+          rsync -a --exclude '.git' --exclude 'dist' ./ dist/Athmar-Precious-Metals-Intelligence/
           cd dist
-          zip -qr Athmar-Precious-Metals-Local-Windows.zip Athmar-Platinum-Forecasting
+          zip -qr Athmar-Precious-Metals-Local-Windows.zip Athmar-Precious-Metals-Intelligence
       - uses: actions/upload-artifact@v4
         with:
           name: athmar-precious-metals-local-windows
-          path: dist/Athmar-Platinum-Local-Windows.zip
+          path: dist/Athmar-Precious-Metals-Local-Windows.zip
           retention-days: 30
