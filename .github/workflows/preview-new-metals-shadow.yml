@@ -1,0 +1,72 @@
+name: Preview New Metal Shadow Systems
+
+on:
+  push:
+    branches:
+      - feat/multi-metal-intelligence
+    paths:
+      - ".github/workflows/preview-new-metals-shadow.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: preview-new-metals-shadow
+  cancel-in-progress: false
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/multi-metal-intelligence
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Verify three immutable V1 locks exist
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for metal in ("gold","silver","palladium"):
+              lock=json.loads(Path(f"config/{metal}_model_lock_v1.json").read_text())
+              assert lock["governance"]["immutable"] is True
+              assert lock["lock_start"] == "2026-11-04"
+              assert set(lock["horizons"]) == {"1","5","20","60","90"}
+          print("NEW_METAL_LOCKS_PRESENT")
+          PY
+      - name: Generate first Gold Silver Palladium Shadow forecasts
+        run: python -m metals.shadow --all
+      - name: Build four-metal dashboard state
+        run: python -m metals.platform_state --out web/data/metals-state.json
+      - name: Assert four independent fail-closed states
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path("web/data/metals-state.json").read_text())
+          assert s["metal_order"] == ["platinum","gold","silver","palladium"]
+          for metal in s["metal_order"]:
+              m=s["metals"][metal]
+              assert m["approval"]["metrics_revealed"] is False
+              assert m["integrity"]["prospective_holdout_metrics_exposed"] is False
+              assert not m["integrity"].get("journal_outcomes_scored",False)
+              assert len(m["horizons"]) == 5
+          for metal in ("gold","silver","palladium"):
+              assert s["metals"][metal]["journal"]["count"] == 5
+          print("FOUR_METAL_SHADOW_FAIL_CLOSED_CONFIRMED")
+          PY
+      - name: Persist preview journals and dashboard state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/shadow/metals web/data/metals-state.json
+          git commit -m "data: initialize Gold Silver Palladium shadow journals"
+          git fetch origin feat/multi-metal-intelligence
+          git rebase origin/feat/multi-metal-intelligence
+          git push origin HEAD:feat/multi-metal-intelligence
