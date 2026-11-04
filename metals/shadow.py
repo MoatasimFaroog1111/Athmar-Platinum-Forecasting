@@ -3,16 +3,19 @@ import argparse, hashlib, json
 from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np, pandas as pd
-from metals.config import METALS,NEW_METALS
+from metals.config import NEW_METALS
 from metals.price_source import fetch_metal
 from metals.market_features import run as fetch_features
 from platinum.daily import OZ_PER_KG,load_daily
 from platinum.point_in_time import asof_feature,load_release_csv
 from platinum.nested_walkforward import _dataset,_model,LAG
 
+HASH_VERSION="v2"
 COLUMNS=["metal","created_at","origin_date","origin_close_usd_kg","horizon","target_date",
  "forecast_usd_kg","p10_usd_kg","p90_usd_kg","model","feature_group",
- "model_lock_sha256","status","outcome_scored","previous_hash","record_hash"]
+ "model_lock_sha256","status","outcome_scored","hash_version","legacy_record_hash",
+ "previous_hash","record_hash"]
+FLOAT_FIELDS={"origin_close_usd_kg","forecast_usd_kg","p10_usd_kg","p90_usd_kg"}
 
 def _sha(path):
     h=hashlib.sha256()
@@ -27,15 +30,45 @@ def _frame(daily_path,feature_paths):
     for name,path in feature_paths.items():f=asof_feature(f,load_release_csv(path),name)
     return f
 
+def _canon(key,value):
+    if key in FLOAT_FIELDS:return format(float(value),".17g")
+    if key=="horizon":return str(int(value))
+    if key=="outcome_scored":
+        return "true" if str(value).strip().lower() in ("true","1","yes") else "false"
+    if value is None:return ""
+    if isinstance(value,float) and np.isnan(value):return ""
+    return str(value)
+
 def _row_hash(row):
-    payload={k:row[k] for k in COLUMNS if k!="record_hash"}
-    return hashlib.sha256(json.dumps(payload,sort_keys=True,separators=(",",":"),ensure_ascii=True).encode()).hexdigest()
+    keys=[k for k in COLUMNS if k!="record_hash"]
+    payload="|".join(f"{k}={_canon(k,row.get(k,''))}" for k in keys)
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+def _migrate_legacy(frame):
+    if "hash_version" in frame.columns:
+        return frame,False
+    f=frame.copy()
+    if "outcome_scored" in f.columns and f["outcome_scored"].astype(str).str.lower().isin(["true","1","yes"]).any():
+        raise ValueError("Cannot migrate a journal containing scored outcomes")
+    f["hash_version"]=HASH_VERSION
+    f["legacy_record_hash"]=f["record_hash"].astype(str)
+    prev="GENESIS";new_hashes=[];prevs=[]
+    for row in f.to_dict("records"):
+        row["previous_hash"]=prev
+        row["hash_version"]=HASH_VERSION
+        prevs.append(prev)
+        h=_row_hash(row);new_hashes.append(h);prev=h
+    f["previous_hash"]=prevs;f["record_hash"]=new_hashes
+    return f[COLUMNS],True
 
 def verify_journal(frame):
+    missing=[c for c in COLUMNS if c not in frame.columns]
+    if missing:raise ValueError(f"Journal missing v2 columns: {missing}")
     prev="GENESIS"
     for r in frame.to_dict("records"):
+        if str(r["hash_version"])!=HASH_VERSION:raise ValueError("Unsupported journal hash version")
         if str(r["previous_hash"])!=prev:raise ValueError("Journal chain broken")
-        if str(r["record_hash"])!=_row_hash({k:r[k] for k in COLUMNS}):raise ValueError("Journal record hash invalid")
+        if str(r["record_hash"])!=_row_hash(r):raise ValueError("Journal record hash invalid")
         if str(r["outcome_scored"]).lower() not in ("false","0"):raise ValueError("Scored outcome found in shadow journal")
         prev=str(r["record_hash"])
     return prev
@@ -70,8 +103,10 @@ def generate(metal,work_root="outputs/metals/live",journal_root="data/shadow/met
     origin_price=float(live_frame.Close.iloc[-1]*OZ_PER_KG)
     created=datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00","Z")
     journal=Path(journal_root)/f"{metal}_forecast_journal.csv";journal.parent.mkdir(parents=True,exist_ok=True)
+    migrated=False
     if journal.exists():
-        existing=pd.read_csv(journal,dtype={"previous_hash":str,"record_hash":str})
+        existing=pd.read_csv(journal,dtype={"previous_hash":str,"record_hash":str,"legacy_record_hash":str,"hash_version":str})
+        existing,migrated=_migrate_legacy(existing)
         prev=verify_journal(existing)
     else:
         existing=pd.DataFrame(columns=COLUMNS);prev="GENESIS"
@@ -85,12 +120,15 @@ def generate(metal,work_root="outputs/metals/live",journal_root="data/shadow/met
           "horizon":h,"target_date":(pd.Timestamp(origin)+pd.offsets.BDay(h)).date().isoformat(),
           "forecast_usd_kg":point,"p10_usd_kg":point*float(np.exp(-q)),"p90_usd_kg":point*float(np.exp(q)),
           "model":spec["model"],"feature_group":spec["group"],"model_lock_sha256":_sha(lock_path),
-          "status":"shadow_locked","outcome_scored":False,"previous_hash":prev,"record_hash":""}
+          "status":"shadow_locked","outcome_scored":False,"hash_version":HASH_VERSION,"legacy_record_hash":"",
+          "previous_hash":prev,"record_hash":""}
         if (origin_date,str(h)) in keys:continue
         row["record_hash"]=_row_hash(row);prev=row["record_hash"];rows.append(row)
-    if rows:
-        out=pd.concat([existing,pd.DataFrame(rows,columns=COLUMNS)],ignore_index=True);verify_journal(out);out.to_csv(journal,index=False)
+    if rows or migrated:
+        out=pd.concat([existing,pd.DataFrame(rows,columns=COLUMNS)],ignore_index=True) if rows else existing
+        verify_journal(out);out.to_csv(journal,index=False)
     return {"metal":metal,"origin_date":origin_date,"new_records":len(rows),"journal":str(journal),
+      "journal_hash_version":HASH_VERSION,"legacy_preview_migrated":migrated,
       "price_csv":price["csv"],"feature_paths":live_features,"prospective_metrics_scored":False}
 
 def main():
