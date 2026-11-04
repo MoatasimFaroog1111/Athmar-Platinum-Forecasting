@@ -1,5 +1,5 @@
 name: Preview New Metal Shadow Systems
-# idempotency-check
+# idempotency-check-v2
 
 on:
   push:
