@@ -1,0 +1,420 @@
+{
+  "default_metal": "platinum",
+  "metal_order": [
+    "platinum",
+    "gold",
+    "silver",
+    "palladium"
+  ],
+  "metals": {
+    "platinum": {
+      "metal": {
+        "key": "platinum",
+        "label": "Platinum",
+        "symbol": "PL=F"
+      },
+      "product": {
+        "name": "Athmar Precious Metals Intelligence",
+        "mode": "SHADOW",
+        "environment": "production-shadow"
+      },
+      "market": {
+        "status": "available",
+        "last_actual_date": "2026-11-03",
+        "last_price_usd_kg": 45830.889233539296,
+        "instrument": "YAHOO_PL_F_FUTURES_INDICATIVE"
+      },
+      "approval": {
+        "protocol_id": "ATHMAR_PLATINUM_APPROVAL_V1",
+        "status": "LOCKED",
+        "origin_start": "2026-11-03",
+        "origin_end": "2027-07-30",
+        "score_not_before_utc": "2027-12-15T00:00:00Z",
+        "metrics_revealed": false,
+        "nominal_interval_coverage": 0.9,
+        "minimum_mature_origins_per_horizon": 100
+      },
+      "horizons": [
+        {
+          "horizon_days": 1,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.04319172393303283,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2026-11-04",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 43893.51456968788,
+            "p90_usd_kg": 47853.77586026109,
+            "record_hash": "73de71c0e124fbab7e0beeb49ff03a05aca84182f48f46c5ced376c93c3d1a36"
+          }
+        },
+        {
+          "horizon_days": 5,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.08872636237365583,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2026-11-10",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 41939.6608475021,
+            "p90_usd_kg": 50083.15197336773,
+            "record_hash": "6286a98fa2e117f34b04452546edf9a999037a50e1c4dc94e73e31bc5b908bb8"
+          }
+        },
+        {
+          "horizon_days": 20,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.21199950404260193,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2026-12-01",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 37075.58983592238,
+            "p90_usd_kg": 56653.72869946392,
+            "record_hash": "f2f2a796ac93c725bbace1c7ce0a83ea9135063921f5a10d82ca33b359680296"
+          }
+        },
+        {
+          "horizon_days": 60,
+          "model": "no_change",
+          "feature_group": "price_only",
+          "interval_q90_abs_logreturn": 0.34644730362401965,
+          "mode": "baseline",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2027-01-26",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 32411.425436935264,
+            "p90_usd_kg": 64806.48041919513,
+            "record_hash": "4d88e55f19e3350fb0227e09bb4a9dfb96af67cd3006a554fdc3bfa934131c3a"
+          }
+        },
+        {
+          "horizon_days": 90,
+          "model": "ridge_1.0",
+          "feature_group": "market_wpic_all",
+          "interval_q90_abs_logreturn": 0.45296965936250544,
+          "mode": "candidate",
+          "status": "locked_shadow",
+          "latest_forecast": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2027-03-09",
+            "forecast_usd_kg": 53774.59279368148,
+            "p10_usd_kg": 34186.52099242513,
+            "p90_usd_kg": 84586.16864719838,
+            "record_hash": "c705b4784f86f17070fb4e50631dca4f440c28e2b25fbd4968c02dea1912a390"
+          }
+        }
+      ],
+      "context": {
+        "title": "WPIC Fundamentals",
+        "status": "available",
+        "metrics": {
+          "Total Mining Supply": 5551,
+          "Recycling": 1802,
+          "Total Supply": 7353,
+          "Automotive": 2904,
+          "Jewellery": 1883,
+          "Industrial": 2385,
+          "Investment": -83,
+          "Total Demand": 7089,
+          "Balance": 265,
+          "Above Ground Stocks": 2010
+        },
+        "footnote": "Exact-date WPIC vintages; next-UTC-day availability; no reconstructed values."
+      },
+      "journal": {
+        "status": "active",
+        "count": 5,
+        "latest": [
+          {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "origin_close_usd_kg": 45830.889233539296,
+            "horizon": 1,
+            "target_date": "2026-11-04",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 43893.51456968788,
+            "p90_usd_kg": 47853.77586026109,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_artifact_sha256": "NO_CHANGE_LOCKED_V1",
+            "model_lock_sha256": "9a98f8d44d07d5e33260377abf526e9bcf7517d7e183359cfd8688da25ebfdfb",
+            "status": "shadow_locked",
+            "record_hash": "73de71c0e124fbab7e0beeb49ff03a05aca84182f48f46c5ced376c93c3d1a36"
+          },
+          {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "origin_close_usd_kg": 45830.889233539296,
+            "horizon": 5,
+            "target_date": "2026-11-10",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 41939.6608475021,
+            "p90_usd_kg": 50083.15197336773,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_artifact_sha256": "NO_CHANGE_LOCKED_V1",
+            "model_lock_sha256": "9a98f8d44d07d5e33260377abf526e9bcf7517d7e183359cfd8688da25ebfdfb",
+            "status": "shadow_locked",
+            "record_hash": "6286a98fa2e117f34b04452546edf9a999037a50e1c4dc94e73e31bc5b908bb8"
+          },
+          {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "origin_close_usd_kg": 45830.889233539296,
+            "horizon": 20,
+            "target_date": "2026-12-01",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 37075.58983592238,
+            "p90_usd_kg": 56653.72869946392,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_artifact_sha256": "NO_CHANGE_LOCKED_V1",
+            "model_lock_sha256": "9a98f8d44d07d5e33260377abf526e9bcf7517d7e183359cfd8688da25ebfdfb",
+            "status": "shadow_locked",
+            "record_hash": "f2f2a796ac93c725bbace1c7ce0a83ea9135063921f5a10d82ca33b359680296"
+          },
+          {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "origin_close_usd_kg": 45830.889233539296,
+            "horizon": 60,
+            "target_date": "2027-01-26",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 32411.425436935264,
+            "p90_usd_kg": 64806.48041919513,
+            "model": "no_change",
+            "feature_group": "price_only",
+            "model_artifact_sha256": "NO_CHANGE_LOCKED_V1",
+            "model_lock_sha256": "9a98f8d44d07d5e33260377abf526e9bcf7517d7e183359cfd8688da25ebfdfb",
+            "status": "shadow_locked",
+            "record_hash": "4d88e55f19e3350fb0227e09bb4a9dfb96af67cd3006a554fdc3bfa934131c3a"
+          },
+          {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "origin_close_usd_kg": 45830.889233539296,
+            "horizon": 90,
+            "target_date": "2027-03-09",
+            "forecast_usd_kg": 53774.59279368148,
+            "p10_usd_kg": 34186.52099242513,
+            "p90_usd_kg": 84586.16864719838,
+            "model": "ridge_1.0",
+            "feature_group": "market_wpic_all",
+            "model_artifact_sha256": "80695c3d6545a25c90f65840608f2806a695ca4f07a120509b20e133d40b4829",
+            "model_lock_sha256": "9a98f8d44d07d5e33260377abf526e9bcf7517d7e183359cfd8688da25ebfdfb",
+            "status": "shadow_locked",
+            "record_hash": "c705b4784f86f17070fb4e50631dca4f440c28e2b25fbd4968c02dea1912a390"
+          }
+        ],
+        "latest_by_horizon": {
+          "1": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2026-11-04",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 43893.51456968788,
+            "p90_usd_kg": 47853.77586026109,
+            "record_hash": "73de71c0e124fbab7e0beeb49ff03a05aca84182f48f46c5ced376c93c3d1a36"
+          },
+          "5": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2026-11-10",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 41939.6608475021,
+            "p90_usd_kg": 50083.15197336773,
+            "record_hash": "6286a98fa2e117f34b04452546edf9a999037a50e1c4dc94e73e31bc5b908bb8"
+          },
+          "20": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2026-12-01",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 37075.58983592238,
+            "p90_usd_kg": 56653.72869946392,
+            "record_hash": "f2f2a796ac93c725bbace1c7ce0a83ea9135063921f5a10d82ca33b359680296"
+          },
+          "60": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2027-01-26",
+            "forecast_usd_kg": 45830.889233539296,
+            "p10_usd_kg": 32411.425436935264,
+            "p90_usd_kg": 64806.48041919513,
+            "record_hash": "4d88e55f19e3350fb0227e09bb4a9dfb96af67cd3006a554fdc3bfa934131c3a"
+          },
+          "90": {
+            "created_at": "2026-11-03T08:11:38Z",
+            "origin_date": "2026-11-03",
+            "target_date": "2027-03-09",
+            "forecast_usd_kg": 53774.59279368148,
+            "p10_usd_kg": 34186.52099242513,
+            "p90_usd_kg": 84586.16864719838,
+            "record_hash": "c705b4784f86f17070fb4e50631dca4f440c28e2b25fbd4968c02dea1912a390"
+          }
+        }
+      },
+      "integrity": {
+        "prospective_holdout_metrics_exposed": false,
+        "cftc_used_for_approval": false,
+        "locked_model_source": "config/model_lock_v1.json",
+        "journal_outcomes_scored": false
+      }
+    },
+    "gold": {
+      "metal": {
+        "key": "gold",
+        "label": "Gold",
+        "symbol": "GC=F"
+      },
+      "product": {
+        "name": "Athmar Precious Metals Intelligence",
+        "mode": "SHADOW",
+        "environment": "bootstrap"
+      },
+      "market": {
+        "status": "unavailable",
+        "last_actual_date": null,
+        "last_price_usd_kg": null,
+        "instrument": "YAHOO_GC=F_FUTURES_INDICATIVE"
+      },
+      "approval": {
+        "protocol_id": "ATHMAR_GOLD_APPROVAL_V1",
+        "status": "BOOTSTRAPPING",
+        "origin_start": "2026-11-04",
+        "origin_end": "2027-07-30",
+        "score_not_before_utc": "2027-12-16T00:00:00Z",
+        "metrics_revealed": false,
+        "nominal_interval_coverage": 0.9,
+        "minimum_mature_origins_per_horizon": 100
+      },
+      "horizons": [],
+      "context": {
+        "title": "Cross-market Drivers",
+        "status": "bootstrap",
+        "metrics": {},
+        "footnote": "Independent V1 is being initialized; no platinum WPIC data is reused."
+      },
+      "journal": {
+        "status": "waiting_for_first_shadow_forecast",
+        "count": 0,
+        "latest": [],
+        "latest_by_horizon": {}
+      },
+      "integrity": {
+        "prospective_holdout_metrics_exposed": false,
+        "journal_outcomes_scored": false,
+        "official_fundamentals_in_v1": false
+      }
+    },
+    "silver": {
+      "metal": {
+        "key": "silver",
+        "label": "Silver",
+        "symbol": "SI=F"
+      },
+      "product": {
+        "name": "Athmar Precious Metals Intelligence",
+        "mode": "SHADOW",
+        "environment": "bootstrap"
+      },
+      "market": {
+        "status": "unavailable",
+        "last_actual_date": null,
+        "last_price_usd_kg": null,
+        "instrument": "YAHOO_SI=F_FUTURES_INDICATIVE"
+      },
+      "approval": {
+        "protocol_id": "ATHMAR_SILVER_APPROVAL_V1",
+        "status": "BOOTSTRAPPING",
+        "origin_start": "2026-11-04",
+        "origin_end": "2027-07-30",
+        "score_not_before_utc": "2027-12-16T00:00:00Z",
+        "metrics_revealed": false,
+        "nominal_interval_coverage": 0.9,
+        "minimum_mature_origins_per_horizon": 100
+      },
+      "horizons": [],
+      "context": {
+        "title": "Cross-market Drivers",
+        "status": "bootstrap",
+        "metrics": {},
+        "footnote": "Independent V1 is being initialized; no platinum WPIC data is reused."
+      },
+      "journal": {
+        "status": "waiting_for_first_shadow_forecast",
+        "count": 0,
+        "latest": [],
+        "latest_by_horizon": {}
+      },
+      "integrity": {
+        "prospective_holdout_metrics_exposed": false,
+        "journal_outcomes_scored": false,
+        "official_fundamentals_in_v1": false
+      }
+    },
+    "palladium": {
+      "metal": {
+        "key": "palladium",
+        "label": "Palladium",
+        "symbol": "PA=F"
+      },
+      "product": {
+        "name": "Athmar Precious Metals Intelligence",
+        "mode": "SHADOW",
+        "environment": "bootstrap"
+      },
+      "market": {
+        "status": "unavailable",
+        "last_actual_date": null,
+        "last_price_usd_kg": null,
+        "instrument": "YAHOO_PA=F_FUTURES_INDICATIVE"
+      },
+      "approval": {
+        "protocol_id": "ATHMAR_PALLADIUM_APPROVAL_V1",
+        "status": "BOOTSTRAPPING",
+        "origin_start": "2026-11-04",
+        "origin_end": "2027-07-30",
+        "score_not_before_utc": "2027-12-16T00:00:00Z",
+        "metrics_revealed": false,
+        "nominal_interval_coverage": 0.9,
+        "minimum_mature_origins_per_horizon": 100
+      },
+      "horizons": [],
+      "context": {
+        "title": "Cross-market Drivers",
+        "status": "bootstrap",
+        "metrics": {},
+        "footnote": "Independent V1 is being initialized; no platinum WPIC data is reused."
+      },
+      "journal": {
+        "status": "waiting_for_first_shadow_forecast",
+        "count": 0,
+        "latest": [],
+        "latest_by_horizon": {}
+      },
+      "integrity": {
+        "prospective_holdout_metrics_exposed": false,
+        "journal_outcomes_scored": false,
+        "official_fundamentals_in_v1": false
+      }
+    }
+  }
+}
