@@ -1,0 +1,34 @@
+{
+  "protocol_id": "ATHMAR_SILVER_APPROVAL_V1",
+  "locked_at_utc": "2026-11-04T12:00:00Z",
+  "origin_start": "2026-11-04",
+  "origin_end": "2027-07-30",
+  "score_not_before_utc": "2027-12-16T00:00:00Z",
+  "horizons_business_days": [
+    1,
+    5,
+    20,
+    60,
+    90
+  ],
+  "nominal_interval_coverage": 0.9,
+  "minimum_mature_origins_per_horizon": 100,
+  "approval_rules": {
+    "all_horizons_must_pass": true,
+    "minimum_mae_improvement_vs_no_change": 0.01,
+    "coverage_wilson_95_ci_must_include_nominal": true,
+    "realized_coverage_min": 0.87,
+    "realized_coverage_max": 0.93
+  },
+  "governance": {
+    "no_model_or_feature_tuning_after_lock": true,
+    "no_holdout_metrics_before_score_not_before": true,
+    "protocol_change_requires_new_future_holdout": true
+  },
+  "source_policy": {
+    "target": "Yahoo Finance SI=F futures indicative chart",
+    "target_status": "research_only_unlicensed_unverified_roll",
+    "features": "Yahoo cross-market closes with next-UTC-day availability",
+    "official_fundamentals_in_v1": false
+  }
+}

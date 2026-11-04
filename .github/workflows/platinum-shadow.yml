@@ -1,4 +1,4 @@
-name: Platinum Shadow Production
+name: Precious Metals Shadow Production
 on:
   workflow_dispatch:
   push:
@@ -12,13 +12,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: platinum-shadow-production
+  group: precious-metals-shadow-production
   cancel-in-progress: false
 
 jobs:
   shadow:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,7 +30,7 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - name: Verify shadow safety tests
-        run: python -m pytest -q tests/test_shadow_forecast.py tests/test_platform_snapshot.py tests/test_prospective_lock.py
+        run: python -m pytest -q tests/test_shadow_forecast.py tests/test_platform_snapshot.py tests/test_prospective_lock.py tests/test_multi_metal.py
       - name: Acquire latest platinum price
         run: python -m platinum.price_source --out raw/daily
       - name: Acquire cross-market features
@@ -64,25 +64,36 @@ jobs:
             --price-csv raw/daily/platinum_daily_futures.csv \
             --journal-csv data/shadow/forecast_journal.csv \
             --out web/data/live-state.json
-      - name: Assert prospective holdout remains unscored
+      - name: Run Gold Silver Palladium locked shadow systems
+        run: python -m metals.shadow --all
+      - name: Build combined four-metal platform state
+        run: python -m metals.platform_state --out web/data/metals-state.json
+      - name: Assert all prospective holdouts remain unscored
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          state=json.loads(Path("web/data/live-state.json").read_text())
-          assert state["approval"]["metrics_revealed"] is False
-          assert state["integrity"]["prospective_holdout_metrics_exposed"] is False
-          assert state["integrity"]["journal_outcomes_scored"] is False
-          print("SHADOW_ONLY_NO_HOLDOUT_SCORING_CONFIRMED")
+          platinum=json.loads(Path("web/data/live-state.json").read_text())
+          combined=json.loads(Path("web/data/metals-state.json").read_text())
+          assert platinum["approval"]["metrics_revealed"] is False
+          assert platinum["integrity"]["prospective_holdout_metrics_exposed"] is False
+          assert platinum["integrity"]["journal_outcomes_scored"] is False
+          assert combined["metal_order"] == ["platinum","gold","silver","palladium"]
+          for metal,state in combined["metals"].items():
+              assert state["approval"]["metrics_revealed"] is False
+              assert state["integrity"]["prospective_holdout_metrics_exposed"] is False
+              assert not state["integrity"].get("journal_outcomes_scored",False)
+              assert len(state["horizons"]) == 5
+          print("FOUR_METAL_SHADOW_NO_HOLDOUT_SCORING_CONFIRMED")
           PY
       - name: Persist append-only journal and live state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/shadow/forecast_journal.csv web/data/live-state.json
+          git add data/shadow/forecast_journal.csv data/shadow/metals web/data/live-state.json web/data/metals-state.json
           if git diff --cached --quiet; then
             echo "No new shadow records."
             exit 0
           fi
-          git commit -m "data: append locked shadow forecast journal"
+          git commit -m "data: append four-metal locked shadow journals"
           git push origin "HEAD:${GITHUB_REF_NAME}"

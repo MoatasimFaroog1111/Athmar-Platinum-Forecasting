@@ -1,0 +1,8 @@
+{
+  "platinum": "data/locks/silver/v1/features/platinum.csv",
+  "gold": "data/locks/silver/v1/features/gold.csv",
+  "palladium": "data/locks/silver/v1/features/palladium.csv",
+  "dollar_index": "data/locks/silver/v1/features/dollar_index.csv",
+  "zar_usd": "data/locks/silver/v1/features/zar_usd.csv",
+  "us10y": "data/locks/silver/v1/features/us10y.csv"
+}
