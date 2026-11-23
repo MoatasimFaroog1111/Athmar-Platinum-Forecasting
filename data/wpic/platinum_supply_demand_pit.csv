@@ -1,0 +1,1881 @@
+vintage,vintage_year,vintage_quarter,pub_date,pub_date_exact,metric,year,is_forecast,value_koz
+Q3_2014,2014,3,2014-11-15,False,Total Mining Supply,2013,False,5855
+Q3_2014,2014,3,2014-11-15,False,Total Mining Supply,2014,True,5100
+Q3_2014,2014,3,2014-11-15,False,Recycling,2013,False,1985
+Q3_2014,2014,3,2014-11-15,False,Recycling,2014,True,2025
+Q3_2014,2014,3,2014-11-15,False,Total Supply,2013,False,7840
+Q3_2014,2014,3,2014-11-15,False,Total Supply,2014,True,7125
+Q3_2014,2014,3,2014-11-15,False,Automotive,2013,False,3140
+Q3_2014,2014,3,2014-11-15,False,Automotive,2014,True,3285
+Q3_2014,2014,3,2014-11-15,False,Jewellery,2013,False,2945
+Q3_2014,2014,3,2014-11-15,False,Jewellery,2014,True,3060
+Q3_2014,2014,3,2014-11-15,False,Industrial,2013,False,1525
+Q3_2014,2014,3,2014-11-15,False,Industrial,2014,True,1500
+Q3_2014,2014,3,2014-11-15,False,Investment,2013,False,925
+Q3_2014,2014,3,2014-11-15,False,Investment,2014,True,165
+Q3_2014,2014,3,2014-11-15,False,Total Demand,2013,False,8535
+Q3_2014,2014,3,2014-11-15,False,Total Demand,2014,True,8010
+Q3_2014,2014,3,2014-11-15,False,Balance,2013,False,-695
+Q3_2014,2014,3,2014-11-15,False,Balance,2014,True,-885
+Q3_2014,2014,3,2014-11-15,False,Above Ground Stocks,2013,False,4140
+Q3_2014,2014,3,2014-11-15,False,Above Ground Stocks,2014,True,3445
+Q4_2014,2014,4,2015-03-05,False,Total Mining Supply,2013,False,5855
+Q4_2014,2014,4,2015-03-05,False,Total Mining Supply,2014,False,5200
+Q4_2014,2014,4,2015-03-05,False,Total Mining Supply,2015,True,5800
+Q4_2014,2014,4,2015-03-05,False,Recycling,2013,False,1985
+Q4_2014,2014,4,2015-03-05,False,Recycling,2014,False,2025
+Q4_2014,2014,4,2015-03-05,False,Recycling,2015,True,2165
+Q4_2014,2014,4,2015-03-05,False,Total Supply,2013,False,7840
+Q4_2014,2014,4,2015-03-05,False,Total Supply,2014,False,7225
+Q4_2014,2014,4,2015-03-05,False,Total Supply,2015,True,7965
+Q4_2014,2014,4,2015-03-05,False,Automotive,2013,False,3135
+Q4_2014,2014,4,2015-03-05,False,Automotive,2014,False,3245
+Q4_2014,2014,4,2015-03-05,False,Automotive,2015,True,3370
+Q4_2014,2014,4,2015-03-05,False,Jewellery,2013,False,2945
+Q4_2014,2014,4,2015-03-05,False,Jewellery,2014,False,2990
+Q4_2014,2014,4,2015-03-05,False,Jewellery,2015,True,3085
+Q4_2014,2014,4,2015-03-05,False,Industrial,2013,False,1510
+Q4_2014,2014,4,2015-03-05,False,Industrial,2014,False,1555
+Q4_2014,2014,4,2015-03-05,False,Industrial,2015,True,1695
+Q4_2014,2014,4,2015-03-05,False,Investment,2013,False,925
+Q4_2014,2014,4,2015-03-05,False,Investment,2014,False,135
+Q4_2014,2014,4,2015-03-05,False,Investment,2015,True,50
+Q4_2014,2014,4,2015-03-05,False,Total Demand,2013,False,8515
+Q4_2014,2014,4,2015-03-05,False,Total Demand,2014,False,7925
+Q4_2014,2014,4,2015-03-05,False,Total Demand,2015,True,8200
+Q4_2014,2014,4,2015-03-05,False,Balance,2013,False,-675
+Q4_2014,2014,4,2015-03-05,False,Balance,2014,False,-700
+Q4_2014,2014,4,2015-03-05,False,Balance,2015,True,-235
+Q4_2014,2014,4,2015-03-05,False,Above Ground Stocks,2013,False,4140
+Q4_2014,2014,4,2015-03-05,False,Above Ground Stocks,2014,False,3465
+Q4_2014,2014,4,2015-03-05,False,Above Ground Stocks,2015,True,2765
+Q1_2015,2015,1,2015-05-15,False,Total Mining Supply,2013,False,5855
+Q1_2015,2015,1,2015-05-15,False,Total Mining Supply,2014,False,5230
+Q1_2015,2015,1,2015-05-15,False,Total Mining Supply,2015,True,5855
+Q1_2015,2015,1,2015-05-15,False,Recycling,2013,False,1985
+Q1_2015,2015,1,2015-05-15,False,Recycling,2014,False,2040
+Q1_2015,2015,1,2015-05-15,False,Recycling,2015,True,2110
+Q1_2015,2015,1,2015-05-15,False,Total Supply,2013,False,7840
+Q1_2015,2015,1,2015-05-15,False,Total Supply,2014,False,7270
+Q1_2015,2015,1,2015-05-15,False,Total Supply,2015,True,7965
+Q1_2015,2015,1,2015-05-15,False,Automotive,2013,False,3125
+Q1_2015,2015,1,2015-05-15,False,Automotive,2014,False,3250
+Q1_2015,2015,1,2015-05-15,False,Automotive,2015,True,3375
+Q1_2015,2015,1,2015-05-15,False,Jewellery,2013,False,2945
+Q1_2015,2015,1,2015-05-15,False,Jewellery,2014,False,2990
+Q1_2015,2015,1,2015-05-15,False,Jewellery,2015,True,3085
+Q1_2015,2015,1,2015-05-15,False,Industrial,2013,False,1510
+Q1_2015,2015,1,2015-05-15,False,Industrial,2014,False,1565
+Q1_2015,2015,1,2015-05-15,False,Industrial,2015,True,1645
+Q1_2015,2015,1,2015-05-15,False,Investment,2013,False,930
+Q1_2015,2015,1,2015-05-15,False,Investment,2014,False,135
+Q1_2015,2015,1,2015-05-15,False,Investment,2015,True,50
+Q1_2015,2015,1,2015-05-15,False,Total Demand,2013,False,8510
+Q1_2015,2015,1,2015-05-15,False,Total Demand,2014,False,7940
+Q1_2015,2015,1,2015-05-15,False,Total Demand,2015,True,8155
+Q1_2015,2015,1,2015-05-15,False,Balance,2013,False,-670
+Q1_2015,2015,1,2015-05-15,False,Balance,2014,False,-670
+Q1_2015,2015,1,2015-05-15,False,Balance,2015,True,-190
+Q1_2015,2015,1,2015-05-15,False,Above Ground Stocks,2013,False,4140
+Q1_2015,2015,1,2015-05-15,False,Above Ground Stocks,2014,False,3470
+Q1_2015,2015,1,2015-05-15,False,Above Ground Stocks,2015,True,2800
+Q2_2015,2015,2,2015-09-09,False,Total Mining Supply,2014,False,5855
+Q2_2015,2015,2,2015-09-09,False,Total Mining Supply,2015,True,5230
+Q2_2015,2015,2,2015-09-09,False,Recycling,2014,False,1985
+Q2_2015,2015,2,2015-09-09,False,Recycling,2015,True,2005
+Q2_2015,2015,2,2015-09-09,False,Total Supply,2014,False,7840
+Q2_2015,2015,2,2015-09-09,False,Total Supply,2015,True,7235
+Q2_2015,2015,2,2015-09-09,False,Automotive,2014,False,3165
+Q2_2015,2015,2,2015-09-09,False,Automotive,2015,True,3295
+Q2_2015,2015,2,2015-09-09,False,Jewellery,2014,False,2945
+Q2_2015,2015,2,2015-09-09,False,Jewellery,2015,True,2990
+Q2_2015,2015,2,2015-09-09,False,Industrial,2014,False,1545
+Q2_2015,2015,2,2015-09-09,False,Industrial,2015,True,1585
+Q2_2015,2015,2,2015-09-09,False,Investment,2014,False,930
+Q2_2015,2015,2,2015-09-09,False,Investment,2015,True,150
+Q2_2015,2015,2,2015-09-09,False,Total Demand,2014,False,8585
+Q2_2015,2015,2,2015-09-09,False,Total Demand,2015,True,8020
+Q2_2015,2015,2,2015-09-09,False,Balance,2014,False,-745
+Q2_2015,2015,2,2015-09-09,False,Balance,2015,True,-785
+Q2_2015,2015,2,2015-09-09,False,Above Ground Stocks,2014,False,4140
+Q2_2015,2015,2,2015-09-09,False,Above Ground Stocks,2015,True,3395
+Q3_2015,2015,3,2015-11-15,False,Total Mining Supply,2014,False,5230
+Q3_2015,2015,3,2015-11-15,False,Total Mining Supply,2015,True,5840
+Q3_2015,2015,3,2015-11-15,False,Total Mining Supply,2016,True,6065
+Q3_2015,2015,3,2015-11-15,False,Recycling,2014,False,2040
+Q3_2015,2015,3,2015-11-15,False,Recycling,2015,True,1890
+Q3_2015,2015,3,2015-11-15,False,Recycling,2016,True,2095
+Q3_2015,2015,3,2015-11-15,False,Total Supply,2014,False,7270
+Q3_2015,2015,3,2015-11-15,False,Total Supply,2015,True,7730
+Q3_2015,2015,3,2015-11-15,False,Total Supply,2016,True,8160
+Q3_2015,2015,3,2015-11-15,False,Automotive,2014,False,3285
+Q3_2015,2015,3,2015-11-15,False,Automotive,2015,True,3415
+Q3_2015,2015,3,2015-11-15,False,Automotive,2016,True,3480
+Q3_2015,2015,3,2015-11-15,False,Jewellery,2014,False,2990
+Q3_2015,2015,3,2015-11-15,False,Jewellery,2015,True,2850
+Q3_2015,2015,3,2015-11-15,False,Jewellery,2016,True,2905
+Q3_2015,2015,3,2015-11-15,False,Industrial,2014,False,1570
+Q3_2015,2015,3,2015-11-15,False,Industrial,2015,True,1605
+Q3_2015,2015,3,2015-11-15,False,Industrial,2016,True,1640
+Q3_2015,2015,3,2015-11-15,False,Investment,2014,False,150
+Q3_2015,2015,3,2015-11-15,False,Investment,2015,True,160
+Q3_2015,2015,3,2015-11-15,False,Investment,2016,True,130
+Q3_2015,2015,3,2015-11-15,False,Total Demand,2014,False,7995
+Q3_2015,2015,3,2015-11-15,False,Total Demand,2015,True,8030
+Q3_2015,2015,3,2015-11-15,False,Total Demand,2016,True,8155
+Q3_2015,2015,3,2015-11-15,False,Balance,2014,False,-725
+Q3_2015,2015,3,2015-11-15,False,Balance,2015,True,-300
+Q3_2015,2015,3,2015-11-15,False,Balance,2016,True,5
+Q3_2015,2015,3,2015-11-15,False,Above Ground Stocks,2014,False,4140
+Q3_2015,2015,3,2015-11-15,False,Above Ground Stocks,2015,True,2740
+Q3_2015,2015,3,2015-11-15,False,Above Ground Stocks,2016,True,2440
+Q4_2015,2015,4,2016-03-05,False,Total Mining Supply,2013,False,5855
+Q4_2015,2015,4,2016-03-05,False,Total Mining Supply,2014,False,5230
+Q4_2015,2015,4,2016-03-05,False,Total Mining Supply,2015,False,6100
+Q4_2015,2015,4,2016-03-05,False,Total Mining Supply,2016,True,6070
+Q4_2015,2015,4,2016-03-05,False,Recycling,2013,False,1985
+Q4_2015,2015,4,2016-03-05,False,Recycling,2014,False,2040
+Q4_2015,2015,4,2016-03-05,False,Recycling,2015,False,1725
+Q4_2015,2015,4,2016-03-05,False,Recycling,2016,True,1960
+Q4_2015,2015,4,2016-03-05,False,Total Supply,2013,False,7840
+Q4_2015,2015,4,2016-03-05,False,Total Supply,2014,False,7270
+Q4_2015,2015,4,2016-03-05,False,Total Supply,2015,False,7825
+Q4_2015,2015,4,2016-03-05,False,Total Supply,2016,True,8030
+Q4_2015,2015,4,2016-03-05,False,Automotive,2013,False,3160
+Q4_2015,2015,4,2016-03-05,False,Automotive,2014,False,3290
+Q4_2015,2015,4,2016-03-05,False,Automotive,2015,False,3455
+Q4_2015,2015,4,2016-03-05,False,Automotive,2016,True,3545
+Q4_2015,2015,4,2016-03-05,False,Jewellery,2013,False,2945
+Q4_2015,2015,4,2016-03-05,False,Jewellery,2014,False,3000
+Q4_2015,2015,4,2016-03-05,False,Jewellery,2015,False,2880
+Q4_2015,2015,4,2016-03-05,False,Jewellery,2016,True,2920
+Q4_2015,2015,4,2016-03-05,False,Industrial,2013,False,1520
+Q4_2015,2015,4,2016-03-05,False,Industrial,2014,False,1555
+Q4_2015,2015,4,2016-03-05,False,Industrial,2015,False,1610
+Q4_2015,2015,4,2016-03-05,False,Industrial,2016,True,1570
+Q4_2015,2015,4,2016-03-05,False,Investment,2013,False,935
+Q4_2015,2015,4,2016-03-05,False,Investment,2014,False,150
+Q4_2015,2015,4,2016-03-05,False,Investment,2015,False,260
+Q4_2015,2015,4,2016-03-05,False,Investment,2016,True,130
+Q4_2015,2015,4,2016-03-05,False,Total Demand,2013,False,8560
+Q4_2015,2015,4,2016-03-05,False,Total Demand,2014,False,7995
+Q4_2015,2015,4,2016-03-05,False,Total Demand,2015,False,8205
+Q4_2015,2015,4,2016-03-05,False,Total Demand,2016,True,8165
+Q4_2015,2015,4,2016-03-05,False,Balance,2013,False,-720
+Q4_2015,2015,4,2016-03-05,False,Balance,2014,False,-725
+Q4_2015,2015,4,2016-03-05,False,Balance,2015,False,-380
+Q4_2015,2015,4,2016-03-05,False,Balance,2016,True,-135
+Q4_2015,2015,4,2016-03-05,False,Above Ground Stocks,2013,False,4140
+Q4_2015,2015,4,2016-03-05,False,Above Ground Stocks,2014,False,3420
+Q4_2015,2015,4,2016-03-05,False,Above Ground Stocks,2015,False,2695
+Q4_2015,2015,4,2016-03-05,False,Above Ground Stocks,2016,True,2315
+Q1_2016,2016,1,2016-05-15,False,Total Mining Supply,2013,False,5855
+Q1_2016,2016,1,2016-05-15,False,Total Mining Supply,2014,False,5230
+Q1_2016,2016,1,2016-05-15,False,Total Mining Supply,2015,False,6195
+Q1_2016,2016,1,2016-05-15,False,Total Mining Supply,2016,True,5995
+Q1_2016,2016,1,2016-05-15,False,Recycling,2013,False,1985
+Q1_2016,2016,1,2016-05-15,False,Recycling,2014,False,2040
+Q1_2016,2016,1,2016-05-15,False,Recycling,2015,False,1710
+Q1_2016,2016,1,2016-05-15,False,Recycling,2016,True,1805
+Q1_2016,2016,1,2016-05-15,False,Total Supply,2013,False,7840
+Q1_2016,2016,1,2016-05-15,False,Total Supply,2014,False,7270
+Q1_2016,2016,1,2016-05-15,False,Total Supply,2015,False,7905
+Q1_2016,2016,1,2016-05-15,False,Total Supply,2016,True,7800
+Q1_2016,2016,1,2016-05-15,False,Automotive,2013,False,3150
+Q1_2016,2016,1,2016-05-15,False,Automotive,2014,False,3280
+Q1_2016,2016,1,2016-05-15,False,Automotive,2015,False,3445
+Q1_2016,2016,1,2016-05-15,False,Automotive,2016,True,3425
+Q1_2016,2016,1,2016-05-15,False,Jewellery,2013,False,2945
+Q1_2016,2016,1,2016-05-15,False,Jewellery,2014,False,3000
+Q1_2016,2016,1,2016-05-15,False,Jewellery,2015,False,2880
+Q1_2016,2016,1,2016-05-15,False,Jewellery,2016,True,2895
+Q1_2016,2016,1,2016-05-15,False,Industrial,2013,False,1520
+Q1_2016,2016,1,2016-05-15,False,Industrial,2014,False,1550
+Q1_2016,2016,1,2016-05-15,False,Industrial,2015,False,1630
+Q1_2016,2016,1,2016-05-15,False,Industrial,2016,True,1585
+Q1_2016,2016,1,2016-05-15,False,Investment,2013,False,935
+Q1_2016,2016,1,2016-05-15,False,Investment,2014,False,150
+Q1_2016,2016,1,2016-05-15,False,Investment,2015,False,265
+Q1_2016,2016,1,2016-05-15,False,Investment,2016,True,350
+Q1_2016,2016,1,2016-05-15,False,Total Demand,2013,False,8550
+Q1_2016,2016,1,2016-05-15,False,Total Demand,2014,False,7980
+Q1_2016,2016,1,2016-05-15,False,Total Demand,2015,False,8220
+Q1_2016,2016,1,2016-05-15,False,Total Demand,2016,True,8255
+Q1_2016,2016,1,2016-05-15,False,Balance,2013,False,-710
+Q1_2016,2016,1,2016-05-15,False,Balance,2014,False,-710
+Q1_2016,2016,1,2016-05-15,False,Balance,2015,False,-315
+Q1_2016,2016,1,2016-05-15,False,Balance,2016,True,-455
+Q1_2016,2016,1,2016-05-15,False,Above Ground Stocks,2013,False,4140
+Q1_2016,2016,1,2016-05-15,False,Above Ground Stocks,2014,False,3430
+Q1_2016,2016,1,2016-05-15,False,Above Ground Stocks,2015,False,2720
+Q1_2016,2016,1,2016-05-15,False,Above Ground Stocks,2016,True,2405
+Q2_2016,2016,2,2016-09-09,False,Total Mining Supply,2013,False,5855
+Q2_2016,2016,2,2016-09-09,False,Total Mining Supply,2014,False,5230
+Q2_2016,2016,2,2016-09-09,False,Total Mining Supply,2015,False,6195
+Q2_2016,2016,2,2016-09-09,False,Total Mining Supply,2016,True,5985
+Q2_2016,2016,2,2016-09-09,False,Recycling,2013,False,1980
+Q2_2016,2016,2,2016-09-09,False,Recycling,2014,False,2035
+Q2_2016,2016,2,2016-09-09,False,Recycling,2015,False,1710
+Q2_2016,2016,2,2016-09-09,False,Recycling,2016,True,1745
+Q2_2016,2016,2,2016-09-09,False,Total Supply,2013,False,7835
+Q2_2016,2016,2,2016-09-09,False,Total Supply,2014,False,7265
+Q2_2016,2016,2,2016-09-09,False,Total Supply,2015,False,7905
+Q2_2016,2016,2,2016-09-09,False,Total Supply,2016,True,7730
+Q2_2016,2016,2,2016-09-09,False,Automotive,2013,False,3165
+Q2_2016,2016,2,2016-09-09,False,Automotive,2014,False,3300
+Q2_2016,2016,2,2016-09-09,False,Automotive,2015,False,3405
+Q2_2016,2016,2,2016-09-09,False,Automotive,2016,True,3390
+Q2_2016,2016,2,2016-09-09,False,Jewellery,2013,False,2945
+Q2_2016,2016,2,2016-09-09,False,Jewellery,2014,False,3000
+Q2_2016,2016,2,2016-09-09,False,Jewellery,2015,False,2880
+Q2_2016,2016,2,2016-09-09,False,Jewellery,2016,True,2885
+Q2_2016,2016,2,2016-09-09,False,Industrial,2013,False,1480
+Q2_2016,2016,2,2016-09-09,False,Industrial,2014,False,1535
+Q2_2016,2016,2,2016-09-09,False,Industrial,2015,False,1650
+Q2_2016,2016,2,2016-09-09,False,Industrial,2016,True,1625
+Q2_2016,2016,2,2016-09-09,False,Investment,2013,False,935
+Q2_2016,2016,2,2016-09-09,False,Investment,2014,False,150
+Q2_2016,2016,2,2016-09-09,False,Investment,2015,False,305
+Q2_2016,2016,2,2016-09-09,False,Investment,2016,True,350
+Q2_2016,2016,2,2016-09-09,False,Total Demand,2013,False,8525
+Q2_2016,2016,2,2016-09-09,False,Total Demand,2014,False,7985
+Q2_2016,2016,2,2016-09-09,False,Total Demand,2015,False,8240
+Q2_2016,2016,2,2016-09-09,False,Total Demand,2016,True,8250
+Q2_2016,2016,2,2016-09-09,False,Balance,2013,False,-690
+Q2_2016,2016,2,2016-09-09,False,Balance,2014,False,-720
+Q2_2016,2016,2,2016-09-09,False,Balance,2015,False,-335
+Q2_2016,2016,2,2016-09-09,False,Balance,2016,True,-520
+Q2_2016,2016,2,2016-09-09,False,Above Ground Stocks,2013,False,4140
+Q2_2016,2016,2,2016-09-09,False,Above Ground Stocks,2014,False,3450
+Q2_2016,2016,2,2016-09-09,False,Above Ground Stocks,2015,False,2730
+Q2_2016,2016,2,2016-09-09,False,Above Ground Stocks,2016,True,2395
+Q3_2016,2016,3,2016-11-15,False,Total Mining Supply,2015,False,6195
+Q3_2016,2016,3,2016-11-15,False,Total Mining Supply,2016,True,6010
+Q3_2016,2016,3,2016-11-15,False,Total Mining Supply,2017,True,6000
+Q3_2016,2016,3,2016-11-15,False,Recycling,2015,False,1710
+Q3_2016,2016,3,2016-11-15,False,Recycling,2016,True,1860
+Q3_2016,2016,3,2016-11-15,False,Recycling,2017,True,1745
+Q3_2016,2016,3,2016-11-15,False,Total Supply,2015,False,7905
+Q3_2016,2016,3,2016-11-15,False,Total Supply,2016,True,7870
+Q3_2016,2016,3,2016-11-15,False,Total Supply,2017,True,7745
+Q3_2016,2016,3,2016-11-15,False,Automotive,2015,False,3395
+Q3_2016,2016,3,2016-11-15,False,Automotive,2016,True,3390
+Q3_2016,2016,3,2016-11-15,False,Automotive,2017,True,3360
+Q3_2016,2016,3,2016-11-15,False,Jewellery,2015,False,2880
+Q3_2016,2016,3,2016-11-15,False,Jewellery,2016,True,2580
+Q3_2016,2016,3,2016-11-15,False,Jewellery,2017,True,2625
+Q3_2016,2016,3,2016-11-15,False,Industrial,2015,False,1685
+Q3_2016,2016,3,2016-11-15,False,Industrial,2016,True,1720
+Q3_2016,2016,3,2016-11-15,False,Industrial,2017,True,1610
+Q3_2016,2016,3,2016-11-15,False,Investment,2015,False,305
+Q3_2016,2016,3,2016-11-15,False,Investment,2016,True,350
+Q3_2016,2016,3,2016-11-15,False,Investment,2017,True,250
+Q3_2016,2016,3,2016-11-15,False,Total Demand,2015,False,8265
+Q3_2016,2016,3,2016-11-15,False,Total Demand,2016,True,8040
+Q3_2016,2016,3,2016-11-15,False,Total Demand,2017,True,7845
+Q3_2016,2016,3,2016-11-15,False,Balance,2015,False,-360
+Q3_2016,2016,3,2016-11-15,False,Balance,2016,True,-170
+Q3_2016,2016,3,2016-11-15,False,Balance,2017,True,-100
+Q3_2016,2016,3,2016-11-15,False,Above Ground Stocks,2015,False,4140
+Q3_2016,2016,3,2016-11-15,False,Above Ground Stocks,2016,True,2315
+Q3_2016,2016,3,2016-11-15,False,Above Ground Stocks,2017,True,2145
+Q4_2016,2016,4,2017-03-05,False,Total Mining Supply,2015,False,6195
+Q4_2016,2016,4,2017-03-05,False,Total Mining Supply,2016,False,6100
+Q4_2016,2016,4,2017-03-05,False,Total Mining Supply,2017,True,5900
+Q4_2016,2016,4,2017-03-05,False,Recycling,2015,False,1710
+Q4_2016,2016,4,2017-03-05,False,Recycling,2016,False,1865
+Q4_2016,2016,4,2017-03-05,False,Recycling,2017,True,1760
+Q4_2016,2016,4,2017-03-05,False,Total Supply,2015,False,7905
+Q4_2016,2016,4,2017-03-05,False,Total Supply,2016,False,7965
+Q4_2016,2016,4,2017-03-05,False,Total Supply,2017,True,7660
+Q4_2016,2016,4,2017-03-05,False,Automotive,2015,False,3385
+Q4_2016,2016,4,2017-03-05,False,Automotive,2016,False,3405
+Q4_2016,2016,4,2017-03-05,False,Automotive,2017,True,3390
+Q4_2016,2016,4,2017-03-05,False,Jewellery,2015,False,2880
+Q4_2016,2016,4,2017-03-05,False,Jewellery,2016,False,2565
+Q4_2016,2016,4,2017-03-05,False,Jewellery,2017,True,2530
+Q4_2016,2016,4,2017-03-05,False,Industrial,2015,False,1670
+Q4_2016,2016,4,2017-03-05,False,Industrial,2016,False,1760
+Q4_2016,2016,4,2017-03-05,False,Industrial,2017,True,1610
+Q4_2016,2016,4,2017-03-05,False,Investment,2015,False,305
+Q4_2016,2016,4,2017-03-05,False,Investment,2016,False,505
+Q4_2016,2016,4,2017-03-05,False,Investment,2017,True,250
+Q4_2016,2016,4,2017-03-05,False,Total Demand,2015,False,8240
+Q4_2016,2016,4,2017-03-05,False,Total Demand,2016,False,8235
+Q4_2016,2016,4,2017-03-05,False,Total Demand,2017,True,7780
+Q4_2016,2016,4,2017-03-05,False,Balance,2015,False,-335
+Q4_2016,2016,4,2017-03-05,False,Balance,2016,False,-270
+Q4_2016,2016,4,2017-03-05,False,Balance,2017,True,-120
+Q4_2016,2016,4,2017-03-05,False,Above Ground Stocks,2015,False,4140
+Q4_2016,2016,4,2017-03-05,False,Above Ground Stocks,2016,False,2340
+Q4_2016,2016,4,2017-03-05,False,Above Ground Stocks,2017,True,2070
+Q1_2017,2017,1,2017-05-15,False,Total Mining Supply,2015,False,6195
+Q1_2017,2017,1,2017-05-15,False,Total Mining Supply,2016,False,6055
+Q1_2017,2017,1,2017-05-15,False,Total Mining Supply,2017,True,5970
+Q1_2017,2017,1,2017-05-15,False,Recycling,2015,False,1710
+Q1_2017,2017,1,2017-05-15,False,Recycling,2016,False,1865
+Q1_2017,2017,1,2017-05-15,False,Recycling,2017,True,1760
+Q1_2017,2017,1,2017-05-15,False,Total Supply,2015,False,7905
+Q1_2017,2017,1,2017-05-15,False,Total Supply,2016,False,7920
+Q1_2017,2017,1,2017-05-15,False,Total Supply,2017,True,7730
+Q1_2017,2017,1,2017-05-15,False,Automotive,2015,False,3390
+Q1_2017,2017,1,2017-05-15,False,Automotive,2016,False,3435
+Q1_2017,2017,1,2017-05-15,False,Automotive,2017,True,3405
+Q1_2017,2017,1,2017-05-15,False,Jewellery,2015,False,2880
+Q1_2017,2017,1,2017-05-15,False,Jewellery,2016,False,2565
+Q1_2017,2017,1,2017-05-15,False,Jewellery,2017,True,2530
+Q1_2017,2017,1,2017-05-15,False,Industrial,2015,False,1670
+Q1_2017,2017,1,2017-05-15,False,Industrial,2016,False,1775
+Q1_2017,2017,1,2017-05-15,False,Industrial,2017,True,1610
+Q1_2017,2017,1,2017-05-15,False,Investment,2015,False,305
+Q1_2017,2017,1,2017-05-15,False,Investment,2016,False,505
+Q1_2017,2017,1,2017-05-15,False,Investment,2017,True,250
+Q1_2017,2017,1,2017-05-15,False,Total Demand,2015,False,8245
+Q1_2017,2017,1,2017-05-15,False,Total Demand,2016,False,8280
+Q1_2017,2017,1,2017-05-15,False,Total Demand,2017,True,7795
+Q1_2017,2017,1,2017-05-15,False,Balance,2015,False,-340
+Q1_2017,2017,1,2017-05-15,False,Balance,2016,False,-360
+Q1_2017,2017,1,2017-05-15,False,Balance,2017,True,-65
+Q1_2017,2017,1,2017-05-15,False,Above Ground Stocks,2015,False,4140
+Q1_2017,2017,1,2017-05-15,False,Above Ground Stocks,2016,False,2310
+Q1_2017,2017,1,2017-05-15,False,Above Ground Stocks,2017,True,1950
+Q3_2017,2017,3,2017-11-15,False,Total Mining Supply,2016,False,6065
+Q3_2017,2017,3,2017-11-15,False,Total Mining Supply,2017,True,5970
+Q3_2017,2017,3,2017-11-15,False,Total Mining Supply,2018,True,5855
+Q3_2017,2017,3,2017-11-15,False,Recycling,2016,False,1855
+Q3_2017,2017,3,2017-11-15,False,Recycling,2017,True,1860
+Q3_2017,2017,3,2017-11-15,False,Recycling,2018,True,1900
+Q3_2017,2017,3,2017-11-15,False,Total Supply,2016,False,7920
+Q3_2017,2017,3,2017-11-15,False,Total Supply,2017,True,7830
+Q3_2017,2017,3,2017-11-15,False,Total Supply,2018,True,7755
+Q3_2017,2017,3,2017-11-15,False,Automotive,2016,False,3415
+Q3_2017,2017,3,2017-11-15,False,Automotive,2017,True,3365
+Q3_2017,2017,3,2017-11-15,False,Automotive,2018,True,3335
+Q3_2017,2017,3,2017-11-15,False,Jewellery,2016,False,2605
+Q3_2017,2017,3,2017-11-15,False,Jewellery,2017,True,2590
+Q3_2017,2017,3,2017-11-15,False,Jewellery,2018,True,2655
+Q3_2017,2017,3,2017-11-15,False,Industrial,2016,False,1795
+Q3_2017,2017,3,2017-11-15,False,Industrial,2017,True,1640
+Q3_2017,2017,3,2017-11-15,False,Industrial,2018,True,1790
+Q3_2017,2017,3,2017-11-15,False,Investment,2016,False,505
+Q3_2017,2017,3,2017-11-15,False,Investment,2017,True,250
+Q3_2017,2017,3,2017-11-15,False,Investment,2018,True,250
+Q3_2017,2017,3,2017-11-15,False,Total Demand,2016,False,8320
+Q3_2017,2017,3,2017-11-15,False,Total Demand,2017,True,7845
+Q3_2017,2017,3,2017-11-15,False,Total Demand,2018,True,8030
+Q3_2017,2017,3,2017-11-15,False,Balance,2016,False,-400
+Q3_2017,2017,3,2017-11-15,False,Balance,2017,True,-15
+Q3_2017,2017,3,2017-11-15,False,Balance,2018,True,-275
+Q3_2017,2017,3,2017-11-15,False,Above Ground Stocks,2016,False,4140
+Q3_2017,2017,3,2017-11-15,False,Above Ground Stocks,2017,True,1895
+Q3_2017,2017,3,2017-11-15,False,Above Ground Stocks,2018,True,1880
+Q4_2017,2017,4,2018-03-05,False,Total Mining Supply,2016,False,6065
+Q4_2017,2017,4,2018-03-05,False,Total Mining Supply,2017,False,6110
+Q4_2017,2017,4,2018-03-05,False,Total Mining Supply,2018,True,5850
+Q4_2017,2017,4,2018-03-05,False,Recycling,2016,False,1855
+Q4_2017,2017,4,2018-03-05,False,Recycling,2017,False,1905
+Q4_2017,2017,4,2018-03-05,False,Recycling,2018,True,1965
+Q4_2017,2017,4,2018-03-05,False,Total Supply,2016,False,7920
+Q4_2017,2017,4,2018-03-05,False,Total Supply,2017,False,8015
+Q4_2017,2017,4,2018-03-05,False,Total Supply,2018,True,7815
+Q4_2017,2017,4,2018-03-05,False,Automotive,2016,False,3490
+Q4_2017,2017,4,2018-03-05,False,Automotive,2017,False,3395
+Q4_2017,2017,4,2018-03-05,False,Automotive,2018,True,3285
+Q4_2017,2017,4,2018-03-05,False,Jewellery,2016,False,2505
+Q4_2017,2017,4,2018-03-05,False,Jewellery,2017,False,2460
+Q4_2017,2017,4,2018-03-05,False,Jewellery,2018,True,2505
+Q4_2017,2017,4,2018-03-05,False,Industrial,2016,False,1790
+Q4_2017,2017,4,2018-03-05,False,Industrial,2017,False,1650
+Q4_2017,2017,4,2018-03-05,False,Industrial,2018,True,1750
+Q4_2017,2017,4,2018-03-05,False,Investment,2016,False,535
+Q4_2017,2017,4,2018-03-05,False,Investment,2017,False,260
+Q4_2017,2017,4,2018-03-05,False,Investment,2018,True,250
+Q4_2017,2017,4,2018-03-05,False,Total Demand,2016,False,8320
+Q4_2017,2017,4,2018-03-05,False,Total Demand,2017,False,7765
+Q4_2017,2017,4,2018-03-05,False,Total Demand,2018,True,7790
+Q4_2017,2017,4,2018-03-05,False,Balance,2016,False,-400
+Q4_2017,2017,4,2018-03-05,False,Balance,2017,False,250
+Q4_2017,2017,4,2018-03-05,False,Balance,2018,True,25
+Q4_2017,2017,4,2018-03-05,False,Above Ground Stocks,2016,False,4140
+Q4_2017,2017,4,2018-03-05,False,Above Ground Stocks,2017,False,1905
+Q4_2017,2017,4,2018-03-05,False,Above Ground Stocks,2018,True,2155
+Q1_2018,2018,1,2018-05-15,False,Total Mining Supply,2016,False,6065
+Q1_2018,2018,1,2018-05-15,False,Total Mining Supply,2017,False,6175
+Q1_2018,2018,1,2018-05-15,False,Total Mining Supply,2018,True,6015
+Q1_2018,2018,1,2018-05-15,False,Recycling,2016,False,1855
+Q1_2018,2018,1,2018-05-15,False,Recycling,2017,False,1905
+Q1_2018,2018,1,2018-05-15,False,Recycling,2018,True,1960
+Q1_2018,2018,1,2018-05-15,False,Total Supply,2016,False,7920
+Q1_2018,2018,1,2018-05-15,False,Total Supply,2017,False,8080
+Q1_2018,2018,1,2018-05-15,False,Total Supply,2018,True,7975
+Q1_2018,2018,1,2018-05-15,False,Automotive,2016,False,3490
+Q1_2018,2018,1,2018-05-15,False,Automotive,2017,False,3390
+Q1_2018,2018,1,2018-05-15,False,Automotive,2018,True,3285
+Q1_2018,2018,1,2018-05-15,False,Jewellery,2016,False,2505
+Q1_2018,2018,1,2018-05-15,False,Jewellery,2017,False,2460
+Q1_2018,2018,1,2018-05-15,False,Jewellery,2018,True,2510
+Q1_2018,2018,1,2018-05-15,False,Industrial,2016,False,1790
+Q1_2018,2018,1,2018-05-15,False,Industrial,2017,False,1655
+Q1_2018,2018,1,2018-05-15,False,Industrial,2018,True,1750
+Q1_2018,2018,1,2018-05-15,False,Investment,2016,False,535
+Q1_2018,2018,1,2018-05-15,False,Investment,2017,False,260
+Q1_2018,2018,1,2018-05-15,False,Investment,2018,True,250
+Q1_2018,2018,1,2018-05-15,False,Total Demand,2016,False,8320
+Q1_2018,2018,1,2018-05-15,False,Total Demand,2017,False,7765
+Q1_2018,2018,1,2018-05-15,False,Total Demand,2018,True,7795
+Q1_2018,2018,1,2018-05-15,False,Balance,2016,False,-400
+Q1_2018,2018,1,2018-05-15,False,Balance,2017,False,315
+Q1_2018,2018,1,2018-05-15,False,Balance,2018,True,180
+Q1_2018,2018,1,2018-05-15,False,Above Ground Stocks,2016,False,4140
+Q1_2018,2018,1,2018-05-15,False,Above Ground Stocks,2017,False,1905
+Q1_2018,2018,1,2018-05-15,False,Above Ground Stocks,2018,True,2220
+Q2_2018,2018,2,2018-09-09,False,Total Mining Supply,2016,False,6065
+Q2_2018,2018,2,2018-09-09,False,Total Mining Supply,2017,False,6170
+Q2_2018,2018,2,2018-09-09,False,Total Mining Supply,2018,True,6015
+Q2_2018,2018,2,2018-09-09,False,Recycling,2016,False,1840
+Q2_2018,2018,2,2018-09-09,False,Recycling,2017,False,1890
+Q2_2018,2018,2,2018-09-09,False,Recycling,2018,True,1895
+Q2_2018,2018,2,2018-09-09,False,Total Supply,2016,False,7905
+Q2_2018,2018,2,2018-09-09,False,Total Supply,2017,False,8060
+Q2_2018,2018,2,2018-09-09,False,Total Supply,2018,True,7910
+Q2_2018,2018,2,2018-09-09,False,Automotive,2016,False,3460
+Q2_2018,2018,2,2018-09-09,False,Automotive,2017,False,3340
+Q2_2018,2018,2,2018-09-09,False,Automotive,2018,True,3130
+Q2_2018,2018,2,2018-09-09,False,Jewellery,2016,False,2505
+Q2_2018,2018,2,2018-09-09,False,Jewellery,2017,False,2460
+Q2_2018,2018,2,2018-09-09,False,Jewellery,2018,True,2445
+Q2_2018,2018,2,2018-09-09,False,Industrial,2016,False,1785
+Q2_2018,2018,2,2018-09-09,False,Industrial,2017,False,1700
+Q2_2018,2018,2,2018-09-09,False,Industrial,2018,True,1790
+Q2_2018,2018,2,2018-09-09,False,Investment,2016,False,535
+Q2_2018,2018,2,2018-09-09,False,Investment,2017,False,265
+Q2_2018,2018,2,2018-09-09,False,Investment,2018,True,250
+Q2_2018,2018,2,2018-09-09,False,Total Demand,2016,False,8285
+Q2_2018,2018,2,2018-09-09,False,Total Demand,2017,False,7765
+Q2_2018,2018,2,2018-09-09,False,Total Demand,2018,True,7615
+Q2_2018,2018,2,2018-09-09,False,Balance,2016,False,-380
+Q2_2018,2018,2,2018-09-09,False,Balance,2017,False,295
+Q2_2018,2018,2,2018-09-09,False,Balance,2018,True,295
+Q2_2018,2018,2,2018-09-09,False,Above Ground Stocks,2016,False,4140
+Q2_2018,2018,2,2018-09-09,False,Above Ground Stocks,2017,False,1905
+Q2_2018,2018,2,2018-09-09,False,Above Ground Stocks,2018,True,2200
+Q3_2018,2018,3,2018-11-15,False,Total Mining Supply,2017,False,6155
+Q3_2018,2018,3,2018-11-15,False,Total Mining Supply,2018,True,6065
+Q3_2018,2018,3,2018-11-15,False,Total Mining Supply,2019,True,6170
+Q3_2018,2018,3,2018-11-15,False,Recycling,2017,False,1890
+Q3_2018,2018,3,2018-11-15,False,Recycling,2018,True,1910
+Q3_2018,2018,3,2018-11-15,False,Recycling,2019,True,1935
+Q3_2018,2018,3,2018-11-15,False,Total Supply,2017,False,8045
+Q3_2018,2018,3,2018-11-15,False,Total Supply,2018,True,7975
+Q3_2018,2018,3,2018-11-15,False,Total Supply,2019,True,8105
+Q3_2018,2018,3,2018-11-15,False,Automotive,2017,False,3335
+Q3_2018,2018,3,2018-11-15,False,Automotive,2018,True,3110
+Q3_2018,2018,3,2018-11-15,False,Automotive,2019,True,3075
+Q3_2018,2018,3,2018-11-15,False,Jewellery,2017,False,2460
+Q3_2018,2018,3,2018-11-15,False,Jewellery,2018,True,2405
+Q3_2018,2018,3,2018-11-15,False,Jewellery,2019,True,2430
+Q3_2018,2018,3,2018-11-15,False,Industrial,2017,False,1700
+Q3_2018,2018,3,2018-11-15,False,Industrial,2018,True,1830
+Q3_2018,2018,3,2018-11-15,False,Industrial,2019,True,1895
+Q3_2018,2018,3,2018-11-15,False,Investment,2017,False,265
+Q3_2018,2018,3,2018-11-15,False,Investment,2018,True,125
+Q3_2018,2018,3,2018-11-15,False,Investment,2019,True,250
+Q3_2018,2018,3,2018-11-15,False,Total Demand,2017,False,7760
+Q3_2018,2018,3,2018-11-15,False,Total Demand,2018,True,7470
+Q3_2018,2018,3,2018-11-15,False,Total Demand,2019,True,7650
+Q3_2018,2018,3,2018-11-15,False,Balance,2017,False,285
+Q3_2018,2018,3,2018-11-15,False,Balance,2018,True,505
+Q3_2018,2018,3,2018-11-15,False,Balance,2019,True,455
+Q3_2018,2018,3,2018-11-15,False,Above Ground Stocks,2017,False,4140
+Q3_2018,2018,3,2018-11-15,False,Above Ground Stocks,2018,True,2160
+Q3_2018,2018,3,2018-11-15,False,Above Ground Stocks,2019,True,2665
+Q4_2018,2018,4,2019-03-06,True,Total Mining Supply,2017,False,6155
+Q4_2018,2018,4,2019-03-06,True,Total Mining Supply,2018,False,6100
+Q4_2018,2018,4,2019-03-06,True,Total Mining Supply,2019,True,6460
+Q4_2018,2018,4,2019-03-06,True,Recycling,2017,False,1890
+Q4_2018,2018,4,2019-03-06,True,Recycling,2018,False,1910
+Q4_2018,2018,4,2019-03-06,True,Recycling,2019,True,1960
+Q4_2018,2018,4,2019-03-06,True,Total Supply,2017,False,8045
+Q4_2018,2018,4,2019-03-06,True,Total Supply,2018,False,8010
+Q4_2018,2018,4,2019-03-06,True,Total Supply,2019,True,8420
+Q4_2018,2018,4,2019-03-06,True,Automotive,2017,False,3325
+Q4_2018,2018,4,2019-03-06,True,Automotive,2018,False,3100
+Q4_2018,2018,4,2019-03-06,True,Automotive,2019,True,3000
+Q4_2018,2018,4,2019-03-06,True,Jewellery,2017,False,2460
+Q4_2018,2018,4,2019-03-06,True,Jewellery,2018,False,2355
+Q4_2018,2018,4,2019-03-06,True,Jewellery,2019,True,2325
+Q4_2018,2018,4,2019-03-06,True,Industrial,2017,False,1700
+Q4_2018,2018,4,2019-03-06,True,Industrial,2018,False,1895
+Q4_2018,2018,4,2019-03-06,True,Industrial,2019,True,1885
+Q4_2018,2018,4,2019-03-06,True,Investment,2017,False,275
+Q4_2018,2018,4,2019-03-06,True,Investment,2018,False,15
+Q4_2018,2018,4,2019-03-06,True,Investment,2019,True,530
+Q4_2018,2018,4,2019-03-06,True,Total Demand,2017,False,7760
+Q4_2018,2018,4,2019-03-06,True,Total Demand,2018,False,7365
+Q4_2018,2018,4,2019-03-06,True,Total Demand,2019,True,7740
+Q4_2018,2018,4,2019-03-06,True,Balance,2017,False,285
+Q4_2018,2018,4,2019-03-06,True,Balance,2018,False,645
+Q4_2018,2018,4,2019-03-06,True,Balance,2019,True,680
+Q4_2018,2018,4,2019-03-06,True,Above Ground Stocks,2017,False,4140
+Q4_2018,2018,4,2019-03-06,True,Above Ground Stocks,2018,False,2170
+Q4_2018,2018,4,2019-03-06,True,Above Ground Stocks,2019,True,2815
+Q1_2019,2019,1,2019-05-13,True,Total Mining Supply,2017,False,6155
+Q1_2019,2019,1,2019-05-13,True,Total Mining Supply,2018,False,6115
+Q1_2019,2019,1,2019-05-13,True,Total Mining Supply,2019,True,6375
+Q1_2019,2019,1,2019-05-13,True,Recycling,2017,False,1890
+Q1_2019,2019,1,2019-05-13,True,Recycling,2018,False,1935
+Q1_2019,2019,1,2019-05-13,True,Recycling,2019,True,1995
+Q1_2019,2019,1,2019-05-13,True,Total Supply,2017,False,8045
+Q1_2019,2019,1,2019-05-13,True,Total Supply,2018,False,8050
+Q1_2019,2019,1,2019-05-13,True,Total Supply,2019,True,8370
+Q1_2019,2019,1,2019-05-13,True,Automotive,2017,False,3320
+Q1_2019,2019,1,2019-05-13,True,Automotive,2018,False,3105
+Q1_2019,2019,1,2019-05-13,True,Automotive,2019,True,3010
+Q1_2019,2019,1,2019-05-13,True,Jewellery,2017,False,2460
+Q1_2019,2019,1,2019-05-13,True,Jewellery,2018,False,2355
+Q1_2019,2019,1,2019-05-13,True,Jewellery,2019,True,2310
+Q1_2019,2019,1,2019-05-13,True,Industrial,2017,False,1700
+Q1_2019,2019,1,2019-05-13,True,Industrial,2018,False,1905
+Q1_2019,2019,1,2019-05-13,True,Industrial,2019,True,1890
+Q1_2019,2019,1,2019-05-13,True,Investment,2017,False,275
+Q1_2019,2019,1,2019-05-13,True,Investment,2018,False,15
+Q1_2019,2019,1,2019-05-13,True,Investment,2019,True,785
+Q1_2019,2019,1,2019-05-13,True,Total Demand,2017,False,7755
+Q1_2019,2019,1,2019-05-13,True,Total Demand,2018,False,7380
+Q1_2019,2019,1,2019-05-13,True,Total Demand,2019,True,7995
+Q1_2019,2019,1,2019-05-13,True,Balance,2017,False,290
+Q1_2019,2019,1,2019-05-13,True,Balance,2018,False,670
+Q1_2019,2019,1,2019-05-13,True,Balance,2019,True,375
+Q1_2019,2019,1,2019-05-13,True,Above Ground Stocks,2017,False,4140
+Q1_2019,2019,1,2019-05-13,True,Above Ground Stocks,2018,False,2175
+Q1_2019,2019,1,2019-05-13,True,Above Ground Stocks,2019,True,2845
+Q2_2019,2019,2,2019-09-06,True,Total Mining Supply,2017,False,6155
+Q2_2019,2019,2,2019-09-06,True,Total Mining Supply,2018,False,6125
+Q2_2019,2019,2,2019-09-06,True,Total Mining Supply,2019,True,6405
+Q2_2019,2019,2,2019-09-06,True,Recycling,2017,False,1890
+Q2_2019,2019,2,2019-09-06,True,Recycling,2018,False,1935
+Q2_2019,2019,2,2019-09-06,True,Recycling,2019,True,1985
+Q2_2019,2019,2,2019-09-06,True,Total Supply,2017,False,8045
+Q2_2019,2019,2,2019-09-06,True,Total Supply,2018,False,8060
+Q2_2019,2019,2,2019-09-06,True,Total Supply,2019,True,8390
+Q2_2019,2019,2,2019-09-06,True,Automotive,2017,False,3330
+Q2_2019,2019,2,2019-09-06,True,Automotive,2018,False,3125
+Q2_2019,2019,2,2019-09-06,True,Automotive,2019,True,3015
+Q2_2019,2019,2,2019-09-06,True,Jewellery,2017,False,2460
+Q2_2019,2019,2,2019-09-06,True,Jewellery,2018,False,2325
+Q2_2019,2019,2,2019-09-06,True,Jewellery,2019,True,2215
+Q2_2019,2019,2,2019-09-06,True,Industrial,2017,False,1680
+Q2_2019,2019,2,2019-09-06,True,Industrial,2018,False,1920
+Q2_2019,2019,2,2019-09-06,True,Industrial,2019,True,1910
+Q2_2019,2019,2,2019-09-06,True,Investment,2017,False,275
+Q2_2019,2019,2,2019-09-06,True,Investment,2018,False,15
+Q2_2019,2019,2,2019-09-06,True,Investment,2019,True,905
+Q2_2019,2019,2,2019-09-06,True,Total Demand,2017,False,7745
+Q2_2019,2019,2,2019-09-06,True,Total Demand,2018,False,7385
+Q2_2019,2019,2,2019-09-06,True,Total Demand,2019,True,8045
+Q2_2019,2019,2,2019-09-06,True,Balance,2017,False,300
+Q2_2019,2019,2,2019-09-06,True,Balance,2018,False,675
+Q2_2019,2019,2,2019-09-06,True,Balance,2019,True,345
+Q2_2019,2019,2,2019-09-06,True,Above Ground Stocks,2017,False,4140
+Q2_2019,2019,2,2019-09-06,True,Above Ground Stocks,2018,False,2315
+Q2_2019,2019,2,2019-09-06,True,Above Ground Stocks,2019,True,2990
+Q3_2019,2019,3,2019-11-21,True,Total Mining Supply,2018,False,6130
+Q3_2019,2019,3,2019-11-21,True,Total Mining Supply,2019,True,6205
+Q3_2019,2019,3,2019-11-21,True,Total Mining Supply,2020,True,6110
+Q3_2019,2019,3,2019-11-21,True,Recycling,2018,False,1935
+Q3_2019,2019,3,2019-11-21,True,Recycling,2019,True,1990
+Q3_2019,2019,3,2019-11-21,True,Recycling,2020,True,2000
+Q3_2019,2019,3,2019-11-21,True,Total Supply,2018,False,8065
+Q3_2019,2019,3,2019-11-21,True,Total Supply,2019,True,8195
+Q3_2019,2019,3,2019-11-21,True,Total Supply,2020,True,8110
+Q3_2019,2019,3,2019-11-21,True,Automotive,2018,False,3100
+Q3_2019,2019,3,2019-11-21,True,Automotive,2019,True,2960
+Q3_2019,2019,3,2019-11-21,True,Automotive,2020,True,2860
+Q3_2019,2019,3,2019-11-21,True,Jewellery,2018,False,2305
+Q3_2019,2019,3,2019-11-21,True,Jewellery,2019,True,2160
+Q3_2019,2019,3,2019-11-21,True,Jewellery,2020,True,2110
+Q3_2019,2019,3,2019-11-21,True,Industrial,2018,False,1915
+Q3_2019,2019,3,2019-11-21,True,Industrial,2019,True,1905
+Q3_2019,2019,3,2019-11-21,True,Industrial,2020,True,1945
+Q3_2019,2019,3,2019-11-21,True,Investment,2018,False,15
+Q3_2019,2019,3,2019-11-21,True,Investment,2019,True,1200
+Q3_2019,2019,3,2019-11-21,True,Investment,2020,True,525
+Q3_2019,2019,3,2019-11-21,True,Total Demand,2018,False,7335
+Q3_2019,2019,3,2019-11-21,True,Total Demand,2019,True,8225
+Q3_2019,2019,3,2019-11-21,True,Total Demand,2020,True,7440
+Q3_2019,2019,3,2019-11-21,True,Balance,2018,False,730
+Q3_2019,2019,3,2019-11-21,True,Balance,2019,True,-30
+Q3_2019,2019,3,2019-11-21,True,Balance,2020,True,670
+Q3_2019,2019,3,2019-11-21,True,Above Ground Stocks,2018,False,4140
+Q3_2019,2019,3,2019-11-21,True,Above Ground Stocks,2019,True,3055
+Q3_2019,2019,3,2019-11-21,True,Above Ground Stocks,2020,True,3025
+Q4_2019,2019,4,2020-03-04,True,Total Mining Supply,2018,False,1425
+Q4_2019,2019,4,2020-03-04,True,Total Mining Supply,2019,False,1610
+Q4_2019,2019,4,2020-03-04,True,Total Mining Supply,2020,True,6130
+Q4_2019,2019,4,2020-03-04,True,Recycling,2018,False,500
+Q4_2019,2019,4,2020-03-04,True,Recycling,2019,False,505
+Q4_2019,2019,4,2020-03-04,True,Recycling,2020,True,1930
+Q4_2019,2019,4,2020-03-04,True,Total Supply,2018,False,1925
+Q4_2019,2019,4,2020-03-04,True,Total Supply,2019,False,2115
+Q4_2019,2019,4,2020-03-04,True,Total Supply,2020,True,8060
+Q4_2019,2019,4,2020-03-04,True,Automotive,2018,False,680
+Q4_2019,2019,4,2020-03-04,True,Automotive,2019,False,700
+Q4_2019,2019,4,2020-03-04,True,Automotive,2020,True,3100
+Q4_2019,2019,4,2020-03-04,True,Jewellery,2018,False,525
+Q4_2019,2019,4,2020-03-04,True,Jewellery,2019,False,485
+Q4_2019,2019,4,2020-03-04,True,Jewellery,2020,True,2245
+Q4_2019,2019,4,2020-03-04,True,Industrial,2018,False,475
+Q4_2019,2019,4,2020-03-04,True,Industrial,2019,False,465
+Q4_2019,2019,4,2020-03-04,True,Industrial,2020,True,1910
+Q4_2019,2019,4,2020-03-04,True,Investment,2018,False,230
+Q4_2019,2019,4,2020-03-04,True,Investment,2019,False,80
+Q4_2019,2019,4,2020-03-04,True,Investment,2020,True,15
+Q4_2019,2019,4,2020-03-04,True,Total Demand,2018,False,1910
+Q4_2019,2019,4,2020-03-04,True,Total Demand,2019,False,1730
+Q4_2019,2019,4,2020-03-04,True,Total Demand,2020,True,7270
+Q4_2019,2019,4,2020-03-04,True,Balance,2018,False,15
+Q4_2019,2019,4,2020-03-04,True,Balance,2019,False,385
+Q4_2019,2019,4,2020-03-04,True,Balance,2020,True,790
+Q4_2019,2019,4,2020-03-04,True,Above Ground Stocks,2018,False,4140
+Q4_2019,2019,4,2020-03-04,True,Above Ground Stocks,2019,False,3160
+Q4_2019,2019,4,2020-03-04,True,Above Ground Stocks,2020,True,3225
+Q1_2020,2020,1,2020-05-18,True,Total Mining Supply,2017,False,6155
+Q1_2020,2020,1,2020-05-18,True,Total Mining Supply,2018,False,6130
+Q1_2020,2020,1,2020-05-18,True,Total Mining Supply,2019,False,6097
+Q1_2020,2020,1,2020-05-18,True,Total Mining Supply,2020,True,5287
+Q1_2020,2020,1,2020-05-18,True,Recycling,2017,False,1890
+Q1_2020,2020,1,2020-05-18,True,Recycling,2018,False,1930
+Q1_2020,2020,1,2020-05-18,True,Recycling,2019,False,2165
+Q1_2020,2020,1,2020-05-18,True,Recycling,2020,True,1910
+Q1_2020,2020,1,2020-05-18,True,Total Supply,2017,False,8045
+Q1_2020,2020,1,2020-05-18,True,Total Supply,2018,False,8060
+Q1_2020,2020,1,2020-05-18,True,Total Supply,2019,False,8262
+Q1_2020,2020,1,2020-05-18,True,Total Supply,2020,True,7197
+Q1_2020,2020,1,2020-05-18,True,Automotive,2017,False,3325
+Q1_2020,2020,1,2020-05-18,True,Automotive,2018,False,3100
+Q1_2020,2020,1,2020-05-18,True,Automotive,2019,False,2894
+Q1_2020,2020,1,2020-05-18,True,Automotive,2020,True,2481
+Q1_2020,2020,1,2020-05-18,True,Jewellery,2017,False,2460
+Q1_2020,2020,1,2020-05-18,True,Jewellery,2018,False,2245
+Q1_2020,2020,1,2020-05-18,True,Jewellery,2019,False,2100
+Q1_2020,2020,1,2020-05-18,True,Jewellery,2020,True,1785
+Q1_2020,2020,1,2020-05-18,True,Industrial,2017,False,1685
+Q1_2020,2020,1,2020-05-18,True,Industrial,2018,False,1910
+Q1_2020,2020,1,2020-05-18,True,Industrial,2019,False,2184
+Q1_2020,2020,1,2020-05-18,True,Industrial,2020,True,2080
+Q1_2020,2020,1,2020-05-18,True,Investment,2017,False,275
+Q1_2020,2020,1,2020-05-18,True,Investment,2018,False,15
+Q1_2020,2020,1,2020-05-18,True,Investment,2019,False,1252
+Q1_2020,2020,1,2020-05-18,True,Investment,2020,True,605
+Q1_2020,2020,1,2020-05-18,True,Total Demand,2017,False,7745
+Q1_2020,2020,1,2020-05-18,True,Total Demand,2018,False,7270
+Q1_2020,2020,1,2020-05-18,True,Total Demand,2019,False,8430
+Q1_2020,2020,1,2020-05-18,True,Total Demand,2020,True,6950
+Q1_2020,2020,1,2020-05-18,True,Balance,2017,False,300
+Q1_2020,2020,1,2020-05-18,True,Balance,2018,False,790
+Q1_2020,2020,1,2020-05-18,True,Balance,2019,False,-168
+Q1_2020,2020,1,2020-05-18,True,Balance,2020,True,247
+Q1_2020,2020,1,2020-05-18,True,Above Ground Stocks,2017,False,4140
+Q1_2020,2020,1,2020-05-18,True,Above Ground Stocks,2018,False,2370
+Q1_2020,2020,1,2020-05-18,True,Above Ground Stocks,2019,False,3160
+Q1_2020,2020,1,2020-05-18,True,Above Ground Stocks,2020,True,3482
+Q2_2020,2020,2,2020-09-08,True,Total Mining Supply,2017,False,6155
+Q2_2020,2020,2,2020-09-08,True,Total Mining Supply,2018,False,6135
+Q2_2020,2020,2,2020-09-08,True,Total Mining Supply,2019,False,6097
+Q2_2020,2020,2,2020-09-08,True,Total Mining Supply,2020,True,5187
+Q2_2020,2020,2,2020-09-08,True,Recycling,2017,False,1895
+Q2_2020,2020,2,2020-09-08,True,Recycling,2018,False,1935
+Q2_2020,2020,2,2020-09-08,True,Recycling,2019,False,2165
+Q2_2020,2020,2,2020-09-08,True,Recycling,2020,True,1915
+Q2_2020,2020,2,2020-09-08,True,Total Supply,2017,False,8050
+Q2_2020,2020,2,2020-09-08,True,Total Supply,2018,False,8070
+Q2_2020,2020,2,2020-09-08,True,Total Supply,2019,False,8261
+Q2_2020,2020,2,2020-09-08,True,Total Supply,2020,True,7102
+Q2_2020,2020,2,2020-09-08,True,Automotive,2017,False,3320
+Q2_2020,2020,2,2020-09-08,True,Automotive,2018,False,3090
+Q2_2020,2020,2,2020-09-08,True,Automotive,2019,False,2894
+Q2_2020,2020,2,2020-09-08,True,Automotive,2020,True,2429
+Q2_2020,2020,2,2020-09-08,True,Jewellery,2017,False,2460
+Q2_2020,2020,2,2020-09-08,True,Jewellery,2018,False,2245
+Q2_2020,2020,2,2020-09-08,True,Jewellery,2019,False,2100
+Q2_2020,2020,2,2020-09-08,True,Jewellery,2020,True,1813
+Q2_2020,2020,2,2020-09-08,True,Industrial,2017,False,1685
+Q2_2020,2020,2,2020-09-08,True,Industrial,2018,False,1920
+Q2_2020,2020,2,2020-09-08,True,Industrial,2019,False,2140
+Q2_2020,2020,2,2020-09-08,True,Industrial,2020,True,2136
+Q2_2020,2020,2,2020-09-08,True,Investment,2017,False,275
+Q2_2020,2020,2,2020-09-08,True,Investment,2018,False,15
+Q2_2020,2020,2,2020-09-08,True,Investment,2019,False,1252
+Q2_2020,2020,2,2020-09-08,True,Investment,2020,True,1060
+Q2_2020,2020,2,2020-09-08,True,Total Demand,2017,False,7740
+Q2_2020,2020,2,2020-09-08,True,Total Demand,2018,False,7270
+Q2_2020,2020,2,2020-09-08,True,Total Demand,2019,False,8386
+Q2_2020,2020,2,2020-09-08,True,Total Demand,2020,True,7438
+Q2_2020,2020,2,2020-09-08,True,Balance,2017,False,310
+Q2_2020,2020,2,2020-09-08,True,Balance,2018,False,800
+Q2_2020,2020,2,2020-09-08,True,Balance,2019,False,-125
+Q2_2020,2020,2,2020-09-08,True,Balance,2020,True,-336
+Q2_2020,2020,2,2020-09-08,True,Above Ground Stocks,2017,False,2380
+Q2_2020,2020,2,2020-09-08,True,Above Ground Stocks,2018,False,3180
+Q2_2020,2020,2,2020-09-08,True,Above Ground Stocks,2019,False,3525
+Q2_2020,2020,2,2020-09-08,True,Above Ground Stocks,2020,True,3189
+Q3_2020,2020,3,2020-11-18,True,Total Mining Supply,2018,False,6135
+Q3_2020,2020,3,2020-11-18,True,Total Mining Supply,2019,False,6097
+Q3_2020,2020,3,2020-11-18,True,Total Mining Supply,2020,True,4797
+Q3_2020,2020,3,2020-11-18,True,Total Mining Supply,2021,True,5772
+Q3_2020,2020,3,2020-11-18,True,Recycling,2018,False,1935
+Q3_2020,2020,3,2020-11-18,True,Recycling,2019,False,2165
+Q3_2020,2020,3,2020-11-18,True,Recycling,2020,True,1941
+Q3_2020,2020,3,2020-11-18,True,Recycling,2021,True,2093
+Q3_2020,2020,3,2020-11-18,True,Total Supply,2018,False,8070
+Q3_2020,2020,3,2020-11-18,True,Total Supply,2019,False,8261
+Q3_2020,2020,3,2020-11-18,True,Total Supply,2020,True,6738
+Q3_2020,2020,3,2020-11-18,True,Total Supply,2021,True,7865
+Q3_2020,2020,3,2020-11-18,True,Automotive,2018,False,3075
+Q3_2020,2020,3,2020-11-18,True,Automotive,2019,False,2885
+Q3_2020,2020,3,2020-11-18,True,Automotive,2020,True,2421
+Q3_2020,2020,3,2020-11-18,True,Automotive,2021,True,2996
+Q3_2020,2020,3,2020-11-18,True,Jewellery,2018,False,2245
+Q3_2020,2020,3,2020-11-18,True,Jewellery,2019,False,2100
+Q3_2020,2020,3,2020-11-18,True,Jewellery,2020,True,1826
+Q3_2020,2020,3,2020-11-18,True,Jewellery,2021,True,2072
+Q3_2020,2020,3,2020-11-18,True,Industrial,2018,False,1940
+Q3_2020,2020,3,2020-11-18,True,Industrial,2019,False,2112
+Q3_2020,2020,3,2020-11-18,True,Industrial,2020,True,2033
+Q3_2020,2020,3,2020-11-18,True,Industrial,2021,True,2276
+Q3_2020,2020,3,2020-11-18,True,Investment,2018,False,15
+Q3_2020,2020,3,2020-11-18,True,Investment,2019,False,1253
+Q3_2020,2020,3,2020-11-18,True,Investment,2020,True,1659
+Q3_2020,2020,3,2020-11-18,True,Investment,2021,True,745
+Q3_2020,2020,3,2020-11-18,True,Total Demand,2018,False,7275
+Q3_2020,2020,3,2020-11-18,True,Total Demand,2019,False,8350
+Q3_2020,2020,3,2020-11-18,True,Total Demand,2020,True,7940
+Q3_2020,2020,3,2020-11-18,True,Total Demand,2021,True,8089
+Q3_2020,2020,3,2020-11-18,True,Balance,2018,False,795
+Q3_2020,2020,3,2020-11-18,True,Balance,2019,False,-89
+Q3_2020,2020,3,2020-11-18,True,Balance,2020,True,-1202
+Q3_2020,2020,3,2020-11-18,True,Balance,2021,True,-224
+Q3_2020,2020,3,2020-11-18,True,Above Ground Stocks,2018,False,3165
+Q3_2020,2020,3,2020-11-18,True,Above Ground Stocks,2019,False,3561
+Q3_2020,2020,3,2020-11-18,True,Above Ground Stocks,2020,True,2360
+Q3_2020,2020,3,2020-11-18,True,Above Ground Stocks,2021,True,2135
+Q4_2020,2020,4,2021-03-10,True,Total Mining Supply,2018,False,6135
+Q4_2020,2020,4,2021-03-10,True,Total Mining Supply,2019,False,6097
+Q4_2020,2020,4,2021-03-10,True,Total Mining Supply,2020,False,4894
+Q4_2020,2020,4,2021-03-10,True,Total Mining Supply,2021,True,5899
+Q4_2020,2020,4,2021-03-10,True,Recycling,2018,False,1935
+Q4_2020,2020,4,2021-03-10,True,Recycling,2019,False,2122
+Q4_2020,2020,4,2021-03-10,True,Recycling,2020,False,1911
+Q4_2020,2020,4,2021-03-10,True,Recycling,2021,True,2033
+Q4_2020,2020,4,2021-03-10,True,Total Supply,2018,False,8070
+Q4_2020,2020,4,2021-03-10,True,Total Supply,2019,False,8219
+Q4_2020,2020,4,2021-03-10,True,Total Supply,2020,False,6806
+Q4_2020,2020,4,2021-03-10,True,Total Supply,2021,True,7932
+Q4_2020,2020,4,2021-03-10,True,Automotive,2018,False,3075
+Q4_2020,2020,4,2021-03-10,True,Automotive,2019,False,2868
+Q4_2020,2020,4,2021-03-10,True,Automotive,2020,False,2394
+Q4_2020,2020,4,2021-03-10,True,Automotive,2021,True,2999
+Q4_2020,2020,4,2021-03-10,True,Jewellery,2018,False,2245
+Q4_2020,2020,4,2021-03-10,True,Jewellery,2019,False,2099
+Q4_2020,2020,4,2021-03-10,True,Jewellery,2020,False,1820
+Q4_2020,2020,4,2021-03-10,True,Jewellery,2021,True,2054
+Q4_2020,2020,4,2021-03-10,True,Industrial,2018,False,1940
+Q4_2020,2020,4,2021-03-10,True,Industrial,2019,False,2086
+Q4_2020,2020,4,2021-03-10,True,Industrial,2020,False,1976
+Q4_2020,2020,4,2021-03-10,True,Industrial,2021,True,2183
+Q4_2020,2020,4,2021-03-10,True,Investment,2018,False,15
+Q4_2020,2020,4,2021-03-10,True,Investment,2019,False,1253
+Q4_2020,2020,4,2021-03-10,True,Investment,2020,False,1549
+Q4_2020,2020,4,2021-03-10,True,Investment,2021,True,756
+Q4_2020,2020,4,2021-03-10,True,Total Demand,2018,False,7275
+Q4_2020,2020,4,2021-03-10,True,Total Demand,2019,False,8307
+Q4_2020,2020,4,2021-03-10,True,Total Demand,2020,False,7738
+Q4_2020,2020,4,2021-03-10,True,Total Demand,2021,True,7992
+Q4_2020,2020,4,2021-03-10,True,Balance,2018,False,795
+Q4_2020,2020,4,2021-03-10,True,Balance,2019,False,-88
+Q4_2020,2020,4,2021-03-10,True,Balance,2020,False,-932
+Q4_2020,2020,4,2021-03-10,True,Balance,2021,True,-60
+Q4_2020,2020,4,2021-03-10,True,Above Ground Stocks,2018,False,3365
+Q4_2020,2020,4,2021-03-10,True,Above Ground Stocks,2019,False,3562
+Q4_2020,2020,4,2021-03-10,True,Above Ground Stocks,2020,False,2630
+Q4_2020,2020,4,2021-03-10,True,Above Ground Stocks,2021,True,2569
+Q1_2021,2021,1,2021-05-17,True,Total Mining Supply,2018,False,6135
+Q1_2021,2021,1,2021-05-17,True,Total Mining Supply,2019,False,6097
+Q1_2021,2021,1,2021-05-17,True,Total Mining Supply,2020,False,4888
+Q1_2021,2021,1,2021-05-17,True,Total Mining Supply,2021,True,5907
+Q1_2021,2021,1,2021-05-17,True,Recycling,2018,False,1935
+Q1_2021,2021,1,2021-05-17,True,Recycling,2019,False,2121
+Q1_2021,2021,1,2021-05-17,True,Recycling,2020,False,1912
+Q1_2021,2021,1,2021-05-17,True,Recycling,2021,True,1975
+Q1_2021,2021,1,2021-05-17,True,Total Supply,2018,False,8070
+Q1_2021,2021,1,2021-05-17,True,Total Supply,2019,False,8219
+Q1_2021,2021,1,2021-05-17,True,Total Supply,2020,False,6799
+Q1_2021,2021,1,2021-05-17,True,Total Supply,2021,True,7883
+Q1_2021,2021,1,2021-05-17,True,Automotive,2018,False,3075
+Q1_2021,2021,1,2021-05-17,True,Automotive,2019,False,2839
+Q1_2021,2021,1,2021-05-17,True,Automotive,2020,False,2368
+Q1_2021,2021,1,2021-05-17,True,Automotive,2021,True,2925
+Q1_2021,2021,1,2021-05-17,True,Jewellery,2018,False,2245
+Q1_2021,2021,1,2021-05-17,True,Jewellery,2019,False,2099
+Q1_2021,2021,1,2021-05-17,True,Jewellery,2020,False,1820
+Q1_2021,2021,1,2021-05-17,True,Jewellery,2021,True,1978
+Q1_2021,2021,1,2021-05-17,True,Industrial,2018,False,1935
+Q1_2021,2021,1,2021-05-17,True,Industrial,2019,False,2130
+Q1_2021,2021,1,2021-05-17,True,Industrial,2020,False,1926
+Q1_2021,2021,1,2021-05-17,True,Industrial,2021,True,2412
+Q1_2021,2021,1,2021-05-17,True,Investment,2018,False,15
+Q1_2021,2021,1,2021-05-17,True,Investment,2019,False,1253
+Q1_2021,2021,1,2021-05-17,True,Investment,2020,False,1549
+Q1_2021,2021,1,2021-05-17,True,Investment,2021,True,726
+Q1_2021,2021,1,2021-05-17,True,Total Demand,2018,False,7270
+Q1_2021,2021,1,2021-05-17,True,Total Demand,2019,False,8321
+Q1_2021,2021,1,2021-05-17,True,Total Demand,2020,False,7663
+Q1_2021,2021,1,2021-05-17,True,Total Demand,2021,True,8041
+Q1_2021,2021,1,2021-05-17,True,Balance,2018,False,800
+Q1_2021,2021,1,2021-05-17,True,Balance,2019,False,-102
+Q1_2021,2021,1,2021-05-17,True,Balance,2020,False,-863
+Q1_2021,2021,1,2021-05-17,True,Balance,2021,True,-158
+Q1_2021,2021,1,2021-05-17,True,Above Ground Stocks,2018,False,3410
+Q1_2021,2021,1,2021-05-17,True,Above Ground Stocks,2019,False,3548
+Q1_2021,2021,1,2021-05-17,True,Above Ground Stocks,2020,False,2684
+Q1_2021,2021,1,2021-05-17,True,Above Ground Stocks,2021,True,2526
+Q2_2021,2021,2,2021-09-09,True,Total Mining Supply,2018,False,6135
+Q2_2021,2021,2,2021-09-09,True,Total Mining Supply,2019,False,6102
+Q2_2021,2021,2,2021-09-09,True,Total Mining Supply,2020,False,4906
+Q2_2021,2021,2,2021-09-09,True,Total Mining Supply,2021,True,6007
+Q2_2021,2021,2,2021-09-09,True,Recycling,2018,False,1935
+Q2_2021,2021,2,2021-09-09,True,Recycling,2019,False,2118
+Q2_2021,2021,2,2021-09-09,True,Recycling,2020,False,1905
+Q2_2021,2021,2,2021-09-09,True,Recycling,2021,True,1936
+Q2_2021,2021,2,2021-09-09,True,Total Supply,2018,False,8070
+Q2_2021,2021,2,2021-09-09,True,Total Supply,2019,False,8220
+Q2_2021,2021,2,2021-09-09,True,Total Supply,2020,False,6811
+Q2_2021,2021,2,2021-09-09,True,Total Supply,2021,True,7943
+Q2_2021,2021,2,2021-09-09,True,Automotive,2018,False,3075
+Q2_2021,2021,2,2021-09-09,True,Automotive,2019,False,2838
+Q2_2021,2021,2,2021-09-09,True,Automotive,2020,False,2366
+Q2_2021,2021,2,2021-09-09,True,Automotive,2021,True,2895
+Q2_2021,2021,2,2021-09-09,True,Jewellery,2018,False,2245
+Q2_2021,2021,2,2021-09-09,True,Jewellery,2019,False,2099
+Q2_2021,2021,2,2021-09-09,True,Jewellery,2020,False,1820
+Q2_2021,2021,2,2021-09-09,True,Jewellery,2021,True,1889
+Q2_2021,2021,2,2021-09-09,True,Industrial,2018,False,1935
+Q2_2021,2021,2,2021-09-09,True,Industrial,2019,False,2129
+Q2_2021,2021,2,2021-09-09,True,Industrial,2020,False,1955
+Q2_2021,2021,2,2021-09-09,True,Industrial,2021,True,2448
+Q2_2021,2021,2,2021-09-09,True,Investment,2018,False,15
+Q2_2021,2021,2,2021-09-09,True,Investment,2019,False,1253
+Q2_2021,2021,2,2021-09-09,True,Investment,2020,False,1554
+Q2_2021,2021,2,2021-09-09,True,Investment,2021,True,521
+Q2_2021,2021,2,2021-09-09,True,Total Demand,2018,False,7270
+Q2_2021,2021,2,2021-09-09,True,Total Demand,2019,False,8319
+Q2_2021,2021,2,2021-09-09,True,Total Demand,2020,False,7694
+Q2_2021,2021,2,2021-09-09,True,Total Demand,2021,True,7753
+Q2_2021,2021,2,2021-09-09,True,Balance,2018,False,800
+Q2_2021,2021,2,2021-09-09,True,Balance,2019,False,-99
+Q2_2021,2021,2,2021-09-09,True,Balance,2020,False,-883
+Q2_2021,2021,2,2021-09-09,True,Balance,2021,True,190
+Q2_2021,2021,2,2021-09-09,True,Above Ground Stocks,2018,False,3270
+Q2_2021,2021,2,2021-09-09,True,Above Ground Stocks,2019,False,3551
+Q2_2021,2021,2,2021-09-09,True,Above Ground Stocks,2020,False,2667
+Q2_2021,2021,2,2021-09-09,True,Above Ground Stocks,2021,True,2857
+Q3_2021,2021,3,2021-11-24,True,Total Mining Supply,2019,False,6102
+Q3_2021,2021,3,2021-11-24,True,Total Mining Supply,2020,False,4906
+Q3_2021,2021,3,2021-11-24,True,Total Mining Supply,2021,True,6137
+Q3_2021,2021,3,2021-11-24,True,Total Mining Supply,2022,True,6203
+Q3_2021,2021,3,2021-11-24,True,Recycling,2019,False,2117
+Q3_2021,2021,3,2021-11-24,True,Recycling,2020,False,1916
+Q3_2021,2021,3,2021-11-24,True,Recycling,2021,True,1977
+Q3_2021,2021,3,2021-11-24,True,Recycling,2022,True,2032
+Q3_2021,2021,3,2021-11-24,True,Total Supply,2019,False,8219
+Q3_2021,2021,3,2021-11-24,True,Total Supply,2020,False,6821
+Q3_2021,2021,3,2021-11-24,True,Total Supply,2021,True,8114
+Q3_2021,2021,3,2021-11-24,True,Total Supply,2022,True,8235
+Q3_2021,2021,3,2021-11-24,True,Automotive,2019,False,2836
+Q3_2021,2021,3,2021-11-24,True,Automotive,2020,False,2365
+Q3_2021,2021,3,2021-11-24,True,Automotive,2021,True,2704
+Q3_2021,2021,3,2021-11-24,True,Automotive,2022,True,3237
+Q3_2021,2021,3,2021-11-24,True,Jewellery,2019,False,2099
+Q3_2021,2021,3,2021-11-24,True,Jewellery,2020,False,1820
+Q3_2021,2021,3,2021-11-24,True,Jewellery,2021,True,1914
+Q3_2021,2021,3,2021-11-24,True,Jewellery,2022,True,1890
+Q3_2021,2021,3,2021-11-24,True,Industrial,2019,False,2127
+Q3_2021,2021,3,2021-11-24,True,Industrial,2020,False,1987
+Q3_2021,2021,3,2021-11-24,True,Industrial,2021,True,2501
+Q3_2021,2021,3,2021-11-24,True,Industrial,2022,True,2169
+Q3_2021,2021,3,2021-11-24,True,Investment,2019,False,1253
+Q3_2021,2021,3,2021-11-24,True,Investment,2020,False,1554
+Q3_2021,2021,3,2021-11-24,True,Investment,2021,True,225
+Q3_2021,2021,3,2021-11-24,True,Investment,2022,True,302
+Q3_2021,2021,3,2021-11-24,True,Total Demand,2019,False,8315
+Q3_2021,2021,3,2021-11-24,True,Total Demand,2020,False,7726
+Q3_2021,2021,3,2021-11-24,True,Total Demand,2021,True,7345
+Q3_2021,2021,3,2021-11-24,True,Total Demand,2022,True,7598
+Q3_2021,2021,3,2021-11-24,True,Balance,2019,False,-96
+Q3_2021,2021,3,2021-11-24,True,Balance,2020,False,-904
+Q3_2021,2021,3,2021-11-24,True,Balance,2021,True,769
+Q3_2021,2021,3,2021-11-24,True,Balance,2022,True,637
+Q3_2021,2021,3,2021-11-24,True,Above Ground Stocks,2019,False,3554
+Q3_2021,2021,3,2021-11-24,True,Above Ground Stocks,2020,False,2650
+Q3_2021,2021,3,2021-11-24,True,Above Ground Stocks,2021,True,3419
+Q3_2021,2021,3,2021-11-24,True,Above Ground Stocks,2022,True,4056
+Q4_2021,2021,4,2022-03-09,True,Total Mining Supply,2019,False,6077
+Q4_2021,2021,4,2022-03-09,True,Total Mining Supply,2020,False,4906
+Q4_2021,2021,4,2022-03-09,True,Total Mining Supply,2021,False,6258
+Q4_2021,2021,4,2022-03-09,True,Total Mining Supply,2022,True,6119
+Q4_2021,2021,4,2022-03-09,True,Recycling,2019,False,2129
+Q4_2021,2021,4,2022-03-09,True,Recycling,2020,False,1926
+Q4_2021,2021,4,2022-03-09,True,Recycling,2021,False,1984
+Q4_2021,2021,4,2022-03-09,True,Recycling,2022,True,2063
+Q4_2021,2021,4,2022-03-09,True,Total Supply,2019,False,8206
+Q4_2021,2021,4,2022-03-09,True,Total Supply,2020,False,6832
+Q4_2021,2021,4,2022-03-09,True,Total Supply,2021,False,8242
+Q4_2021,2021,4,2022-03-09,True,Total Supply,2022,True,8182
+Q4_2021,2021,4,2022-03-09,True,Automotive,2019,False,2831
+Q4_2021,2021,4,2022-03-09,True,Automotive,2020,False,2370
+Q4_2021,2021,4,2022-03-09,True,Automotive,2021,False,2621
+Q4_2021,2021,4,2022-03-09,True,Automotive,2022,True,3129
+Q4_2021,2021,4,2022-03-09,True,Jewellery,2019,False,2099
+Q4_2021,2021,4,2022-03-09,True,Jewellery,2020,False,1820
+Q4_2021,2021,4,2022-03-09,True,Jewellery,2021,False,1915
+Q4_2021,2021,4,2022-03-09,True,Jewellery,2022,True,1940
+Q4_2021,2021,4,2022-03-09,True,Industrial,2019,False,2127
+Q4_2021,2021,4,2022-03-09,True,Industrial,2020,False,1982
+Q4_2021,2021,4,2022-03-09,True,Industrial,2021,False,2519
+Q4_2021,2021,4,2022-03-09,True,Industrial,2022,True,2132
+Q4_2021,2021,4,2022-03-09,True,Investment,2019,False,1237
+Q4_2021,2021,4,2022-03-09,True,Investment,2020,False,1546
+Q4_2021,2021,4,2022-03-09,True,Investment,2021,False,-43
+Q4_2021,2021,4,2022-03-09,True,Investment,2022,True,329
+Q4_2021,2021,4,2022-03-09,True,Total Demand,2019,False,8294
+Q4_2021,2021,4,2022-03-09,True,Total Demand,2020,False,7718
+Q4_2021,2021,4,2022-03-09,True,Total Demand,2021,False,7010
+Q4_2021,2021,4,2022-03-09,True,Total Demand,2022,True,7530
+Q4_2021,2021,4,2022-03-09,True,Balance,2019,False,-87
+Q4_2021,2021,4,2022-03-09,True,Balance,2020,False,-886
+Q4_2021,2021,4,2022-03-09,True,Balance,2021,False,1232
+Q4_2021,2021,4,2022-03-09,True,Balance,2022,True,652
+Q4_2021,2021,4,2022-03-09,True,Above Ground Stocks,2019,False,3563
+Q4_2021,2021,4,2022-03-09,True,Above Ground Stocks,2020,False,2677
+Q4_2021,2021,4,2022-03-09,True,Above Ground Stocks,2021,False,3908
+Q4_2021,2021,4,2022-03-09,True,Above Ground Stocks,2022,True,4560
+Q1_2022,2022,1,2022-05-16,True,Total Mining Supply,2019,False,6077
+Q1_2022,2022,1,2022-05-16,True,Total Mining Supply,2020,False,4906
+Q1_2022,2022,1,2022-05-16,True,Total Mining Supply,2021,False,6204
+Q1_2022,2022,1,2022-05-16,True,Total Mining Supply,2022,True,5872
+Q1_2022,2022,1,2022-05-16,True,Recycling,2019,False,2136
+Q1_2022,2022,1,2022-05-16,True,Recycling,2020,False,1930
+Q1_2022,2022,1,2022-05-16,True,Recycling,2021,False,1953
+Q1_2022,2022,1,2022-05-16,True,Recycling,2022,True,1909
+Q1_2022,2022,1,2022-05-16,True,Total Supply,2019,False,8213
+Q1_2022,2022,1,2022-05-16,True,Total Supply,2020,False,6836
+Q1_2022,2022,1,2022-05-16,True,Total Supply,2021,False,8156
+Q1_2022,2022,1,2022-05-16,True,Total Supply,2022,True,7781
+Q1_2022,2022,1,2022-05-16,True,Automotive,2019,False,2869
+Q1_2022,2022,1,2022-05-16,True,Automotive,2020,False,2402
+Q1_2022,2022,1,2022-05-16,True,Automotive,2021,False,2643
+Q1_2022,2022,1,2022-05-16,True,Automotive,2022,True,3055
+Q1_2022,2022,1,2022-05-16,True,Jewellery,2019,False,2099
+Q1_2022,2022,1,2022-05-16,True,Jewellery,2020,False,1820
+Q1_2022,2022,1,2022-05-16,True,Jewellery,2021,False,1923
+Q1_2022,2022,1,2022-05-16,True,Jewellery,2022,True,1886
+Q1_2022,2022,1,2022-05-16,True,Industrial,2019,False,2127
+Q1_2022,2022,1,2022-05-16,True,Industrial,2020,False,1978
+Q1_2022,2022,1,2022-05-16,True,Industrial,2021,False,2508
+Q1_2022,2022,1,2022-05-16,True,Industrial,2022,True,2109
+Q1_2022,2022,1,2022-05-16,True,Investment,2019,False,1237
+Q1_2022,2022,1,2022-05-16,True,Investment,2020,False,1544
+Q1_2022,2022,1,2022-05-16,True,Investment,2021,False,-45
+Q1_2022,2022,1,2022-05-16,True,Investment,2022,True,104
+Q1_2022,2022,1,2022-05-16,True,Total Demand,2019,False,8331
+Q1_2022,2022,1,2022-05-16,True,Total Demand,2020,False,7743
+Q1_2022,2022,1,2022-05-16,True,Total Demand,2021,False,7029
+Q1_2022,2022,1,2022-05-16,True,Total Demand,2022,True,7155
+Q1_2022,2022,1,2022-05-16,True,Balance,2019,False,-119
+Q1_2022,2022,1,2022-05-16,True,Balance,2020,False,-908
+Q1_2022,2022,1,2022-05-16,True,Balance,2021,False,1128
+Q1_2022,2022,1,2022-05-16,True,Balance,2022,True,627
+Q1_2022,2022,1,2022-05-16,True,Above Ground Stocks,2019,False,3531
+Q1_2022,2022,1,2022-05-16,True,Above Ground Stocks,2020,False,2624
+Q1_2022,2022,1,2022-05-16,True,Above Ground Stocks,2021,False,3752
+Q1_2022,2022,1,2022-05-16,True,Above Ground Stocks,2022,True,4379
+Q2_2022,2022,2,2022-09-05,True,Total Mining Supply,2019,False,6077
+Q2_2022,2022,2,2022-09-05,True,Total Mining Supply,2020,False,4906
+Q2_2022,2022,2,2022-09-05,True,Total Mining Supply,2021,False,6204
+Q2_2022,2022,2,2022-09-05,True,Total Mining Supply,2022,True,5794
+Q2_2022,2022,2,2022-09-05,True,Recycling,2019,False,2137
+Q2_2022,2022,2,2022-09-05,True,Recycling,2020,False,1929
+Q2_2022,2022,2,2022-09-05,True,Recycling,2021,False,1936
+Q2_2022,2022,2,2022-09-05,True,Recycling,2022,True,1720
+Q2_2022,2022,2,2022-09-05,True,Total Supply,2019,False,8214
+Q2_2022,2022,2,2022-09-05,True,Total Supply,2020,False,6834
+Q2_2022,2022,2,2022-09-05,True,Total Supply,2021,False,8140
+Q2_2022,2022,2,2022-09-05,True,Total Supply,2022,True,7514
+Q2_2022,2022,2,2022-09-05,True,Automotive,2019,False,2867
+Q2_2022,2022,2,2022-09-05,True,Automotive,2020,False,2401
+Q2_2022,2022,2,2022-09-05,True,Automotive,2021,False,2638
+Q2_2022,2022,2,2022-09-05,True,Automotive,2022,True,3015
+Q2_2022,2022,2,2022-09-05,True,Jewellery,2019,False,2106
+Q2_2022,2022,2,2022-09-05,True,Jewellery,2020,False,1830
+Q2_2022,2022,2,2022-09-05,True,Jewellery,2021,False,1953
+Q2_2022,2022,2,2022-09-05,True,Jewellery,2022,True,1959
+Q2_2022,2022,2,2022-09-05,True,Industrial,2019,False,2144
+Q2_2022,2022,2,2022-09-05,True,Industrial,2020,False,2018
+Q2_2022,2022,2,2022-09-05,True,Industrial,2021,False,2507
+Q2_2022,2022,2,2022-09-05,True,Industrial,2022,True,2132
+Q2_2022,2022,2,2022-09-05,True,Investment,2019,False,1237
+Q2_2022,2022,2,2022-09-05,True,Investment,2020,False,1544
+Q2_2022,2022,2,2022-09-05,True,Investment,2021,False,-45
+Q2_2022,2022,2,2022-09-05,True,Investment,2022,True,-565
+Q2_2022,2022,2,2022-09-05,True,Total Demand,2019,False,8353
+Q2_2022,2022,2,2022-09-05,True,Total Demand,2020,False,7794
+Q2_2022,2022,2,2022-09-05,True,Total Demand,2021,False,7053
+Q2_2022,2022,2,2022-09-05,True,Total Demand,2022,True,6540
+Q2_2022,2022,2,2022-09-05,True,Balance,2019,False,-139
+Q2_2022,2022,2,2022-09-05,True,Balance,2020,False,-959
+Q2_2022,2022,2,2022-09-05,True,Balance,2021,False,1087
+Q2_2022,2022,2,2022-09-05,True,Balance,2022,True,974
+Q2_2022,2022,2,2022-09-05,True,Above Ground Stocks,2019,False,3511
+Q2_2022,2022,2,2022-09-05,True,Above Ground Stocks,2020,False,2552
+Q2_2022,2022,2,2022-09-05,True,Above Ground Stocks,2021,False,3638
+Q2_2022,2022,2,2022-09-05,True,Above Ground Stocks,2022,True,4612
+Q3_2022,2022,3,2022-11-22,True,Total Mining Supply,2019,False,6077
+Q3_2022,2022,3,2022-11-22,True,Total Mining Supply,2020,False,4906
+Q3_2022,2022,3,2022-11-22,True,Total Mining Supply,2021,False,6204
+Q3_2022,2022,3,2022-11-22,True,Total Mining Supply,2022,True,5637
+Q3_2022,2022,3,2022-11-22,True,Total Mining Supply,2023,True,5726
+Q3_2022,2022,3,2022-11-22,True,Recycling,2019,False,2134
+Q3_2022,2022,3,2022-11-22,True,Recycling,2020,False,1930
+Q3_2022,2022,3,2022-11-22,True,Recycling,2021,False,1937
+Q3_2022,2022,3,2022-11-22,True,Recycling,2022,True,1669
+Q3_2022,2022,3,2022-11-22,True,Recycling,2023,True,1740
+Q3_2022,2022,3,2022-11-22,True,Total Supply,2019,False,8211
+Q3_2022,2022,3,2022-11-22,True,Total Supply,2020,False,6835
+Q3_2022,2022,3,2022-11-22,True,Total Supply,2021,False,8141
+Q3_2022,2022,3,2022-11-22,True,Total Supply,2022,True,7306
+Q3_2022,2022,3,2022-11-22,True,Total Supply,2023,True,7466
+Q3_2022,2022,3,2022-11-22,True,Automotive,2019,False,2867
+Q3_2022,2022,3,2022-11-22,True,Automotive,2020,False,2402
+Q3_2022,2022,3,2022-11-22,True,Automotive,2021,False,2635
+Q3_2022,2022,3,2022-11-22,True,Automotive,2022,True,2964
+Q3_2022,2022,3,2022-11-22,True,Automotive,2023,True,3288
+Q3_2022,2022,3,2022-11-22,True,Jewellery,2019,False,2106
+Q3_2022,2022,3,2022-11-22,True,Jewellery,2020,False,1830
+Q3_2022,2022,3,2022-11-22,True,Jewellery,2021,False,1953
+Q3_2022,2022,3,2022-11-22,True,Jewellery,2022,True,1953
+Q3_2022,2022,3,2022-11-22,True,Jewellery,2023,True,1954
+Q3_2022,2022,3,2022-11-22,True,Industrial,2019,False,2137
+Q3_2022,2022,3,2022-11-22,True,Industrial,2020,False,2098
+Q3_2022,2022,3,2022-11-22,True,Industrial,2021,False,2450
+Q3_2022,2022,3,2022-11-22,True,Industrial,2022,True,2110
+Q3_2022,2022,3,2022-11-22,True,Industrial,2023,True,2316
+Q3_2022,2022,3,2022-11-22,True,Investment,2019,False,1237
+Q3_2022,2022,3,2022-11-22,True,Investment,2020,False,1544
+Q3_2022,2022,3,2022-11-22,True,Investment,2021,False,-45
+Q3_2022,2022,3,2022-11-22,True,Investment,2022,True,-525
+Q3_2022,2022,3,2022-11-22,True,Investment,2023,True,212
+Q3_2022,2022,3,2022-11-22,True,Total Demand,2019,False,8347
+Q3_2022,2022,3,2022-11-22,True,Total Demand,2020,False,7874
+Q3_2022,2022,3,2022-11-22,True,Total Demand,2021,False,6993
+Q3_2022,2022,3,2022-11-22,True,Total Demand,2022,True,6502
+Q3_2022,2022,3,2022-11-22,True,Total Demand,2023,True,7770
+Q3_2022,2022,3,2022-11-22,True,Balance,2019,False,-136
+Q3_2022,2022,3,2022-11-22,True,Balance,2020,False,-1039
+Q3_2022,2022,3,2022-11-22,True,Balance,2021,False,1147
+Q3_2022,2022,3,2022-11-22,True,Balance,2022,True,804
+Q3_2022,2022,3,2022-11-22,True,Balance,2023,True,-303
+Q3_2022,2022,3,2022-11-22,True,Above Ground Stocks,2019,False,3514
+Q3_2022,2022,3,2022-11-22,True,Above Ground Stocks,2020,False,2476
+Q3_2022,2022,3,2022-11-22,True,Above Ground Stocks,2021,False,3623
+Q3_2022,2022,3,2022-11-22,True,Above Ground Stocks,2022,True,4426
+Q3_2022,2022,3,2022-11-22,True,Above Ground Stocks,2023,True,4123
+Q4_2022,2022,4,2023-03-08,True,Total Mining Supply,2019,False,6077
+Q4_2022,2022,4,2023-03-08,True,Total Mining Supply,2020,False,4906
+Q4_2022,2022,4,2023-03-08,True,Total Mining Supply,2021,False,6204
+Q4_2022,2022,4,2023-03-08,True,Total Mining Supply,2022,False,5545
+Q4_2022,2022,4,2023-03-08,True,Total Mining Supply,2023,True,5573
+Q4_2022,2022,4,2023-03-08,True,Recycling,2019,False,2134
+Q4_2022,2022,4,2023-03-08,True,Recycling,2020,False,1970
+Q4_2022,2022,4,2023-03-08,True,Recycling,2021,False,2032
+Q4_2022,2022,4,2023-03-08,True,Recycling,2022,False,1682
+Q4_2022,2022,4,2023-03-08,True,Recycling,2023,True,1856
+Q4_2022,2022,4,2023-03-08,True,Total Supply,2019,False,8211
+Q4_2022,2022,4,2023-03-08,True,Total Supply,2020,False,6876
+Q4_2022,2022,4,2023-03-08,True,Total Supply,2021,False,8235
+Q4_2022,2022,4,2023-03-08,True,Total Supply,2022,False,7227
+Q4_2022,2022,4,2023-03-08,True,Total Supply,2023,True,7428
+Q4_2022,2022,4,2023-03-08,True,Automotive,2019,False,2870
+Q4_2022,2022,4,2023-03-08,True,Automotive,2020,False,2403
+Q4_2022,2022,4,2023-03-08,True,Automotive,2021,False,2647
+Q4_2022,2022,4,2023-03-08,True,Automotive,2022,False,2957
+Q4_2022,2022,4,2023-03-08,True,Automotive,2023,True,3246
+Q4_2022,2022,4,2023-03-08,True,Jewellery,2019,False,2106
+Q4_2022,2022,4,2023-03-08,True,Jewellery,2020,False,1830
+Q4_2022,2022,4,2023-03-08,True,Jewellery,2021,False,1953
+Q4_2022,2022,4,2023-03-08,True,Jewellery,2022,False,1894
+Q4_2022,2022,4,2023-03-08,True,Jewellery,2023,True,1936
+Q4_2022,2022,4,2023-03-08,True,Industrial,2019,False,2142
+Q4_2022,2022,4,2023-03-08,True,Industrial,2020,False,2096
+Q4_2022,2022,4,2023-03-08,True,Industrial,2021,False,2530
+Q4_2022,2022,4,2023-03-08,True,Industrial,2022,False,2243
+Q4_2022,2022,4,2023-03-08,True,Industrial,2023,True,2505
+Q4_2022,2022,4,2023-03-08,True,Investment,2019,False,1233
+Q4_2022,2022,4,2023-03-08,True,Investment,2020,False,1536
+Q4_2022,2022,4,2023-03-08,True,Investment,2021,False,-53
+Q4_2022,2022,4,2023-03-08,True,Investment,2022,False,-643
+Q4_2022,2022,4,2023-03-08,True,Investment,2023,True,298
+Q4_2022,2022,4,2023-03-08,True,Total Demand,2019,False,8350
+Q4_2022,2022,4,2023-03-08,True,Total Demand,2020,False,7866
+Q4_2022,2022,4,2023-03-08,True,Total Demand,2021,False,7077
+Q4_2022,2022,4,2023-03-08,True,Total Demand,2022,False,6451
+Q4_2022,2022,4,2023-03-08,True,Total Demand,2023,True,7985
+Q4_2022,2022,4,2023-03-08,True,Balance,2019,False,-139
+Q4_2022,2022,4,2023-03-08,True,Balance,2020,False,-990
+Q4_2022,2022,4,2023-03-08,True,Balance,2021,False,1158
+Q4_2022,2022,4,2023-03-08,True,Balance,2022,False,776
+Q4_2022,2022,4,2023-03-08,True,Balance,2023,True,-556
+Q4_2022,2022,4,2023-03-08,True,Above Ground Stocks,2019,False,3511
+Q4_2022,2022,4,2023-03-08,True,Above Ground Stocks,2020,False,2521
+Q4_2022,2022,4,2023-03-08,True,Above Ground Stocks,2021,False,3679
+Q4_2022,2022,4,2023-03-08,True,Above Ground Stocks,2022,False,4455
+Q4_2022,2022,4,2023-03-08,True,Above Ground Stocks,2023,True,3899
+Q1_2023,2023,1,2023-05-15,True,Total Mining Supply,2019,False,6077
+Q1_2023,2023,1,2023-05-15,True,Total Mining Supply,2020,False,4906
+Q1_2023,2023,1,2023-05-15,True,Total Mining Supply,2021,False,6204
+Q1_2023,2023,1,2023-05-15,True,Total Mining Supply,2022,False,5565
+Q1_2023,2023,1,2023-05-15,True,Total Mining Supply,2023,True,5511
+Q1_2023,2023,1,2023-05-15,True,Recycling,2019,False,2112
+Q1_2023,2023,1,2023-05-15,True,Recycling,2020,False,1997
+Q1_2023,2023,1,2023-05-15,True,Recycling,2021,False,2079
+Q1_2023,2023,1,2023-05-15,True,Recycling,2022,False,1691
+Q1_2023,2023,1,2023-05-15,True,Recycling,2023,True,1682
+Q1_2023,2023,1,2023-05-15,True,Total Supply,2019,False,8189
+Q1_2023,2023,1,2023-05-15,True,Total Supply,2020,False,6903
+Q1_2023,2023,1,2023-05-15,True,Total Supply,2021,False,8283
+Q1_2023,2023,1,2023-05-15,True,Total Supply,2022,False,7256
+Q1_2023,2023,1,2023-05-15,True,Total Supply,2023,True,7193
+Q1_2023,2023,1,2023-05-15,True,Automotive,2019,False,2811
+Q1_2023,2023,1,2023-05-15,True,Automotive,2020,False,2324
+Q1_2023,2023,1,2023-05-15,True,Automotive,2021,False,2555
+Q1_2023,2023,1,2023-05-15,True,Automotive,2022,False,2897
+Q1_2023,2023,1,2023-05-15,True,Automotive,2023,True,3255
+Q1_2023,2023,1,2023-05-15,True,Jewellery,2019,False,2106
+Q1_2023,2023,1,2023-05-15,True,Jewellery,2020,False,1830
+Q1_2023,2023,1,2023-05-15,True,Jewellery,2021,False,1953
+Q1_2023,2023,1,2023-05-15,True,Jewellery,2022,False,1899
+Q1_2023,2023,1,2023-05-15,True,Jewellery,2023,True,1861
+Q1_2023,2023,1,2023-05-15,True,Industrial,2019,False,2257
+Q1_2023,2023,1,2023-05-15,True,Industrial,2020,False,2018
+Q1_2023,2023,1,2023-05-15,True,Industrial,2021,False,2538
+Q1_2023,2023,1,2023-05-15,True,Industrial,2022,False,2245
+Q1_2023,2023,1,2023-05-15,True,Industrial,2023,True,2628
+Q1_2023,2023,1,2023-05-15,True,Investment,2019,False,1233
+Q1_2023,2023,1,2023-05-15,True,Investment,2020,False,1536
+Q1_2023,2023,1,2023-05-15,True,Investment,2021,False,-56
+Q1_2023,2023,1,2023-05-15,True,Investment,2022,False,-640
+Q1_2023,2023,1,2023-05-15,True,Investment,2023,True,433
+Q1_2023,2023,1,2023-05-15,True,Total Demand,2019,False,8407
+Q1_2023,2023,1,2023-05-15,True,Total Demand,2020,False,7709
+Q1_2023,2023,1,2023-05-15,True,Total Demand,2021,False,6990
+Q1_2023,2023,1,2023-05-15,True,Total Demand,2022,False,6401
+Q1_2023,2023,1,2023-05-15,True,Total Demand,2023,True,8176
+Q1_2023,2023,1,2023-05-15,True,Balance,2019,False,-218
+Q1_2023,2023,1,2023-05-15,True,Balance,2020,False,-806
+Q1_2023,2023,1,2023-05-15,True,Balance,2021,False,1293
+Q1_2023,2023,1,2023-05-15,True,Balance,2022,False,854
+Q1_2023,2023,1,2023-05-15,True,Balance,2023,True,-983
+Q1_2023,2023,1,2023-05-15,True,Above Ground Stocks,2019,False,3432
+Q1_2023,2023,1,2023-05-15,True,Above Ground Stocks,2020,False,2626
+Q1_2023,2023,1,2023-05-15,True,Above Ground Stocks,2021,False,3919
+Q1_2023,2023,1,2023-05-15,True,Above Ground Stocks,2022,False,4774
+Q1_2023,2023,1,2023-05-15,True,Above Ground Stocks,2023,True,3790
+Q2_2023,2023,2,2023-09-06,True,Total Mining Supply,2019,False,6077
+Q2_2023,2023,2,2023-09-06,True,Total Mining Supply,2020,False,4906
+Q2_2023,2023,2,2023-09-06,True,Total Mining Supply,2021,False,6204
+Q2_2023,2023,2,2023-09-06,True,Total Mining Supply,2022,False,5565
+Q2_2023,2023,2,2023-09-06,True,Total Mining Supply,2023,True,5605
+Q2_2023,2023,2,2023-09-06,True,Recycling,2019,False,2112
+Q2_2023,2023,2,2023-09-06,True,Recycling,2020,False,1997
+Q2_2023,2023,2,2023-09-06,True,Recycling,2021,False,2079
+Q2_2023,2023,2,2023-09-06,True,Recycling,2022,False,1691
+Q2_2023,2023,2,2023-09-06,True,Recycling,2023,True,1620
+Q2_2023,2023,2,2023-09-06,True,Total Supply,2019,False,8189
+Q2_2023,2023,2,2023-09-06,True,Total Supply,2020,False,6902
+Q2_2023,2023,2,2023-09-06,True,Total Supply,2021,False,8283
+Q2_2023,2023,2,2023-09-06,True,Total Supply,2022,False,7256
+Q2_2023,2023,2,2023-09-06,True,Total Supply,2023,True,7224
+Q2_2023,2023,2,2023-09-06,True,Automotive,2019,False,2810
+Q2_2023,2023,2,2023-09-06,True,Automotive,2020,False,2324
+Q2_2023,2023,2,2023-09-06,True,Automotive,2021,False,2557
+Q2_2023,2023,2,2023-09-06,True,Automotive,2022,False,2902
+Q2_2023,2023,2,2023-09-06,True,Automotive,2023,True,3283
+Q2_2023,2023,2,2023-09-06,True,Jewellery,2019,False,2106
+Q2_2023,2023,2,2023-09-06,True,Jewellery,2020,False,1830
+Q2_2023,2023,2,2023-09-06,True,Jewellery,2021,False,1953
+Q2_2023,2023,2,2023-09-06,True,Jewellery,2022,False,1899
+Q2_2023,2023,2,2023-09-06,True,Jewellery,2023,True,1893
+Q2_2023,2023,2,2023-09-06,True,Industrial,2019,False,2248
+Q2_2023,2023,2,2023-09-06,True,Industrial,2020,False,2105
+Q2_2023,2023,2,2023-09-06,True,Industrial,2021,False,2534
+Q2_2023,2023,2,2023-09-06,True,Industrial,2022,False,2331
+Q2_2023,2023,2,2023-09-06,True,Industrial,2023,True,2667
+Q2_2023,2023,2,2023-09-06,True,Investment,2019,False,1233
+Q2_2023,2023,2,2023-09-06,True,Investment,2020,False,1536
+Q2_2023,2023,2,2023-09-06,True,Investment,2021,False,-56
+Q2_2023,2023,2,2023-09-06,True,Investment,2022,False,-640
+Q2_2023,2023,2,2023-09-06,True,Investment,2023,True,386
+Q2_2023,2023,2,2023-09-06,True,Total Demand,2019,False,8397
+Q2_2023,2023,2,2023-09-06,True,Total Demand,2020,False,7796
+Q2_2023,2023,2,2023-09-06,True,Total Demand,2021,False,6988
+Q2_2023,2023,2,2023-09-06,True,Total Demand,2022,False,6491
+Q2_2023,2023,2,2023-09-06,True,Total Demand,2023,True,8230
+Q2_2023,2023,2,2023-09-06,True,Balance,2019,False,-208
+Q2_2023,2023,2,2023-09-06,True,Balance,2020,False,-893
+Q2_2023,2023,2,2023-09-06,True,Balance,2021,False,1295
+Q2_2023,2023,2,2023-09-06,True,Balance,2022,False,764
+Q2_2023,2023,2,2023-09-06,True,Balance,2023,True,-1005
+Q2_2023,2023,2,2023-09-06,True,Above Ground Stocks,2019,False,3442
+Q2_2023,2023,2,2023-09-06,True,Above Ground Stocks,2020,False,2549
+Q2_2023,2023,2,2023-09-06,True,Above Ground Stocks,2021,False,3844
+Q2_2023,2023,2,2023-09-06,True,Above Ground Stocks,2022,False,4608
+Q2_2023,2023,2,2023-09-06,True,Above Ground Stocks,2023,True,3603
+Q3_2023,2023,3,2023-11-21,True,Total Mining Supply,2019,False,4906
+Q3_2023,2023,3,2023-11-21,True,Total Mining Supply,2020,False,6204
+Q3_2023,2023,3,2023-11-21,True,Total Mining Supply,2021,False,5565
+Q3_2023,2023,3,2023-11-21,True,Total Mining Supply,2022,False,5608
+Q3_2023,2023,3,2023-11-21,True,Total Mining Supply,2023,True,5743
+Q3_2023,2023,3,2023-11-21,True,Total Mining Supply,2024,True,1
+Q3_2023,2023,3,2023-11-21,True,Recycling,2019,False,1997
+Q3_2023,2023,3,2023-11-21,True,Recycling,2020,False,2078
+Q3_2023,2023,3,2023-11-21,True,Recycling,2021,False,1696
+Q3_2023,2023,3,2023-11-21,True,Recycling,2022,False,1471
+Q3_2023,2023,3,2023-11-21,True,Recycling,2023,True,1567
+Q3_2023,2023,3,2023-11-21,True,Recycling,2024,True,-13
+Q3_2023,2023,3,2023-11-21,True,Total Supply,2019,False,6902
+Q3_2023,2023,3,2023-11-21,True,Total Supply,2020,False,8282
+Q3_2023,2023,3,2023-11-21,True,Total Supply,2021,False,7261
+Q3_2023,2023,3,2023-11-21,True,Total Supply,2022,False,7079
+Q3_2023,2023,3,2023-11-21,True,Total Supply,2023,True,7310
+Q3_2023,2023,3,2023-11-21,True,Total Supply,2024,True,-3
+Q3_2023,2023,3,2023-11-21,True,Automotive,2019,False,2326
+Q3_2023,2023,3,2023-11-21,True,Automotive,2020,False,2555
+Q3_2023,2023,3,2023-11-21,True,Automotive,2021,False,2867
+Q3_2023,2023,3,2023-11-21,True,Automotive,2022,False,3262
+Q3_2023,2023,3,2023-11-21,True,Automotive,2023,True,3312
+Q3_2023,2023,3,2023-11-21,True,Automotive,2024,True,14
+Q3_2023,2023,3,2023-11-21,True,Jewellery,2019,False,1830
+Q3_2023,2023,3,2023-11-21,True,Jewellery,2020,False,1953
+Q3_2023,2023,3,2023-11-21,True,Jewellery,2021,False,1899
+Q3_2023,2023,3,2023-11-21,True,Jewellery,2022,False,1852
+Q3_2023,2023,3,2023-11-21,True,Jewellery,2023,True,1903
+Q3_2023,2023,3,2023-11-21,True,Jewellery,2024,True,-3
+Q3_2023,2023,3,2023-11-21,True,Industrial,2019,False,2075
+Q3_2023,2023,3,2023-11-21,True,Industrial,2020,False,2536
+Q3_2023,2023,3,2023-11-21,True,Industrial,2021,False,2335
+Q3_2023,2023,3,2023-11-21,True,Industrial,2022,False,2652
+Q3_2023,2023,3,2023-11-21,True,Industrial,2023,True,2367
+Q3_2023,2023,3,2023-11-21,True,Industrial,2024,True,14
+Q3_2023,2023,3,2023-11-21,True,Investment,2019,False,1536
+Q3_2023,2023,3,2023-11-21,True,Investment,2020,False,-56
+Q3_2023,2023,3,2023-11-21,True,Investment,2021,False,-640
+Q3_2023,2023,3,2023-11-21,True,Investment,2022,False,385
+Q3_2023,2023,3,2023-11-21,True,Investment,2023,True,82
+Q3_2023,2023,3,2023-11-21,True,Investment,2024,True,-79
+Q3_2023,2023,3,2023-11-21,True,Total Demand,2019,False,7768
+Q3_2023,2023,3,2023-11-21,True,Total Demand,2020,False,6988
+Q3_2023,2023,3,2023-11-21,True,Total Demand,2021,False,6461
+Q3_2023,2023,3,2023-11-21,True,Total Demand,2022,False,8150
+Q3_2023,2023,3,2023-11-21,True,Total Demand,2023,True,7663
+Q3_2023,2023,3,2023-11-21,True,Total Demand,2024,True,26
+Q3_2023,2023,3,2023-11-21,True,Balance,2019,False,-865
+Q3_2023,2023,3,2023-11-21,True,Balance,2020,False,1294
+Q3_2023,2023,3,2023-11-21,True,Balance,2021,False,800
+Q3_2023,2023,3,2023-11-21,True,Balance,2022,False,-1071
+Q3_2023,2023,3,2023-11-21,True,Balance,2023,True,-353
+Q3_2023,2023,3,2023-11-21,True,Balance,2024,True,-340
+Q3_2023,2023,3,2023-11-21,True,Above Ground Stocks,2019,False,2592
+Q3_2023,2023,3,2023-11-21,True,Above Ground Stocks,2020,False,3886
+Q3_2023,2023,3,2023-11-21,True,Above Ground Stocks,2021,False,4687
+Q3_2023,2023,3,2023-11-21,True,Above Ground Stocks,2022,False,3615
+Q3_2023,2023,3,2023-11-21,True,Above Ground Stocks,2023,True,3262
+Q3_2023,2023,3,2023-11-21,True,Above Ground Stocks,2024,True,-23
+Q4_2023,2023,4,2024-03-06,True,Total Mining Supply,2019,False,4906
+Q4_2023,2023,4,2024-03-06,True,Total Mining Supply,2020,False,6204
+Q4_2023,2023,4,2024-03-06,True,Total Mining Supply,2021,False,5565
+Q4_2023,2023,4,2024-03-06,True,Total Mining Supply,2022,False,5636
+Q4_2023,2023,4,2024-03-06,True,Total Mining Supply,2023,False,5489
+Q4_2023,2023,4,2024-03-06,True,Total Mining Supply,2024,True,1
+Q4_2023,2023,4,2024-03-06,True,Recycling,2019,False,1997
+Q4_2023,2023,4,2024-03-06,True,Recycling,2020,False,2096
+Q4_2023,2023,4,2024-03-06,True,Recycling,2021,False,1740
+Q4_2023,2023,4,2024-03-06,True,Recycling,2022,False,1495
+Q4_2023,2023,4,2024-03-06,True,Recycling,2023,False,1600
+Q4_2023,2023,4,2024-03-06,True,Recycling,2024,True,-14
+Q4_2023,2023,4,2024-03-06,True,Total Supply,2019,False,6903
+Q4_2023,2023,4,2024-03-06,True,Total Supply,2020,False,8300
+Q4_2023,2023,4,2024-03-06,True,Total Supply,2021,False,7305
+Q4_2023,2023,4,2024-03-06,True,Total Supply,2022,False,7131
+Q4_2023,2023,4,2024-03-06,True,Total Supply,2023,False,7089
+Q4_2023,2023,4,2024-03-06,True,Total Supply,2024,True,-2
+Q4_2023,2023,4,2024-03-06,True,Automotive,2019,False,2300
+Q4_2023,2023,4,2024-03-06,True,Automotive,2020,False,2521
+Q4_2023,2023,4,2024-03-06,True,Automotive,2021,False,2815
+Q4_2023,2023,4,2024-03-06,True,Automotive,2022,False,3272
+Q4_2023,2023,4,2024-03-06,True,Automotive,2023,False,3297
+Q4_2023,2023,4,2024-03-06,True,Automotive,2024,True,16
+Q4_2023,2023,4,2024-03-06,True,Jewellery,2019,False,1830
+Q4_2023,2023,4,2024-03-06,True,Jewellery,2020,False,1953
+Q4_2023,2023,4,2024-03-06,True,Jewellery,2021,False,1899
+Q4_2023,2023,4,2024-03-06,True,Jewellery,2022,False,1850
+Q4_2023,2023,4,2024-03-06,True,Jewellery,2023,False,1900
+Q4_2023,2023,4,2024-03-06,True,Jewellery,2024,True,-3
+Q4_2023,2023,4,2024-03-06,True,Industrial,2019,False,2094
+Q4_2023,2023,4,2024-03-06,True,Industrial,2020,False,2538
+Q4_2023,2023,4,2024-03-06,True,Industrial,2021,False,2336
+Q4_2023,2023,4,2024-03-06,True,Industrial,2022,False,2622
+Q4_2023,2023,4,2024-03-06,True,Industrial,2023,False,2258
+Q4_2023,2023,4,2024-03-06,True,Industrial,2024,True,12
+Q4_2023,2023,4,2024-03-06,True,Investment,2019,False,1536
+Q4_2023,2023,4,2024-03-06,True,Investment,2020,False,-56
+Q4_2023,2023,4,2024-03-06,True,Investment,2021,False,-644
+Q4_2023,2023,4,2024-03-06,True,Investment,2022,False,265
+Q4_2023,2023,4,2024-03-06,True,Investment,2023,False,52
+Q4_2023,2023,4,2024-03-06,True,Investment,2024,True,-80
+Q4_2023,2023,4,2024-03-06,True,Total Demand,2019,False,7760
+Q4_2023,2023,4,2024-03-06,True,Total Demand,2020,False,6955
+Q4_2023,2023,4,2024-03-06,True,Total Demand,2021,False,6406
+Q4_2023,2023,4,2024-03-06,True,Total Demand,2022,False,8009
+Q4_2023,2023,4,2024-03-06,True,Total Demand,2023,False,7507
+Q4_2023,2023,4,2024-03-06,True,Total Demand,2024,True,25
+Q4_2023,2023,4,2024-03-06,True,Balance,2019,False,-858
+Q4_2023,2023,4,2024-03-06,True,Balance,2020,False,1345
+Q4_2023,2023,4,2024-03-06,True,Balance,2021,False,899
+Q4_2023,2023,4,2024-03-06,True,Balance,2022,False,-878
+Q4_2023,2023,4,2024-03-06,True,Balance,2023,False,-418
+Q4_2023,2023,4,2024-03-06,True,Balance,2024,True,-29
+Q4_2023,2023,4,2024-03-06,True,Above Ground Stocks,2019,False,2634
+Q4_2023,2023,4,2024-03-06,True,Above Ground Stocks,2020,False,3979
+Q4_2023,2023,4,2024-03-06,True,Above Ground Stocks,2021,False,4878
+Q4_2023,2023,4,2024-03-06,True,Above Ground Stocks,2022,False,4000
+Q4_2023,2023,4,2024-03-06,True,Above Ground Stocks,2023,False,3581
+Q4_2023,2023,4,2024-03-06,True,Above Ground Stocks,2024,True,-18
+Q1_2024,2024,1,2024-05-13,True,Total Mining Supply,2019,False,4904
+Q1_2024,2024,1,2024-05-13,True,Total Mining Supply,2020,False,6202
+Q1_2024,2024,1,2024-05-13,True,Total Mining Supply,2021,False,5563
+Q1_2024,2024,1,2024-05-13,True,Total Mining Supply,2022,False,5615
+Q1_2024,2024,1,2024-05-13,True,Total Mining Supply,2023,False,5468
+Q1_2024,2024,1,2024-05-13,True,Total Mining Supply,2024,True,1
+Q1_2024,2024,1,2024-05-13,True,Recycling,2019,False,1996
+Q1_2024,2024,1,2024-05-13,True,Recycling,2020,False,2108
+Q1_2024,2024,1,2024-05-13,True,Recycling,2021,False,1764
+Q1_2024,2024,1,2024-05-13,True,Recycling,2022,False,1557
+Q1_2024,2024,1,2024-05-13,True,Recycling,2023,False,1642
+Q1_2024,2024,1,2024-05-13,True,Recycling,2024,True,-12
+Q1_2024,2024,1,2024-05-13,True,Total Supply,2019,False,6900
+Q1_2024,2024,1,2024-05-13,True,Total Supply,2020,False,8309
+Q1_2024,2024,1,2024-05-13,True,Total Supply,2021,False,7327
+Q1_2024,2024,1,2024-05-13,True,Total Supply,2022,False,7172
+Q1_2024,2024,1,2024-05-13,True,Total Supply,2023,False,7111
+Q1_2024,2024,1,2024-05-13,True,Total Supply,2024,True,-2
+Q1_2024,2024,1,2024-05-13,True,Automotive,2019,False,2274
+Q1_2024,2024,1,2024-05-13,True,Automotive,2020,False,2483
+Q1_2024,2024,1,2024-05-13,True,Automotive,2021,False,2763
+Q1_2024,2024,1,2024-05-13,True,Automotive,2022,False,3211
+Q1_2024,2024,1,2024-05-13,True,Automotive,2023,False,3269
+Q1_2024,2024,1,2024-05-13,True,Automotive,2024,True,16
+Q1_2024,2024,1,2024-05-13,True,Jewellery,2019,False,1830
+Q1_2024,2024,1,2024-05-13,True,Jewellery,2020,False,1953
+Q1_2024,2024,1,2024-05-13,True,Jewellery,2021,False,1899
+Q1_2024,2024,1,2024-05-13,True,Jewellery,2022,False,1868
+Q1_2024,2024,1,2024-05-13,True,Jewellery,2023,False,1978
+Q1_2024,2024,1,2024-05-13,True,Jewellery,2024,True,-2
+Q1_2024,2024,1,2024-05-13,True,Industrial,2019,False,2100
+Q1_2024,2024,1,2024-05-13,True,Industrial,2020,False,2531
+Q1_2024,2024,1,2024-05-13,True,Industrial,2021,False,2316
+Q1_2024,2024,1,2024-05-13,True,Industrial,2022,False,2626
+Q1_2024,2024,1,2024-05-13,True,Industrial,2023,False,2242
+Q1_2024,2024,1,2024-05-13,True,Industrial,2024,True,13
+Q1_2024,2024,1,2024-05-13,True,Investment,2019,False,1559
+Q1_2024,2024,1,2024-05-13,True,Investment,2020,False,-30
+Q1_2024,2024,1,2024-05-13,True,Investment,2021,False,-606
+Q1_2024,2024,1,2024-05-13,True,Investment,2022,False,318
+Q1_2024,2024,1,2024-05-13,True,Investment,2023,False,99
+Q1_2024,2024,1,2024-05-13,True,Investment,2024,True,-69
+Q1_2024,2024,1,2024-05-13,True,Total Demand,2019,False,7763
+Q1_2024,2024,1,2024-05-13,True,Total Demand,2020,False,6936
+Q1_2024,2024,1,2024-05-13,True,Total Demand,2021,False,6372
+Q1_2024,2024,1,2024-05-13,True,Total Demand,2022,False,8023
+Q1_2024,2024,1,2024-05-13,True,Total Demand,2023,False,7587
+Q1_2024,2024,1,2024-05-13,True,Total Demand,2024,True,26
+Q1_2024,2024,1,2024-05-13,True,Balance,2019,False,-863
+Q1_2024,2024,1,2024-05-13,True,Balance,2020,False,1373
+Q1_2024,2024,1,2024-05-13,True,Balance,2021,False,955
+Q1_2024,2024,1,2024-05-13,True,Balance,2022,False,-851
+Q1_2024,2024,1,2024-05-13,True,Balance,2023,False,-476
+Q1_2024,2024,1,2024-05-13,True,Balance,2024,True,-112
+Q1_2024,2024,1,2024-05-13,True,Above Ground Stocks,2019,False,2619
+Q1_2024,2024,1,2024-05-13,True,Above Ground Stocks,2020,False,3992
+Q1_2024,2024,1,2024-05-13,True,Above Ground Stocks,2021,False,4947
+Q1_2024,2024,1,2024-05-13,True,Above Ground Stocks,2022,False,4097
+Q1_2024,2024,1,2024-05-13,True,Above Ground Stocks,2023,False,3620
+Q1_2024,2024,1,2024-05-13,True,Above Ground Stocks,2024,True,-17
+Q2_2024,2024,2,2024-09-10,True,Total Mining Supply,2019,False,4904
+Q2_2024,2024,2,2024-09-10,True,Total Mining Supply,2020,False,6202
+Q2_2024,2024,2,2024-09-10,True,Total Mining Supply,2021,False,5563
+Q2_2024,2024,2,2024-09-10,True,Total Mining Supply,2022,False,5615
+Q2_2024,2024,2,2024-09-10,True,Total Mining Supply,2023,False,5508
+Q2_2024,2024,2,2024-09-10,True,Total Mining Supply,2024,True,1
+Q2_2024,2024,2,2024-09-10,True,Recycling,2019,False,1996
+Q2_2024,2024,2,2024-09-10,True,Recycling,2020,False,2107
+Q2_2024,2024,2,2024-09-10,True,Recycling,2021,False,1764
+Q2_2024,2024,2,2024-09-10,True,Recycling,2022,False,1545
+Q2_2024,2024,2,2024-09-10,True,Recycling,2023,False,1581
+Q2_2024,2024,2,2024-09-10,True,Recycling,2024,True,-12
+Q2_2024,2024,2,2024-09-10,True,Total Supply,2019,False,6900
+Q2_2024,2024,2,2024-09-10,True,Total Supply,2020,False,8309
+Q2_2024,2024,2,2024-09-10,True,Total Supply,2021,False,7327
+Q2_2024,2024,2,2024-09-10,True,Total Supply,2022,False,7160
+Q2_2024,2024,2,2024-09-10,True,Total Supply,2023,False,7089
+Q2_2024,2024,2,2024-09-10,True,Total Supply,2024,True,-2
+Q2_2024,2024,2,2024-09-10,True,Automotive,2019,False,2275
+Q2_2024,2024,2,2024-09-10,True,Automotive,2020,False,2492
+Q2_2024,2024,2,2024-09-10,True,Automotive,2021,False,2769
+Q2_2024,2024,2,2024-09-10,True,Automotive,2022,False,3215
+Q2_2024,2024,2,2024-09-10,True,Automotive,2023,False,3237
+Q2_2024,2024,2,2024-09-10,True,Automotive,2024,True,16
+Q2_2024,2024,2,2024-09-10,True,Jewellery,2019,False,1830
+Q2_2024,2024,2,2024-09-10,True,Jewellery,2020,False,1953
+Q2_2024,2024,2,2024-09-10,True,Jewellery,2021,False,1899
+Q2_2024,2024,2,2024-09-10,True,Jewellery,2022,False,1868
+Q2_2024,2024,2,2024-09-10,True,Jewellery,2023,False,1994
+Q2_2024,2024,2,2024-09-10,True,Jewellery,2024,True,-2
+Q2_2024,2024,2,2024-09-10,True,Industrial,2019,False,2102
+Q2_2024,2024,2,2024-09-10,True,Industrial,2020,False,2532
+Q2_2024,2024,2,2024-09-10,True,Industrial,2021,False,2315
+Q2_2024,2024,2,2024-09-10,True,Industrial,2022,False,2356
+Q2_2024,2024,2,2024-09-10,True,Industrial,2023,False,2369
+Q2_2024,2024,2,2024-09-10,True,Industrial,2024,True,2
+Q2_2024,2024,2,2024-09-10,True,Investment,2019,False,1582
+Q2_2024,2024,2,2024-09-10,True,Investment,2020,False,-3
+Q2_2024,2024,2,2024-09-10,True,Investment,2021,False,-516
+Q2_2024,2024,2,2024-09-10,True,Investment,2022,False,451
+Q2_2024,2024,2,2024-09-10,True,Investment,2023,False,517
+Q2_2024,2024,2,2024-09-10,True,Investment,2024,True,15
+Q2_2024,2024,2,2024-09-10,True,Total Demand,2019,False,7789
+Q2_2024,2024,2,2024-09-10,True,Total Demand,2020,False,6972
+Q2_2024,2024,2,2024-09-10,True,Total Demand,2021,False,6467
+Q2_2024,2024,2,2024-09-10,True,Total Demand,2022,False,7892
+Q2_2024,2024,2,2024-09-10,True,Total Demand,2023,False,8118
+Q2_2024,2024,2,2024-09-10,True,Total Demand,2024,True,22
+Q2_2024,2024,2,2024-09-10,True,Balance,2019,False,-888
+Q2_2024,2024,2,2024-09-10,True,Balance,2020,False,1337
+Q2_2024,2024,2,2024-09-10,True,Balance,2021,False,860
+Q2_2024,2024,2,2024-09-10,True,Balance,2022,False,-731
+Q2_2024,2024,2,2024-09-10,True,Balance,2023,False,-1028
+Q2_2024,2024,2,2024-09-10,True,Balance,2024,True,-441
+Q2_2024,2024,2,2024-09-10,True,Above Ground Stocks,2019,False,2569
+Q2_2024,2024,2,2024-09-10,True,Above Ground Stocks,2020,False,3906
+Q2_2024,2024,2,2024-09-10,True,Above Ground Stocks,2021,False,4765
+Q2_2024,2024,2,2024-09-10,True,Above Ground Stocks,2022,False,4034
+Q2_2024,2024,2,2024-09-10,True,Above Ground Stocks,2023,False,3006
+Q2_2024,2024,2,2024-09-10,True,Above Ground Stocks,2024,True,-15
+Q3_2024,2024,3,2024-11-26,True,Total Mining Supply,2021,False,6202
+Q3_2024,2024,3,2024-11-26,True,Total Mining Supply,2022,False,5563
+Q3_2024,2024,3,2024-11-26,True,Total Mining Supply,2023,False,5615
+Q3_2024,2024,3,2024-11-26,True,Total Mining Supply,2024,True,5683
+Q3_2024,2024,3,2024-11-26,True,Total Mining Supply,2025,True,5550
+Q3_2024,2024,3,2024-11-26,True,Recycling,2021,False,2106
+Q3_2024,2024,3,2024-11-26,True,Recycling,2022,False,1762
+Q3_2024,2024,3,2024-11-26,True,Recycling,2023,False,1544
+Q3_2024,2024,3,2024-11-26,True,Recycling,2024,True,1587
+Q3_2024,2024,3,2024-11-26,True,Recycling,2025,True,1774
+Q3_2024,2024,3,2024-11-26,True,Total Supply,2021,False,8308
+Q3_2024,2024,3,2024-11-26,True,Total Supply,2022,False,7326
+Q3_2024,2024,3,2024-11-26,True,Total Supply,2023,False,7159
+Q3_2024,2024,3,2024-11-26,True,Total Supply,2024,True,7269
+Q3_2024,2024,3,2024-11-26,True,Total Supply,2025,True,7324
+Q3_2024,2024,3,2024-11-26,True,Automotive,2021,False,2441
+Q3_2024,2024,3,2024-11-26,True,Automotive,2022,False,2751
+Q3_2024,2024,3,2024-11-26,True,Automotive,2023,False,3223
+Q3_2024,2024,3,2024-11-26,True,Automotive,2024,True,3173
+Q3_2024,2024,3,2024-11-26,True,Automotive,2025,True,3245
+Q3_2024,2024,3,2024-11-26,True,Jewellery,2021,False,1953
+Q3_2024,2024,3,2024-11-26,True,Jewellery,2022,False,1880
+Q3_2024,2024,3,2024-11-26,True,Jewellery,2023,False,1849
+Q3_2024,2024,3,2024-11-26,True,Jewellery,2024,True,1951
+Q3_2024,2024,3,2024-11-26,True,Jewellery,2025,True,1983
+Q3_2024,2024,3,2024-11-26,True,Industrial,2021,False,2526
+Q3_2024,2024,3,2024-11-26,True,Industrial,2022,False,2336
+Q3_2024,2024,3,2024-11-26,True,Industrial,2023,False,2449
+Q3_2024,2024,3,2024-11-26,True,Industrial,2024,True,2434
+Q3_2024,2024,3,2024-11-26,True,Industrial,2025,True,2216
+Q3_2024,2024,3,2024-11-26,True,Investment,2021,False,-3
+Q3_2024,2024,3,2024-11-26,True,Investment,2022,False,-516
+Q3_2024,2024,3,2024-11-26,True,Investment,2023,False,397
+Q3_2024,2024,3,2024-11-26,True,Investment,2024,True,393
+Q3_2024,2024,3,2024-11-26,True,Investment,2025,True,420
+Q3_2024,2024,3,2024-11-26,True,Total Demand,2021,False,6917
+Q3_2024,2024,3,2024-11-26,True,Total Demand,2022,False,6451
+Q3_2024,2024,3,2024-11-26,True,Total Demand,2023,False,7918
+Q3_2024,2024,3,2024-11-26,True,Total Demand,2024,True,7951
+Q3_2024,2024,3,2024-11-26,True,Total Demand,2025,True,7863
+Q3_2024,2024,3,2024-11-26,True,Balance,2021,False,1392
+Q3_2024,2024,3,2024-11-26,True,Balance,2022,False,874
+Q3_2024,2024,3,2024-11-26,True,Balance,2023,False,-759
+Q3_2024,2024,3,2024-11-26,True,Balance,2024,True,-682
+Q3_2024,2024,3,2024-11-26,True,Balance,2025,True,-539
+Q3_2024,2024,3,2024-11-26,True,Above Ground Stocks,2021,False,4119
+Q3_2024,2024,3,2024-11-26,True,Above Ground Stocks,2022,False,4993
+Q3_2024,2024,3,2024-11-26,True,Above Ground Stocks,2023,False,4235
+Q3_2024,2024,3,2024-11-26,True,Above Ground Stocks,2024,True,3553
+Q3_2024,2024,3,2024-11-26,True,Above Ground Stocks,2025,True,3014
+Q4_2024,2024,4,2025-03-05,True,Total Mining Supply,2021,False,6202
+Q4_2024,2024,4,2025-03-05,True,Total Mining Supply,2022,False,5563
+Q4_2024,2024,4,2025-03-05,True,Total Mining Supply,2023,False,5615
+Q4_2024,2024,4,2025-03-05,True,Total Mining Supply,2024,False,5807
+Q4_2024,2024,4,2025-03-05,True,Total Mining Supply,2025,True,5506
+Q4_2024,2024,4,2025-03-05,True,Recycling,2021,False,2091
+Q4_2024,2024,4,2025-03-05,True,Recycling,2022,False,1809
+Q4_2024,2024,4,2025-03-05,True,Recycling,2023,False,1499
+Q4_2024,2024,4,2025-03-05,True,Recycling,2024,False,1486
+Q4_2024,2024,4,2025-03-05,True,Recycling,2025,True,1496
+Q4_2024,2024,4,2025-03-05,True,Total Supply,2021,False,8293
+Q4_2024,2024,4,2025-03-05,True,Total Supply,2022,False,7372
+Q4_2024,2024,4,2025-03-05,True,Total Supply,2023,False,7114
+Q4_2024,2024,4,2025-03-05,True,Total Supply,2024,False,7293
+Q4_2024,2024,4,2025-03-05,True,Total Supply,2025,True,7002
+Q4_2024,2024,4,2025-03-05,True,Automotive,2021,False,2432
+Q4_2024,2024,4,2025-03-05,True,Automotive,2022,False,2734
+Q4_2024,2024,4,2025-03-05,True,Automotive,2023,False,3202
+Q4_2024,2024,4,2025-03-05,True,Automotive,2024,False,3130
+Q4_2024,2024,4,2025-03-05,True,Automotive,2025,True,3102
+Q4_2024,2024,4,2025-03-05,True,Jewellery,2021,False,1953
+Q4_2024,2024,4,2025-03-05,True,Jewellery,2022,False,1880
+Q4_2024,2024,4,2025-03-05,True,Jewellery,2023,False,1849
+Q4_2024,2024,4,2025-03-05,True,Jewellery,2024,False,1993
+Q4_2024,2024,4,2025-03-05,True,Jewellery,2025,True,2027
+Q4_2024,2024,4,2025-03-05,True,Industrial,2021,False,2514
+Q4_2024,2024,4,2025-03-05,True,Industrial,2022,False,2353
+Q4_2024,2024,4,2025-03-05,True,Industrial,2023,False,2475
+Q4_2024,2024,4,2025-03-05,True,Industrial,2024,False,2462
+Q4_2024,2024,4,2025-03-05,True,Industrial,2025,True,2116
+Q4_2024,2024,4,2025-03-05,True,Investment,2021,False,-3
+Q4_2024,2024,4,2025-03-05,True,Investment,2022,False,-516
+Q4_2024,2024,4,2025-03-05,True,Investment,2023,False,397
+Q4_2024,2024,4,2025-03-05,True,Investment,2024,False,702
+Q4_2024,2024,4,2025-03-05,True,Investment,2025,True,606
+Q4_2024,2024,4,2025-03-05,True,Total Demand,2021,False,6895
+Q4_2024,2024,4,2025-03-05,True,Total Demand,2022,False,6452
+Q4_2024,2024,4,2025-03-05,True,Total Demand,2023,False,7924
+Q4_2024,2024,4,2025-03-05,True,Total Demand,2024,False,8288
+Q4_2024,2024,4,2025-03-05,True,Total Demand,2025,True,7850
+Q4_2024,2024,4,2025-03-05,True,Balance,2021,False,1398
+Q4_2024,2024,4,2025-03-05,True,Balance,2022,False,920
+Q4_2024,2024,4,2025-03-05,True,Balance,2023,False,-809
+Q4_2024,2024,4,2025-03-05,True,Balance,2024,False,-995
+Q4_2024,2024,4,2025-03-05,True,Balance,2025,True,-848
+Q4_2024,2024,4,2025-03-05,True,Above Ground Stocks,2021,False,4267
+Q4_2024,2024,4,2025-03-05,True,Above Ground Stocks,2022,False,5187
+Q4_2024,2024,4,2025-03-05,True,Above Ground Stocks,2023,False,4378
+Q4_2024,2024,4,2025-03-05,True,Above Ground Stocks,2024,False,3383
+Q4_2024,2024,4,2025-03-05,True,Above Ground Stocks,2025,True,2535
+Q1_2025,2025,1,2025-05-19,True,Total Mining Supply,2021,False,6202
+Q1_2025,2025,1,2025-05-19,True,Total Mining Supply,2022,False,5563
+Q1_2025,2025,1,2025-05-19,True,Total Mining Supply,2023,False,5615
+Q1_2025,2025,1,2025-05-19,True,Total Mining Supply,2024,False,5782
+Q1_2025,2025,1,2025-05-19,True,Total Mining Supply,2025,True,5426
+Q1_2025,2025,1,2025-05-19,True,Recycling,2021,False,2107
+Q1_2025,2025,1,2025-05-19,True,Recycling,2022,False,1824
+Q1_2025,2025,1,2025-05-19,True,Recycling,2023,False,1515
+Q1_2025,2025,1,2025-05-19,True,Recycling,2024,False,1530
+Q1_2025,2025,1,2025-05-19,True,Recycling,2025,True,1573
+Q1_2025,2025,1,2025-05-19,True,Total Supply,2021,False,8309
+Q1_2025,2025,1,2025-05-19,True,Total Supply,2022,False,7387
+Q1_2025,2025,1,2025-05-19,True,Total Supply,2023,False,7130
+Q1_2025,2025,1,2025-05-19,True,Total Supply,2024,False,7311
+Q1_2025,2025,1,2025-05-19,True,Total Supply,2025,True,6999
+Q1_2025,2025,1,2025-05-19,True,Automotive,2021,False,2451
+Q1_2025,2025,1,2025-05-19,True,Automotive,2022,False,2775
+Q1_2025,2025,1,2025-05-19,True,Automotive,2023,False,3203
+Q1_2025,2025,1,2025-05-19,True,Automotive,2024,False,3106
+Q1_2025,2025,1,2025-05-19,True,Automotive,2025,True,3052
+Q1_2025,2025,1,2025-05-19,True,Jewellery,2021,False,1953
+Q1_2025,2025,1,2025-05-19,True,Jewellery,2022,False,1880
+Q1_2025,2025,1,2025-05-19,True,Jewellery,2023,False,1849
+Q1_2025,2025,1,2025-05-19,True,Jewellery,2024,False,2008
+Q1_2025,2025,1,2025-05-19,True,Jewellery,2025,True,2114
+Q1_2025,2025,1,2025-05-19,True,Industrial,2021,False,2561
+Q1_2025,2025,1,2025-05-19,True,Industrial,2022,False,2341
+Q1_2025,2025,1,2025-05-19,True,Industrial,2023,False,2576
+Q1_2025,2025,1,2025-05-19,True,Industrial,2024,False,2487
+Q1_2025,2025,1,2025-05-19,True,Industrial,2025,True,2111
+Q1_2025,2025,1,2025-05-19,True,Investment,2021,False,-3
+Q1_2025,2025,1,2025-05-19,True,Investment,2022,False,-516
+Q1_2025,2025,1,2025-05-19,True,Investment,2023,False,397
+Q1_2025,2025,1,2025-05-19,True,Investment,2024,False,702
+Q1_2025,2025,1,2025-05-19,True,Investment,2025,True,688
+Q1_2025,2025,1,2025-05-19,True,Total Demand,2021,False,6962
+Q1_2025,2025,1,2025-05-19,True,Total Demand,2022,False,6479
+Q1_2025,2025,1,2025-05-19,True,Total Demand,2023,False,8026
+Q1_2025,2025,1,2025-05-19,True,Total Demand,2024,False,8303
+Q1_2025,2025,1,2025-05-19,True,Total Demand,2025,True,7965
+Q1_2025,2025,1,2025-05-19,True,Balance,2021,False,1347
+Q1_2025,2025,1,2025-05-19,True,Balance,2022,False,908
+Q1_2025,2025,1,2025-05-19,True,Balance,2023,False,-896
+Q1_2025,2025,1,2025-05-19,True,Balance,2024,False,-992
+Q1_2025,2025,1,2025-05-19,True,Balance,2025,True,-966
+Q1_2025,2025,1,2025-05-19,True,Above Ground Stocks,2021,False,4106
+Q1_2025,2025,1,2025-05-19,True,Above Ground Stocks,2022,False,5014
+Q1_2025,2025,1,2025-05-19,True,Above Ground Stocks,2023,False,4118
+Q1_2025,2025,1,2025-05-19,True,Above Ground Stocks,2024,False,3126
+Q1_2025,2025,1,2025-05-19,True,Above Ground Stocks,2025,True,2160
+Q2_2025,2025,2,2025-09-10,True,Total Mining Supply,2021,False,6202
+Q2_2025,2025,2,2025-09-10,True,Total Mining Supply,2022,False,5563
+Q2_2025,2025,2,2025-09-10,True,Total Mining Supply,2023,False,5615
+Q2_2025,2025,2,2025-09-10,True,Total Mining Supply,2024,False,5764
+Q2_2025,2025,2,2025-09-10,True,Total Mining Supply,2025,True,5426
+Q2_2025,2025,2,2025-09-10,True,Recycling,2021,False,2107
+Q2_2025,2025,2,2025-09-10,True,Recycling,2022,False,1811
+Q2_2025,2025,2,2025-09-10,True,Recycling,2023,False,1515
+Q2_2025,2025,2,2025-09-10,True,Recycling,2024,False,1516
+Q2_2025,2025,2,2025-09-10,True,Recycling,2025,True,1601
+Q2_2025,2025,2,2025-09-10,True,Total Supply,2021,False,8309
+Q2_2025,2025,2,2025-09-10,True,Total Supply,2022,False,7374
+Q2_2025,2025,2,2025-09-10,True,Total Supply,2023,False,7130
+Q2_2025,2025,2,2025-09-10,True,Total Supply,2024,False,7280
+Q2_2025,2025,2,2025-09-10,True,Total Supply,2025,True,7027
+Q2_2025,2025,2,2025-09-10,True,Automotive,2021,False,2466
+Q2_2025,2025,2,2025-09-10,True,Automotive,2022,False,2778
+Q2_2025,2025,2,2025-09-10,True,Automotive,2023,False,3206
+Q2_2025,2025,2,2025-09-10,True,Automotive,2024,False,3114
+Q2_2025,2025,2,2025-09-10,True,Automotive,2025,True,3033
+Q2_2025,2025,2,2025-09-10,True,Jewellery,2021,False,1953
+Q2_2025,2025,2,2025-09-10,True,Jewellery,2022,False,1880
+Q2_2025,2025,2,2025-09-10,True,Jewellery,2023,False,1849
+Q2_2025,2025,2,2025-09-10,True,Jewellery,2024,False,2008
+Q2_2025,2025,2,2025-09-10,True,Jewellery,2025,True,2226
+Q2_2025,2025,2,2025-09-10,True,Industrial,2021,False,2403
+Q2_2025,2025,2,2025-09-10,True,Industrial,2022,False,2166
+Q2_2025,2025,2,2025-09-10,True,Industrial,2023,False,2389
+Q2_2025,2025,2,2025-09-10,True,Industrial,2024,False,2423
+Q2_2025,2025,2,2025-09-10,True,Industrial,2025,True,1901
+Q2_2025,2025,2,2025-09-10,True,Investment,2021,False,-3
+Q2_2025,2025,2,2025-09-10,True,Investment,2022,False,-516
+Q2_2025,2025,2,2025-09-10,True,Investment,2023,False,397
+Q2_2025,2025,2,2025-09-10,True,Investment,2024,False,702
+Q2_2025,2025,2,2025-09-10,True,Investment,2025,True,718
+Q2_2025,2025,2,2025-09-10,True,Total Demand,2021,False,6818
+Q2_2025,2025,2,2025-09-10,True,Total Demand,2022,False,6308
+Q2_2025,2025,2,2025-09-10,True,Total Demand,2023,False,7841
+Q2_2025,2025,2,2025-09-10,True,Total Demand,2024,False,8248
+Q2_2025,2025,2,2025-09-10,True,Total Demand,2025,True,7877
+Q2_2025,2025,2,2025-09-10,True,Balance,2021,False,1491
+Q2_2025,2025,2,2025-09-10,True,Balance,2022,False,1066
+Q2_2025,2025,2,2025-09-10,True,Balance,2023,False,-712
+Q2_2025,2025,2,2025-09-10,True,Balance,2024,False,-968
+Q2_2025,2025,2,2025-09-10,True,Balance,2025,True,-850
+Q2_2025,2025,2,2025-09-10,True,Above Ground Stocks,2021,False,4442
+Q2_2025,2025,2,2025-09-10,True,Above Ground Stocks,2022,False,5508
+Q2_2025,2025,2,2025-09-10,True,Above Ground Stocks,2023,False,4796
+Q2_2025,2025,2,2025-09-10,True,Above Ground Stocks,2024,False,3828
+Q2_2025,2025,2,2025-09-10,True,Above Ground Stocks,2025,True,2978
+Q3_2025,2025,3,2025-11-19,True,Total Mining Supply,2022,False,5568
+Q3_2025,2025,3,2025-11-19,True,Total Mining Supply,2023,False,5620
+Q3_2025,2025,3,2025-11-19,True,Total Mining Supply,2024,False,5787
+Q3_2025,2025,3,2025-11-19,True,Total Mining Supply,2025,True,5510
+Q3_2025,2025,3,2025-11-19,True,Total Mining Supply,2026,True,5622
+Q3_2025,2025,3,2025-11-19,True,Recycling,2022,False,1811
+Q3_2025,2025,3,2025-11-19,True,Recycling,2023,False,1515
+Q3_2025,2025,3,2025-11-19,True,Recycling,2024,False,1516
+Q3_2025,2025,3,2025-11-19,True,Recycling,2025,True,1619
+Q3_2025,2025,3,2025-11-19,True,Recycling,2026,True,1782
+Q3_2025,2025,3,2025-11-19,True,Total Supply,2022,False,7378
+Q3_2025,2025,3,2025-11-19,True,Total Supply,2023,False,7135
+Q3_2025,2025,3,2025-11-19,True,Total Supply,2024,False,7303
+Q3_2025,2025,3,2025-11-19,True,Total Supply,2025,True,7129
+Q3_2025,2025,3,2025-11-19,True,Total Supply,2026,True,7404
+Q3_2025,2025,3,2025-11-19,True,Automotive,2022,False,2766
+Q3_2025,2025,3,2025-11-19,True,Automotive,2023,False,3208
+Q3_2025,2025,3,2025-11-19,True,Automotive,2024,False,3109
+Q3_2025,2025,3,2025-11-19,True,Automotive,2025,True,3020
+Q3_2025,2025,3,2025-11-19,True,Automotive,2026,True,2915
+Q3_2025,2025,3,2025-11-19,True,Jewellery,2022,False,1880
+Q3_2025,2025,3,2025-11-19,True,Jewellery,2023,False,1850
+Q3_2025,2025,3,2025-11-19,True,Jewellery,2024,False,2008
+Q3_2025,2025,3,2025-11-19,True,Jewellery,2025,True,2157
+Q3_2025,2025,3,2025-11-19,True,Jewellery,2026,True,2036
+Q3_2025,2025,3,2025-11-19,True,Industrial,2022,False,2166
+Q3_2025,2025,3,2025-11-19,True,Industrial,2023,False,2389
+Q3_2025,2025,3,2025-11-19,True,Industrial,2024,False,2423
+Q3_2025,2025,3,2025-11-19,True,Industrial,2025,True,1902
+Q3_2025,2025,3,2025-11-19,True,Industrial,2026,True,2076
+Q3_2025,2025,3,2025-11-19,True,Investment,2022,False,-518
+Q3_2025,2025,3,2025-11-19,True,Investment,2023,False,397
+Q3_2025,2025,3,2025-11-19,True,Investment,2024,False,702
+Q3_2025,2025,3,2025-11-19,True,Investment,2025,True,742
+Q3_2025,2025,3,2025-11-19,True,Investment,2026,True,358
+Q3_2025,2025,3,2025-11-19,True,Total Demand,2022,False,6295
+Q3_2025,2025,3,2025-11-19,True,Total Demand,2023,False,7844
+Q3_2025,2025,3,2025-11-19,True,Total Demand,2024,False,8243
+Q3_2025,2025,3,2025-11-19,True,Total Demand,2025,True,7821
+Q3_2025,2025,3,2025-11-19,True,Total Demand,2026,True,7385
+Q3_2025,2025,3,2025-11-19,True,Balance,2022,False,1083
+Q3_2025,2025,3,2025-11-19,True,Balance,2023,False,-710
+Q3_2025,2025,3,2025-11-19,True,Balance,2024,False,-939
+Q3_2025,2025,3,2025-11-19,True,Balance,2025,True,-692
+Q3_2025,2025,3,2025-11-19,True,Balance,2026,True,20
+Q3_2025,2025,3,2025-11-19,True,Above Ground Stocks,2022,False,5528
+Q3_2025,2025,3,2025-11-19,True,Above Ground Stocks,2023,False,4819
+Q3_2025,2025,3,2025-11-19,True,Above Ground Stocks,2024,False,3879
+Q3_2025,2025,3,2025-11-19,True,Above Ground Stocks,2025,True,3187
+Q3_2025,2025,3,2025-11-19,True,Above Ground Stocks,2026,True,3207
+Q4_2025,2025,4,2026-03-04,True,Total Mining Supply,2022,False,5568
+Q4_2025,2025,4,2026-03-04,True,Total Mining Supply,2023,False,5620
+Q4_2025,2025,4,2026-03-04,True,Total Mining Supply,2024,False,5787
+Q4_2025,2025,4,2026-03-04,True,Total Mining Supply,2025,False,5551
+Q4_2025,2025,4,2026-03-04,True,Total Mining Supply,2026,True,5553
+Q4_2025,2025,4,2026-03-04,True,Recycling,2022,False,1811
+Q4_2025,2025,4,2026-03-04,True,Recycling,2023,False,1515
+Q4_2025,2025,4,2026-03-04,True,Recycling,2024,False,1516
+Q4_2025,2025,4,2026-03-04,True,Recycling,2025,False,1664
+Q4_2025,2025,4,2026-03-04,True,Recycling,2026,True,1827
+Q4_2025,2025,4,2026-03-04,True,Total Supply,2022,False,7378
+Q4_2025,2025,4,2026-03-04,True,Total Supply,2023,False,7135
+Q4_2025,2025,4,2026-03-04,True,Total Supply,2024,False,7303
+Q4_2025,2025,4,2026-03-04,True,Total Supply,2025,False,7215
+Q4_2025,2025,4,2026-03-04,True,Total Supply,2026,True,7379
+Q4_2025,2025,4,2026-03-04,True,Automotive,2022,False,2768
+Q4_2025,2025,4,2026-03-04,True,Automotive,2023,False,3210
+Q4_2025,2025,4,2026-03-04,True,Automotive,2024,False,3107
+Q4_2025,2025,4,2026-03-04,True,Automotive,2025,False,3035
+Q4_2025,2025,4,2026-03-04,True,Automotive,2026,True,2943
+Q4_2025,2025,4,2026-03-04,True,Jewellery,2022,False,1880
+Q4_2025,2025,4,2026-03-04,True,Jewellery,2023,False,1850
+Q4_2025,2025,4,2026-03-04,True,Jewellery,2024,False,2008
+Q4_2025,2025,4,2026-03-04,True,Jewellery,2025,False,2190
+Q4_2025,2025,4,2026-03-04,True,Jewellery,2026,True,1927
+Q4_2025,2025,4,2026-03-04,True,Industrial,2022,False,2156
+Q4_2025,2025,4,2026-03-04,True,Industrial,2023,False,2379
+Q4_2025,2025,4,2026-03-04,True,Industrial,2024,False,2409
+Q4_2025,2025,4,2026-03-04,True,Industrial,2025,False,1915
+Q4_2025,2025,4,2026-03-04,True,Industrial,2026,True,2124
+Q4_2025,2025,4,2026-03-04,True,Investment,2022,False,-518
+Q4_2025,2025,4,2026-03-04,True,Investment,2023,False,384
+Q4_2025,2025,4,2026-03-04,True,Investment,2024,False,701
+Q4_2025,2025,4,2026-03-04,True,Investment,2025,False,1157
+Q4_2025,2025,4,2026-03-04,True,Investment,2026,True,625
+Q4_2025,2025,4,2026-03-04,True,Total Demand,2022,False,6287
+Q4_2025,2025,4,2026-03-04,True,Total Demand,2023,False,7822
+Q4_2025,2025,4,2026-03-04,True,Total Demand,2024,False,8224
+Q4_2025,2025,4,2026-03-04,True,Total Demand,2025,False,8297
+Q4_2025,2025,4,2026-03-04,True,Total Demand,2026,True,7619
+Q4_2025,2025,4,2026-03-04,True,Balance,2022,False,1092
+Q4_2025,2025,4,2026-03-04,True,Balance,2023,False,-688
+Q4_2025,2025,4,2026-03-04,True,Balance,2024,False,-921
+Q4_2025,2025,4,2026-03-04,True,Balance,2025,False,-1082
+Q4_2025,2025,4,2026-03-04,True,Balance,2026,True,-240
+Q4_2025,2025,4,2026-03-04,True,Above Ground Stocks,2022,False,5543
+Q4_2025,2025,4,2026-03-04,True,Above Ground Stocks,2023,False,4855
+Q4_2025,2025,4,2026-03-04,True,Above Ground Stocks,2024,False,3935
+Q4_2025,2025,4,2026-03-04,True,Above Ground Stocks,2025,False,2853
+Q4_2025,2025,4,2026-03-04,True,Above Ground Stocks,2026,True,2613
+Q1_2026,2026,1,2026-05-18,True,Total Mining Supply,2022,False,5568
+Q1_2026,2026,1,2026-05-18,True,Total Mining Supply,2023,False,5620
+Q1_2026,2026,1,2026-05-18,True,Total Mining Supply,2024,False,5787
+Q1_2026,2026,1,2026-05-18,True,Total Mining Supply,2025,False,5561
+Q1_2026,2026,1,2026-05-18,True,Total Mining Supply,2026,True,5551
+Q1_2026,2026,1,2026-05-18,True,Recycling,2022,False,1811
+Q1_2026,2026,1,2026-05-18,True,Recycling,2023,False,1515
+Q1_2026,2026,1,2026-05-18,True,Recycling,2024,False,1536
+Q1_2026,2026,1,2026-05-18,True,Recycling,2025,False,1679
+Q1_2026,2026,1,2026-05-18,True,Recycling,2026,True,1826
+Q1_2026,2026,1,2026-05-18,True,Total Supply,2022,False,7378
+Q1_2026,2026,1,2026-05-18,True,Total Supply,2023,False,7135
+Q1_2026,2026,1,2026-05-18,True,Total Supply,2024,False,7323
+Q1_2026,2026,1,2026-05-18,True,Total Supply,2025,False,7240
+Q1_2026,2026,1,2026-05-18,True,Total Supply,2026,True,7377
+Q1_2026,2026,1,2026-05-18,True,Automotive,2022,False,2766
+Q1_2026,2026,1,2026-05-18,True,Automotive,2023,False,3204
+Q1_2026,2026,1,2026-05-18,True,Automotive,2024,False,3108
+Q1_2026,2026,1,2026-05-18,True,Automotive,2025,False,3031
+Q1_2026,2026,1,2026-05-18,True,Automotive,2026,True,2959
+Q1_2026,2026,1,2026-05-18,True,Jewellery,2022,False,1880
+Q1_2026,2026,1,2026-05-18,True,Jewellery,2023,False,1849
+Q1_2026,2026,1,2026-05-18,True,Jewellery,2024,False,2008
+Q1_2026,2026,1,2026-05-18,True,Jewellery,2025,False,2214
+Q1_2026,2026,1,2026-05-18,True,Jewellery,2026,True,1958
+Q1_2026,2026,1,2026-05-18,True,Industrial,2022,False,2288
+Q1_2026,2026,1,2026-05-18,True,Industrial,2023,False,2491
+Q1_2026,2026,1,2026-05-18,True,Industrial,2024,False,2526
+Q1_2026,2026,1,2026-05-18,True,Industrial,2025,False,2049
+Q1_2026,2026,1,2026-05-18,True,Industrial,2026,True,2238
+Q1_2026,2026,1,2026-05-18,True,Investment,2022,False,-504
+Q1_2026,2026,1,2026-05-18,True,Investment,2023,False,388
+Q1_2026,2026,1,2026-05-18,True,Investment,2024,False,713
+Q1_2026,2026,1,2026-05-18,True,Investment,2025,False,1136
+Q1_2026,2026,1,2026-05-18,True,Investment,2026,True,519
+Q1_2026,2026,1,2026-05-18,True,Total Demand,2022,False,6430
+Q1_2026,2026,1,2026-05-18,True,Total Demand,2023,False,7933
+Q1_2026,2026,1,2026-05-18,True,Total Demand,2024,False,8355
+Q1_2026,2026,1,2026-05-18,True,Total Demand,2025,False,8431
+Q1_2026,2026,1,2026-05-18,True,Total Demand,2026,True,7674
+Q1_2026,2026,1,2026-05-18,True,Balance,2022,False,949
+Q1_2026,2026,1,2026-05-18,True,Balance,2023,False,-799
+Q1_2026,2026,1,2026-05-18,True,Balance,2024,False,-1033
+Q1_2026,2026,1,2026-05-18,True,Balance,2025,False,-1191
+Q1_2026,2026,1,2026-05-18,True,Balance,2026,True,-297
+Q1_2026,2026,1,2026-05-18,True,Above Ground Stocks,2022,False,5067
+Q1_2026,2026,1,2026-05-18,True,Above Ground Stocks,2023,False,4268
+Q1_2026,2026,1,2026-05-18,True,Above Ground Stocks,2024,False,3235
+Q1_2026,2026,1,2026-05-18,True,Above Ground Stocks,2025,False,2044
+Q1_2026,2026,1,2026-05-18,True,Above Ground Stocks,2026,True,1747
+Q2_2026,2026,2,2026-09-09,True,Total Mining Supply,2022,False,5568
+Q2_2026,2026,2,2026-09-09,True,Total Mining Supply,2023,False,5620
+Q2_2026,2026,2,2026-09-09,True,Total Mining Supply,2024,False,5787
+Q2_2026,2026,2,2026-09-09,True,Total Mining Supply,2025,False,5561
+Q2_2026,2026,2,2026-09-09,True,Total Mining Supply,2026,True,5551
+Q2_2026,2026,2,2026-09-09,True,Recycling,2022,False,1811
+Q2_2026,2026,2,2026-09-09,True,Recycling,2023,False,1515
+Q2_2026,2026,2,2026-09-09,True,Recycling,2024,False,1536
+Q2_2026,2026,2,2026-09-09,True,Recycling,2025,False,1669
+Q2_2026,2026,2,2026-09-09,True,Recycling,2026,True,1802
+Q2_2026,2026,2,2026-09-09,True,Total Supply,2022,False,7378
+Q2_2026,2026,2,2026-09-09,True,Total Supply,2023,False,7135
+Q2_2026,2026,2,2026-09-09,True,Total Supply,2024,False,7323
+Q2_2026,2026,2,2026-09-09,True,Total Supply,2025,False,7231
+Q2_2026,2026,2,2026-09-09,True,Total Supply,2026,True,7353
+Q2_2026,2026,2,2026-09-09,True,Automotive,2022,False,2769
+Q2_2026,2026,2,2026-09-09,True,Automotive,2023,False,3206
+Q2_2026,2026,2,2026-09-09,True,Automotive,2024,False,3110
+Q2_2026,2026,2,2026-09-09,True,Automotive,2025,False,3039
+Q2_2026,2026,2,2026-09-09,True,Automotive,2026,True,2904
+Q2_2026,2026,2,2026-09-09,True,Jewellery,2022,False,1880
+Q2_2026,2026,2,2026-09-09,True,Jewellery,2023,False,1849
+Q2_2026,2026,2,2026-09-09,True,Jewellery,2024,False,2008
+Q2_2026,2026,2,2026-09-09,True,Jewellery,2025,False,2214
+Q2_2026,2026,2,2026-09-09,True,Jewellery,2026,True,1883
+Q2_2026,2026,2,2026-09-09,True,Industrial,2022,False,2328
+Q2_2026,2026,2,2026-09-09,True,Industrial,2023,False,2493
+Q2_2026,2026,2,2026-09-09,True,Industrial,2024,False,2588
+Q2_2026,2026,2,2026-09-09,True,Industrial,2025,False,2266
+Q2_2026,2026,2,2026-09-09,True,Industrial,2026,True,2385
+Q2_2026,2026,2,2026-09-09,True,Investment,2022,False,-504
+Q2_2026,2026,2,2026-09-09,True,Investment,2023,False,388
+Q2_2026,2026,2,2026-09-09,True,Investment,2024,False,713
+Q2_2026,2026,2,2026-09-09,True,Investment,2025,False,1152
+Q2_2026,2026,2,2026-09-09,True,Investment,2026,True,-83
+Q2_2026,2026,2,2026-09-09,True,Total Demand,2022,False,6473
+Q2_2026,2026,2,2026-09-09,True,Total Demand,2023,False,7937
+Q2_2026,2026,2,2026-09-09,True,Total Demand,2024,False,8418
+Q2_2026,2026,2,2026-09-09,True,Total Demand,2025,False,8671
+Q2_2026,2026,2,2026-09-09,True,Total Demand,2026,True,7089
+Q2_2026,2026,2,2026-09-09,True,Balance,2022,False,905
+Q2_2026,2026,2,2026-09-09,True,Balance,2023,False,-802
+Q2_2026,2026,2,2026-09-09,True,Balance,2024,False,-1096
+Q2_2026,2026,2,2026-09-09,True,Balance,2025,False,-1440
+Q2_2026,2026,2,2026-09-09,True,Balance,2026,True,265
+Q2_2026,2026,2,2026-09-09,True,Above Ground Stocks,2022,False,5084
+Q2_2026,2026,2,2026-09-09,True,Above Ground Stocks,2023,False,4281
+Q2_2026,2026,2,2026-09-09,True,Above Ground Stocks,2024,False,3186
+Q2_2026,2026,2,2026-09-09,True,Above Ground Stocks,2025,False,1745
+Q2_2026,2026,2,2026-09-09,True,Above Ground Stocks,2026,True,2010
